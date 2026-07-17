@@ -1,0 +1,1201 @@
+# REPLIT PROMPT — Telegram Bot: Money Management System (Full Update)
+
+---
+
+## CRITICAL FORMATTING RULES — READ FIRST BEFORE WRITING ANY CODE
+
+These rules apply to every single message, dashboard, card, and screen the bot sends. Violating these rules will break the visual layout in Telegram.
+
+RULE 1 — NO OVERSIZED SYMBOLS:
+Do not use large decorative unicode symbols, oversized emoji, or special unicode characters that render as giant icons in Telegram. Every symbol must be small, inline, and the same visual size as the text next to it.
+
+RULE 2 — BOX DRAWING CHARACTERS — ALLOWED BUT MUST BE MOBILE SAFE:
+Box drawing characters such as ╔ ╗ ╚ ╝ ╠ ╣ ║ ═ are allowed ONLY if they render at the correct size on mobile Telegram. To keep them mobile safe, follow these strict rules:
+- Never make a box wider than 32 characters total per line including the border characters
+- Every line inside the box must be the same fixed width so the box does not break or go uneven
+- Do not mix box drawing characters with emoji on the same line inside the box because emoji width is unpredictable and will misalign the box
+- Do not nest boxes inside boxes
+- If the box breaks or misaligns on mobile, replace it immediately with plain text and a simple divider instead
+
+RULE 3 — LINE DIVIDERS — ALLOWED BUT MUST BE CORRECT SIZE:
+Line dividers using repeated symbols such as ════════ or ━━━━━━━━ are allowed ONLY if the length is strictly controlled. To keep them mobile safe, follow these strict rules:
+- Maximum divider length is 30 characters, never longer
+- All dividers in the entire bot must use the same fixed length, do not use different lengths in different screens
+- Do not make dividers wider than the text content above and below them
+- Correct example: ══════════════════════════════
+- Wrong example: ══════════════════════════════════════════════════════════════
+- Never combine multiple different divider styles in the same message
+- If a divider causes the message to look broken or overflow on a 375px mobile screen, shorten it or replace with ----------
+
+RULE 4 — NO UNDERLINE OVERUSE:
+Do not use underline formatting for entire blocks of text or section headers. Underline may only be used on a single short word if absolutely necessary. Never underline a full sentence or title.
+
+RULE 5 — STARS AND SPECIAL MARKERS:
+If highlighting the trade amount or any key value, use a maximum of one star or marker on each side. Example: * $3.00 * is acceptable. Do not stack multiple symbols like ★★ $3.00 ★★ or >>> $3.00 <<< as these inflate the visual size.
+
+RULE 6 — EMOJI SIZE:
+Use only standard single Telegram emoji. Do not use sequences of multiple emoji together as decoration. Maximum one emoji per label or line item.
+
+RULE 7 — PLAIN TEXT STRUCTURE:
+Build all dashboards and cards using plain text with consistent spacing and single blank lines between sections. Use Telegram bold (*text*) and monospace (`text`) only for the most important values like the trade amount and balance. Do not bold entire blocks.
+
+RULE 8 — MOBILE FIRST:
+All messages must render correctly on a small mobile screen. Keep line lengths short. Do not assume wide screen rendering. Test every message format as if it is on a 375px wide phone screen.
+
+RULE 9 — NO EXTRA WHITESPACE INFLATION:
+Do not add multiple blank lines between every item. One blank line between sections is the maximum. Do not pad messages with empty lines to make them look bigger.
+
+RULE 10 — CONSISTENT SIZING THROUGHOUT:
+Every message in the bot must follow the same formatting style. Do not mix box-drawing cards in one place and plain text in another. Pick plain text with minimal bold and monospace and use it everywhere consistently.
+
+---
+
+## OVERVIEW
+
+Update and extend the existing Binary Trading Money Management (MM) Telegram Bot module with the following new features:
+- Integrated payment system under Buy Access (same as SVIP payment flow)
+- Two-page session setup form (Page 1: first 5-6 inputs, Page 2: remaining inputs)
+- Mode selection redesigned with highlights, risk rating, and TP hit probability rank
+- Auto-vanishing dashboard after WIN/LOSS button is tapped
+- Clean, beautiful trade dashboard with highlighted trade amount
+- Back button on every single screen
+- Admin has automatic lifetime access, no purchase needed
+- MM dashboard under the Money Management button shows full user status info
+- Admin can view all access users and remove them manually
+- Expired or limit-reached users see Buy Access + Home buttons
+
+---
+
+## PAYMENT SYSTEM — BUY ACCESS
+
+Under the Buy Access screen, display the price list followed by a PAY button for each plan. Use the exact same payment flow, invoice system, and approval logic already used in the SVIP join payment system in this bot. Do not create a new payment system. Reuse the existing one entirely.
+
+Display format:
+
+```
+MONEY MANAGEMENT Access Plans
+
+13 Days     $6      [ PAY ]
+25 Days     $10     [ PAY ]
+1 Month     $15     [ PAY ]
+2 Months    $25     [ PAY ]
+4 Months    $60     [ PAY ]
+Lifetime    $100    [ PAY ]
+
+SVIP / AI Bot Users = FREE
+DM Admin to claim your free access.
+
+[ Back ]
+```
+
+When user taps PAY for any plan:
+- Bot initiates payment using the existing SVIP payment invoice method
+- After successful payment and admin approval, user receives MM access for selected duration
+- Notification message sent to user is MM-specific:
+
+```
+Your MONEY MANAGEMENT Access is now active!
+Plan: [selected plan]
+Expires: [date or Lifetime]
+You can now start unlimited sessions.
+```
+
+---
+
+## MONEY MANAGEMENT DASHBOARD (Entry Screen)
+
+This is the first screen the user sees after tapping the MONEY MANAGEMENT button from the main menu.
+
+For FREE users, show:
+
+```
+============================================
+  MONEY MANAGEMENT
+============================================
+  Status:  FREE
+
+  Free Plan Includes:
+  - 1 session per day
+  - Maximum capital $50
+  - All 10 trading modes
+  - Basic dashboard
+
+  Premium Plan Includes:
+  - Unlimited sessions daily
+  - No capital limit
+  - Priority AI tracking
+  - Full dashboard stats
+  - New Session anytime
+  - Multi-session support
+
+--------------------------------------------
+  Today's Sessions: 0 of 1 used
+============================================
+
+[ BINARY START SESSION ]
+[ Buy Access ]
+[ Support ]
+[ Back ]
+```
+
+For PREMIUM users (temporary or lifetime), show:
+
+```
+============================================
+  MONEY MANAGEMENT
+============================================
+  Status:  PREMIUM
+  Expires: 25 June 2025
+  (or: Lifetime)
+============================================
+
+[ BINARY START SESSION ]
+[ Buy Access ]
+[ Support ]
+[ Back ]
+```
+
+For users whose free daily limit is reached or subscription has expired, show:
+
+```
+============================================
+  MONEY MANAGEMENT
+============================================
+  Status:  FREE
+  Today's free session has been used.
+  (or: Your subscription has expired.)
+
+  Upgrade to continue trading.
+============================================
+
+[ Buy Access ]
+[ Home ]
+```
+
+No BINARY START SESSION button is shown when access is expired or daily limit is reached. Only Buy Access and Home buttons are shown.
+
+---
+
+## SESSION SETUP — TWO PAGE FORM
+
+All inputs are collected via chat text typed by the user. Bot sends a prompt, user types the answer. No inline buttons used for data input. Back button is available on every step to go to the previous step.
+
+---
+
+### PAGE 1 — First 5 Inputs
+
+Bot sends a clean page header then collects these 5 inputs one at a time:
+
+```
+============================================
+  SESSION SETUP — Page 1 of 2
+============================================
+```
+
+STEP 1 — Trading Capital
+
+```
+Enter your Trading Capital ($):
+(Example: 100)
+
+[ Back ]
+```
+
+Free user types more than 50:
+```
+Free Access allows maximum $50 capital.
+Please enter $50 or less.
+[ Back ]
+```
+
+STEP 2 — Accuracy Percentage
+
+```
+Enter your Trading Accuracy %:
+(Example: 65)
+
+[ Back ]
+```
+
+Validation: number between 1 and 100.
+
+STEP 3 — Number of Trades (Optional)
+
+```
+How many trades do you want this session?
+(Type a number, or type: skip)
+
+[ Back ]
+```
+
+STEP 4 — Today's Profit Target
+
+```
+How much profit do you want today? ($)
+(Example: 20)
+
+[ Back ]
+```
+
+STEP 5 — Broker Cent Account Support
+
+```
+Does your broker support Cent Account?
+(Type: yes or no)
+
+yes = Amounts shown in cent format (1.90$, 2.00$)
+no  = Amounts shown in standard rounded format
+
+[ Back ]
+```
+
+Rounding logic when no:
+- Decimal less than 0.50 = round DOWN to nearest $1
+- Decimal 0.50 or more = round UP to nearest $1
+
+After Step 5 is completed, bot shows page 2 header and continues.
+
+---
+
+### PAGE 2 — Remaining Inputs
+
+```
+============================================
+  SESSION SETUP — Page 2 of 2
+============================================
+```
+
+STEP 6 — Market Payout Percentage
+
+```
+Enter broker Market Payout %:
+(Example: 80)
+
+[ Back ]
+```
+
+STEP 7 — Total Trades Planned
+
+```
+Total trades planned for this session?
+(Example: 10)
+
+[ Back ]
+```
+
+STEP 8 — Wins Needed
+
+```
+How many wins do you need this session?
+(Example: 6)
+
+[ Back ]
+```
+
+STEP 9 — Stop Loss Limit
+
+```
+Max loss before session auto-stops? ($)
+(Example: 15)
+
+[ Back ]
+```
+
+STEP 10 — Session Profit Target
+
+```
+Profit amount to auto-close session? ($)
+(Example: 20)
+
+[ Back ]
+```
+
+STEP 11 — Overall Target
+
+```
+Your overall trading goal? ($)
+(Example: 500)
+
+[ Back ]
+```
+
+---
+
+### STEP 12 — TRADING MODE SELECTION (Highlighted, with Risk Rating)
+
+After Step 11, bot sends a fully highlighted mode selection screen. Each mode is displayed with:
+- Mode name
+- Short description
+- Risk level (LOW / MEDIUM / HIGH / VERY HIGH)
+- TP Hit Probability Rank (1 = highest probability, 10 = lowest)
+- Win rate it works well with
+
+User types a number from 1 to 10 to select a mode.
+
+```
+============================================
+  SELECT TRADING MODE
+  Type the number to choose your mode
+============================================
+
+  1 | REGULAR
+    Win = next doubles. Loss = stay same
+    until win then double.
+    Risk: LOW
+    TP Hit Rank: 1/10  (Best Probability)
+    Works well at: 50%+ win rate
+  ----------------------------------------
+
+  2 | 1-STEP COMPOUNDING
+    Loss on trade 1 = trade 2 doubles.
+    After trade 2 result = restart always.
+    Risk: LOW-MEDIUM
+    TP Hit Rank: 2/10
+    Works well at: 45%+ win rate
+  ----------------------------------------
+
+  3 | 2-STEP COMPOUNDING
+    2 consecutive losses trigger doubles.
+    After 3rd trade result = restart.
+    Risk: MEDIUM
+    TP Hit Rank: 3/10
+    Works well at: 40%+ win rate
+  ----------------------------------------
+
+  4 | 3-STEP COMPOUNDING
+    3 consecutive losses trigger doubles.
+    After 4th trade result = restart.
+    Risk: MEDIUM-HIGH
+    TP Hit Rank: 4/10
+    Works well at: 38%+ win rate
+  ----------------------------------------
+
+  5 | MARTINGALE (1-MTG)
+    Every loss doubles. Win = restart.
+    Auto-stops at stop loss limit.
+    Risk: HIGH
+    TP Hit Rank: 5/10
+    Works well at: 45%+ win rate
+  ----------------------------------------
+
+  6 | OSCAR'S GRIND
+    Loss = same size. Win = +1 unit.
+    At +1 unit net profit = restart.
+    Risk: LOW
+    TP Hit Rank: 2/10  (Top Performer)
+    Works well at: 30%+ win rate
+  ----------------------------------------
+
+  7 | ANTI-MARTINGALE
+    Win = double. Loss = restart base.
+    After 3 wins in a row = restart.
+    Risk: LOW-MEDIUM
+    TP Hit Rank: 3/10
+    Works well at: 40%+ win rate
+  ----------------------------------------
+
+  8 | FLAT BET
+    Every trade = same base amount.
+    Safest mode. No progression.
+    Risk: VERY LOW
+    TP Hit Rank: 1/10  (Safest)
+    Works well at: 55%+ win rate
+  ----------------------------------------
+
+  9 | FIBONACCI
+    Loss = move forward in sequence.
+    Win = move 2 steps back.
+    Risk: MEDIUM
+    TP Hit Rank: 3/10
+    Works well at: 40%+ win rate
+  ----------------------------------------
+
+  10 | D'ALEMBERT
+    Loss = +1 unit. Win = -1 unit.
+    Gentlest progression system.
+    Risk: LOW
+    TP Hit Rank: 2/10
+    Works well at: 35%+ win rate
+  ----------------------------------------
+
+  Type a number (1 to 10):
+
+  [ Back ]
+============================================
+```
+
+After user types a number, bot confirms the selected mode and starts the session.
+
+---
+
+## ALL TRADING MODE LOGIC
+
+### Mode 1 — REGULAR
+
+WIN Sequence:
+```
+Trade 1: Base Amount = WIN
+Trade 2: 2x Base Amount = WIN
+Restart at Base Amount
+```
+
+LOSS Sequence:
+```
+Trade 1: Base = LOSS
+Trade 2: Base = LOSS   (same, not doubled)
+Trade 3: Base = WIN
+Trade 4: 2x Base = WIN
+Restart at Base Amount
+```
+
+Consecutive Loss (2 or more in a row):
+```
+Keep using Base Amount every trade until first WIN
+WIN: next = 2x Base
+Next WIN: Restart
+```
+
+### Mode 2 — 1-STEP COMPOUNDING
+
+```
+Trade 1: Base = LOSS
+Trade 2: 2x Base = WIN or LOSS
+Restart regardless of result
+
+Trade 1: Base = WIN
+Restart
+```
+
+### Mode 3 — 2-STEP COMPOUNDING
+
+```
+Trade 1: Base = LOSS
+Trade 2: 2x Base = LOSS
+Trade 3: 4x Base = WIN or LOSS
+Restart
+
+Trade 1: Base = LOSS / Trade 2: 2x Base = WIN
+Restart
+
+Trade 1: WIN = Restart
+```
+
+### Mode 4 — 3-STEP COMPOUNDING
+
+```
+Trade 1: Base = LOSS
+Trade 2: 2x Base = LOSS
+Trade 3: 4x Base = LOSS
+Trade 4: 8x Base = WIN or LOSS
+Restart
+```
+
+### Mode 5 — MARTINGALE
+
+```
+Each LOSS: next = 2x previous
+First WIN: restart at Base
+Next amount exceeds stop loss limit: session auto-stops
+```
+
+### Mode 6 — OSCAR'S GRIND
+
+```
+Start at 1 unit
+LOSS: same unit size
+WIN: increase 1 unit
+Net profit = +1 unit: restart at 1 unit
+```
+
+### Mode 7 — ANTI-MARTINGALE
+
+```
+WIN: double amount
+LOSS: restart at Base
+After 3 consecutive wins: restart at Base
+```
+
+### Mode 8 — FLAT BET
+
+```
+Every trade: same Base Amount always
+No changes based on win or loss
+```
+
+### Mode 9 — FIBONACCI
+
+```
+Sequence: 1, 1, 2, 3, 5, 8, 13, 21
+LOSS: move 1 step forward
+WIN: move 2 steps back (min step 1)
+Back to step 1: restart
+```
+
+### Mode 10 — D'ALEMBERT
+
+```
+Start: 1 unit
+LOSS: current + 1 unit
+WIN: current - 1 unit (min 1 unit)
+```
+
+---
+
+## LIVE TRADE DASHBOARD
+
+After session starts, bot sends the first trade message. Every subsequent message after WIN or LOSS is tapped replaces the previous one (old message auto-deleted or edited so it vanishes from the chat). Only the latest trade card is visible.
+
+Trade card format:
+
+```
+╔══════════════════════════════════════╗
+║         TRADE #4  |  REGULAR         ║
+╠══════════════════════════════════════╣
+║                                      ║
+║   USE THIS AMOUNT:                   ║
+║                                      ║
+║         ★  $3.00  ★                  ║
+║                                      ║
+╠══════════════════════════════════════╣
+║  [ ✅  WIN ]        [ ❌  LOSS ]      ║
+╠══════════════════════════════════════╣
+║  Capital    $100    Balance  $109.00 ║
+║  Wins          3    Losses        1  ║
+║  Trades    4/10     Win Rate    75%  ║
+║  Profit         +$9.00               ║
+║  Stop Loss  $15     Target    $20    ║
+╠══════════════════════════════════════╣
+║  [ Close Session ]  [ New Session ]  ║
+║         [ Back to Home ]             ║
+╚══════════════════════════════════════╝
+```
+
+Key rules:
+- The trade amount (★ $3.00 ★) must be the most visually prominent element, centered with stars or bold markers
+- After WIN or LOSS is tapped, the current card is immediately deleted and the next trade card is sent as a fresh new message. Old card completely vanishes.
+- All numbers update accurately with each trade
+- Back button is always present
+
+---
+
+## TARGET HIT AND STOP LOSS ALERTS
+
+Profit Target Hit:
+```
+╔══════════════════════════════════════╗
+║       CONGRATULATIONS!               ║
+║   Your session target is reached!    ║
+╠══════════════════════════════════════╣
+║  Final Profit:   +$20.00             ║
+║  Total Trades:   8                   ║
+║  Wins:           6   Losses:  2      ║
+║  Win Rate:       75%                 ║
+╠══════════════════════════════════════╣
+║  Want to improve your trading?       ║
+║  Try our AI Bot, SVIP Signals or     ║
+║  Premium Software.                   ║
+║  DM Support Team for details.        ║
+╠══════════════════════════════════════╣
+║  [ New Session ]   [ Home ]          ║
+╚══════════════════════════════════════╝
+```
+
+Stop Loss Hit:
+```
+╔══════════════════════════════════════╗
+║   STOP LOSS REACHED                  ║
+║   Session closed for your safety.    ║
+╠══════════════════════════════════════╣
+║  Total Loss:    -$15.00              ║
+║  Total Trades:   6                   ║
+║  Wins:           2   Losses:  4      ║
+╠══════════════════════════════════════╣
+║  Smarter risk management available.  ║
+║  Our AI Bot and SVIP can help.       ║
+║  DM Support Team for details.        ║
+╠══════════════════════════════════════╣
+║  [ New Session ]   [ Home ]          ║
+╚══════════════════════════════════════╝
+```
+
+---
+
+## ADMIN — AUTOMATIC LIFETIME ACCESS
+
+Admin user IDs listed in the .env file under ADMIN_IDS automatically have full lifetime MM access. The bot checks at startup and grants lifetime access to all admin IDs in the database without any purchase or manual step required. Admins never see the Buy Access prompt. Admins never hit daily session limits. This is handled in the access check function automatically.
+
+---
+
+## ADMIN PANEL — MM ACCESS MANAGEMENT
+
+Inside the existing admin panel, add:
+
+```
+[ MM ACCESS GRANT ]
+[ MM ACCESS LIST ]
+```
+
+### MM ACCESS GRANT
+
+Admin taps MM ACCESS GRANT. Bot sends:
+```
+Type the username:
+(Example: @username)
+[ Back ]
+```
+
+Admin types username. Bot sends:
+```
+Type the duration:
+
+Examples:
+1, 2, 3, 7, 14, 24     = Days
+1month, 2month, 3month = Months
+lifetime               = Permanent
+
+[ Back ]
+```
+
+Admin types duration. Access is granted immediately.
+
+User receives:
+```
+Your MONEY MANAGEMENT Access is now active!
+Plan: [selected duration]
+Expires: [date or Lifetime]
+Start your session anytime!
+```
+
+---
+
+### MM ACCESS LIST
+
+Admin taps MM ACCESS LIST. Bot sends a paginated list of all users who currently have MM access:
+
+```
+============================================
+  MM ACCESS LIST
+  Total Active: 12
+============================================
+  1.  @username1       Expires: 25 Jun 2025
+      [ Remove ]
+
+  2.  @username2       Lifetime
+      [ Remove ]
+
+  3.  @username3       Expires: 01 Jul 2025
+      [ Remove ]
+
+  ... (paginated, 10 per page)
+
+  [ Next Page ]   [ Back ]
+============================================
+```
+
+When admin taps Remove next to a username:
+```
+Remove access for @username1?
+
+[ Confirm Remove ]   [ Cancel ]
+```
+
+After confirm:
+- Access is deleted from database immediately
+- User receives this message:
+```
+Your MONEY MANAGEMENT Access has been removed.
+Contact support if you think this is a mistake.
+```
+
+---
+
+## BACK BUTTON — RULES
+
+Every single screen in the entire MM module must have a Back button. Rules:
+
+- Main MM dashboard Back button = returns to main menu
+- Buy Access Back button = returns to MM dashboard
+- Session setup Step 1 Back button = returns to MM dashboard
+- Session setup Step 2 to 12 Back button = returns to previous step (with previously entered value remembered if possible)
+- Mode selection Back button = returns to Step 11
+- Active session Back button = returns to MM dashboard (asks confirmation: "This will close your session. Continue?" with Yes and Cancel buttons)
+- MM Access List Back button = returns to admin panel
+- MM Access Grant Back button = returns to admin panel
+
+---
+
+## EXPIRED OR LIMIT REACHED — FORCED SCREEN
+
+When a user tries to tap BINARY START SESSION but their free daily limit is used or their subscription is expired, do not show the setup form. Instead show:
+
+```
+╔══════════════════════════════════════╗
+║       ACCESS REQUIRED                ║
+╠══════════════════════════════════════╣
+║  Your free session for today         ║
+║  has been used.                      ║
+║                                      ║
+║  (or: Your subscription has          ║
+║  expired.)                           ║
+║                                      ║
+║  Upgrade to continue trading         ║
+║  with unlimited sessions.            ║
+╠══════════════════════════════════════╣
+║  [ Buy Access ]      [ Home ]        ║
+╚══════════════════════════════════════╝
+```
+
+Only these two buttons are shown. No BINARY START SESSION button. No other options.
+
+---
+
+## FILE STRUCTURE
+
+```
+/
+├── bot.py
+├── config.py
+├── database.py
+├── handlers/
+│   ├── main_menu.py
+│   ├── language_handler.py
+│   ├── mm_dashboard.py            (entry screen, status display)
+│   ├── mm_setup_page1.py          (steps 1 to 5)
+│   ├── mm_setup_page2.py          (steps 6 to 12 including mode)
+│   ├── mm_session.py              (live trade dashboard, win/loss)
+│   ├── mm_admin_access.py         (grant, list, remove)
+│   ├── buy_access.py              (price list with pay buttons)
+│   └── payment_handler.py        (reuse existing SVIP payment logic)
+├── strategies/
+│   ├── regular.py
+│   ├── compounding_1step.py
+│   ├── compounding_2step.py
+│   ├── compounding_3step.py
+│   ├── martingale.py
+│   ├── oscars_grind.py
+│   ├── anti_martingale.py
+│   ├── flat_bet.py
+│   ├── fibonacci.py
+│   └── dalembert.py
+├── locales/
+│   ├── en.json
+│   ├── bn.json
+│   ├── hi.json
+│   ├── ar.json
+│   └── ... (all supported languages)
+├── .env
+└── requirements.txt
+```
+
+---
+
+## REQUIREMENTS.TXT
+
+```
+python-telegram-bot==20.7
+aiosqlite==0.19.0
+apscheduler==3.10.4
+python-dotenv==1.0.0
+```
+
+---
+
+## .ENV
+
+```
+BOT_TOKEN=your_token_here
+ADMIN_IDS=123456789,987654321
+DB_PATH=mm_bot.db
+```
+
+---
+
+
+---
+
+
+---
+
+## BINARY TRADING PROFIT & LOSS CALCULATION — EXACT FORMULA
+
+This is the core calculation engine that must be used everywhere in the bot for all profit, loss, balance, and dashboard updates. Every single number shown to the user must follow this formula exactly.
+
+---
+
+### HOW BINARY PAYOUT WORKS
+
+In binary trading, the broker gives a payout percentage on each winning trade. This is the Market Percentage the user enters during session setup.
+
+Formula:
+
+WIN:
+  Profit = Trade Amount x (Market Percentage / 100)
+  Total Return = Trade Amount + Profit
+  Balance = Previous Balance + Profit
+
+LOSS:
+  Loss = Full Trade Amount (entire amount is lost)
+  Balance = Previous Balance - Trade Amount
+
+---
+
+### WORKED EXAMPLES
+
+Example 1 — $1 Trade at 80% Market:
+  Trade Amount = $1.00
+  Market % = 80%
+  WIN:
+    Profit = 1.00 x (80 / 100) = $0.80
+    Total Return = $1.00 + $0.80 = $1.80
+    Balance increases by $0.80
+  LOSS:
+    Loss = $1.00
+    Balance decreases by $1.00
+
+Example 2 — $10 Trade at 80% Market:
+  Trade Amount = $10.00
+  Market % = 80%
+  WIN:
+    Profit = 10.00 x (80 / 100) = $8.00
+    Total Return = $10.00 + $8.00 = $18.00
+    Balance increases by $8.00
+  LOSS:
+    Loss = $10.00
+    Balance decreases by $10.00
+
+Example 3 — $3 Trade at 85% Market:
+  Trade Amount = $3.00
+  Market % = 85%
+  WIN:
+    Profit = 3.00 x (85 / 100) = $2.55
+    Total Return = $3.00 + $2.55 = $5.55
+    Balance increases by $2.55
+  LOSS:
+    Loss = $3.00
+    Balance decreases by $3.00
+
+---
+
+### RULES FOR CALCULATION ENGINE
+
+RULE A — Every WIN adds only the PROFIT to the balance, not the total return. The trade amount is not re-added to balance because it was already part of the balance before the trade.
+
+RULE B — Every LOSS subtracts the full trade amount from the balance.
+
+RULE C — Market Percentage is entered once at session setup (Step 7) and applies to every single trade in that session. It does not change mid-session.
+
+RULE D — Profit per trade = Trade Amount x (Market % / 100). This must be calculated fresh for each trade because the trade amount changes based on the selected mode.
+
+RULE E — All amounts must be rounded to 2 decimal places in all displays and calculations.
+
+RULE F — The running balance, total profit, and win/loss counts must be updated immediately after every WIN or LOSS button tap. The dashboard must always show accurate real-time numbers.
+
+RULE G — Session Profit = sum of all individual trade profits minus sum of all individual trade losses. This is the net profit shown in the dashboard.
+
+RULE H — If session profit becomes negative, the dashboard shows it with a minus sign. Example: Profit: -$3.20
+
+RULE I — Stop Loss check: after every trade, if the total session loss (negative profit) reaches or exceeds the stop loss amount entered by the user, the session auto-closes immediately with the Stop Loss alert.
+
+RULE J — Target check: after every WIN, if the total session profit reaches or exceeds the profit target entered by the user, the session auto-closes immediately with the Target Hit alert.
+
+---
+
+### DASHBOARD CALCULATION DISPLAY
+
+Every trade card dashboard must show these values calculated using the above formula:
+
+```
+Capital:   $100.00      (original capital entered at setup, never changes)
+Balance:   $108.80      (capital + net profit so far, updates every trade)
+Wins:      5            (count of WIN taps)
+Losses:    2            (count of LOSS taps)
+Win Rate:  71%          (wins / total trades x 100, rounded to whole number)
+Profit:    +$8.80       (sum of all win profits minus sum of all loss amounts)
+Trade #:   7 / 10       (current trade number / total planned trades)
+```
+
+Profit calculation example for above dashboard:
+  Assume $1 base, 80% market, Mode Regular:
+  Trade 1: $1 WIN  = +$0.80
+  Trade 2: $2 WIN  = +$1.60
+  Trade 3: $1 WIN  = +$0.80
+  Trade 4: $2 WIN  = +$1.60
+  Trade 5: $1 WIN  = +$0.80
+  Trade 6: $1 LOSS = -$1.00
+  Trade 7: $1 LOSS = -$1.00
+  Net Profit = 0.80 + 1.60 + 0.80 + 1.60 + 0.80 - 1.00 - 1.00 = +$3.60
+  Balance = $100.00 + $3.60 = $103.60
+
+---
+
+### BASE AMOUNT CALCULATION AT SESSION START
+
+When session setup is complete, the bot must calculate the optimal base trade amount using:
+
+  Base Amount = (Capital x Risk Per Trade %) / 100
+
+Where Risk Per Trade % is determined by the selected mode:
+  Flat Bet        = 2% of capital
+  Oscar's Grind   = 2% of capital
+  D'Alembert      = 2% of capital
+  Fibonacci       = 2% of capital
+  Regular         = 3% of capital
+  1-Step          = 3% of capital
+  2-Step          = 4% of capital
+  3-Step          = 5% of capital
+  Anti-Martingale = 3% of capital
+  Martingale      = 2% of capital (low base because it doubles)
+
+After calculating, apply the $1.00 minimum floor rule (round up to $1.00 if result is below).
+Apply cent or standard rounding based on broker type selected.
+Show the calculated base amount to the user before starting and ask confirmation:
+
+```
+Session Setup Complete
+
+Pair Market %:  80%
+Base Trade Amount:  $2.00
+Mode:  Regular
+Stop Loss:  $15.00
+Target:  $20.00
+
+Trade 1 starts at $2.00
+WIN gives you: $1.60 profit
+LOSS costs you: $2.00
+
+[ Start Trading ]    [ Back ]
+```
+
+This confirmation screen shows the user exactly what one win and one loss means in dollar terms before they begin, so there are no surprises.
+
+---
+
+## FOREX PIPS CALCULATOR MODULE
+
+Add a new button to the main menu:
+
+```
+[ FOREX PIPS CALCULATOR ]
+```
+
+---
+
+### PAGE 1 — INPUT SETUP SCREEN
+
+When user taps FOREX PIPS CALCULATOR, bot shows this screen with 3 data input buttons and 2 action buttons:
+
+```
+FOREX PIPS CALCULATOR
+
+Set your trading details below.
+Tap each button and type your answer in the chat box.
+
+[ PAIR NAME ]
+[ ACCOUNT SIZE ]
+[ TARGET PROFIT ]
+
+[ Calculate Now ]
+[ Menu ]
+```
+
+Each input button works as follows:
+
+---
+
+PAIR NAME button:
+When tapped, bot sends:
+```
+Type your Forex Pair name:
+(Examples: EURUSD, EURGBP, XAUUSD, GOLD, GBPJPY, USDJPY)
+```
+User types the pair name in the chat box.
+Bot saves it and returns to Page 1 showing the entered value next to the button:
+```
+[ PAIR NAME: XAUUSD ]
+```
+Validation: must be a recognizable forex pair or commodity name. If unrecognized, bot replies:
+```
+Pair not recognized. Please enter a valid Forex pair.
+(Examples: EURUSD, XAUUSD, GOLD, GBPJPY)
+```
+
+---
+
+ACCOUNT SIZE button:
+When tapped, bot sends:
+```
+Type your Account Size ($):
+(Example: 100)
+```
+User types number in chat box.
+Bot saves it and returns to Page 1 showing:
+```
+[ ACCOUNT SIZE: $100 ]
+```
+Validation: must be a positive number greater than 0.
+
+---
+
+TARGET PROFIT button:
+When tapped, bot sends:
+```
+Type your Target Profit ($):
+(Example: 20)
+```
+User types number in chat box.
+Bot saves it and returns to Page 1 showing:
+```
+[ TARGET PROFIT: $20 ]
+```
+Validation: must be a positive number, cannot exceed account size.
+
+---
+
+Page 1 after all 3 inputs are filled:
+
+```
+FOREX PIPS CALCULATOR
+
+Pair:    XAUUSD
+Account: $100
+Target:  $20
+
+[ PAIR NAME: XAUUSD ]
+[ ACCOUNT SIZE: $100 ]
+[ TARGET PROFIT: $20 ]
+
+[ Calculate Now ]
+[ Menu ]
+```
+
+User can re-tap any button to change the value before calculating.
+
+---
+
+### CALCULATE NOW — RESULTS SCREEN
+
+When user taps Calculate Now and all 3 values are filled, bot calculates 3 lot size suggestions based on pair pip value, account size, and target profit. Then displays the results screen:
+
+```
+FOREX PIPS CALCULATOR
+Pair: XAUUSD  |  Account: $100  |  Target: $20
+------------------------------
+LOTS SIZE SUGGESTIONS
+
+SAFE    -->  0.01
+MEDIUM  -->  0.03
+RISK    -->  0.05
+
+------------------------------
+Always go for Safe Lots sizes.
+
+JOIN OUR SVIP or BUY ADVANCE AI BOT
+for a more accurate Trading journey.
+------------------------------
+
+[ Back ]
+[ Home ]
+[ New Calculate ]
+[ Support ]
+```
+
+---
+
+### LOT SIZE CALCULATION LOGIC
+
+Use standard forex pip value formulas for each pair type:
+
+For JPY pairs (USDJPY, GBPJPY, EURJPY etc.):
+- Pip value per 0.01 lot = (0.01 x 100) / current price approximately
+
+For Gold / XAUUSD:
+- Pip value per 0.01 lot = $0.01 per pip move
+- 1 pip for Gold = $0.01 x lot size x 100
+
+For standard pairs (EURUSD, GBPUSD, EURGBP etc.):
+- Pip value per 0.01 lot = $0.10 per pip approximately
+
+Calculation method:
+1. Determine pip value per 0.01 lot for the given pair
+2. Calculate how many pips needed to reach target profit with each lot size
+3. SAFE lot = smallest size where target is reachable within normal daily range (low risk)
+4. MEDIUM lot = moderate size, target reachable in average session
+5. RISK lot = larger size, target reachable quickly but higher drawdown risk
+
+If the pair entered is not in the built-in list, use standard major pair pip value as default and note:
+```
+Using standard pip value. For exact results, verify with your broker.
+```
+
+---
+
+### NEW CALCULATE BUTTON
+
+When user taps New Calculate:
+- Clear all 3 saved values (pair, account size, target profit)
+- Return to Page 1 with all buttons reset to empty
+- User starts fresh input from the beginning
+
+---
+
+### BUTTON RULES FOR FOREX CALCULATOR
+
+- Menu button = opens main menu home page
+- Back button = returns to previous screen
+- Home button = returns to main menu home page
+- Support button = opens support contact (same as existing Support flow in bot)
+- New Calculate button = resets all data and returns to Page 1
+- All text shown in user's selected language with 10% English keywords as per language mixing rule
+- No access restriction on Forex Pips Calculator — all users (free and premium) can use it unlimited times with no daily limit
+- Admin can also use it with no restrictions
+
+---
+
+## CRITICAL IMPLEMENTATION NOTES
+
+1. PAYMENT: Reuse the existing SVIP payment invoice system exactly. Each plan's PAY button triggers the same payment flow. Only the access type granted and the confirmation message text are different.
+
+2. TWO PAGE FORM: Steps 1 to 5 are Page 1. Steps 6 to 12 are Page 2. Bot shows a clear page header at the start of each page. Back button on every step goes to previous step. Step 6 back goes back to Step 5 (crossing page boundary is fine).
+
+3. MODE SELECTION HIGHLIGHT: The mode list must be sent as a single formatted message with clear visual separators between each mode. Each mode shows Risk level and TP Hit Rank so the user can make an informed choice quickly. Mode number 6, 8, and 10 should be highlighted as recommended for low win rate traders.
+
+4. AUTO-VANISH DASHBOARD: After WIN or LOSS is tapped, use bot.delete_message() to delete the previous trade card, then send the next trade card as a new message. The chat should only ever show one active trade card at a time.
+
+5. TRADE AMOUNT HIGHLIGHT: The trade amount in the dashboard card must always be the most visually prominent element. Use stars, capital letters, or line separators to make it stand out clearly from the other stats.
+
+6. ADMIN AUTO ACCESS: On every bot startup, the code must check all ADMIN_IDS from .env and ensure they all have lifetime MM access in the database. If any admin is missing from the MM access table, add them automatically. Admins bypass all access checks silently.
+
+7. MM ACCESS LIST: Show all users with active MM access as a paginated list (10 per page) with usernames and expiry dates. Each entry has a Remove button. Removing immediately deletes access and notifies the user.
+
+8. BACK BUTTON: Every screen must have a Back button. No dead ends anywhere in the flow. Back buttons follow the rules listed in the Back Button section above.
+
+9. EXPIRED SCREEN: When daily limit is reached or subscription is expired, only show Buy Access and Home buttons. Do not show the BINARY START SESSION button under any condition.
+
+10. SESSION DATA: All session state stored in SQLite. Bot restarts do not lose active sessions. Win/loss history, current step in mode progression, profit, balance all persisted.
+
+11. LANGUAGE MIXING RULE: User sets language once in bot settings. When a non-English language is selected, messages are NOT 100% in that language. Every message must be 90% in the selected language and 10% English mixed in naturally. The 10% English must cover the most important keywords and action words so the user always understands key information even if the translation feels unfamiliar. The following words must always stay in English regardless of selected language: WIN, LOSS, Trade, Amount, Balance, Profit, Stop Loss, Target, Session, Mode, Capital, Premium, Free, Access, Dashboard, Risk, TP, SL, Rank. All other sentence content, descriptions, prompts, and explanations use the selected language. This 90/10 mix makes the bot easy to understand for all users globally. Default language is English (100% English, no mixing needed).
+
+12. STRATEGY FILES: Each mode is a separate Python file. Each exports one function: next_amount(result, history, base_amount, config). This keeps all mode logic clean and independently testable.
+
+13. MINIMUM TRADE AMOUNT — $1.00 HARD FLOOR: The minimum trade amount calculated by any mode at any time must never go below $1.00. $1.00 is the universal minimum trade amount supported by all binary options brokers worldwide. Rules:
+- If any mode calculation produces an amount below $1.00, automatically round up to $1.00
+- This rule applies to all 10 modes without any exception
+- When cent account mode is selected, minimum is still $1.00 (never $0.something)
+- The base amount at session start must also be floored at $1.00 before the session begins
+- If the user's capital and settings result in a calculated base amount below $1.00, bot sets base to $1.00 automatically and notifies the user:
+  "Base Trade Amount adjusted to minimum $1.00 (minimum supported by all brokers)"
+  (This message shown in selected language with 10% English keywords as per Rule 11)
+
+14. FILE PASSWORD PROTECTION: Every Python file in this project must be protected so that no one can read, edit, or modify the source code without the correct password. Implement this protection as follows:
+
+- At the very top of every .py file, before any imports or code, add a password check block
+- The password is: svipownershakib
+- On startup, the bot must verify the password hash before executing any code
+- Store the password as a SHA256 hash, never as plain text in the code
+- SHA256 hash of svipownershakib must be hardcoded in every file as the verification key
+- If the password check fails or the hash does not match, the file must immediately exit with no error message and no output
+- The password check must run before any bot logic, database connection, or import execution
+- Additionally, obfuscate all .py files using pyarmor or a similar Python obfuscation tool so the source code logic cannot be read even if someone accesses the file directly
+- The requirements.txt must include pyarmor for this purpose
+- The .env file must never contain the password — the password hash lives only inside the Python files themselves
+- No one except the owner with password svipownershakib should be able to modify or understand the code logic

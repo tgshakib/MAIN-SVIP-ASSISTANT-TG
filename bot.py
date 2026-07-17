@@ -43,7 +43,7 @@ async def main():
     # Set bot command menu
     await bot.set_my_commands([
         BotCommand(command="start",   description="Start bot and open menu"),
-        BotCommand(command="admin",   description="Admin panel"),
+        BotCommand(command="admin",   description="Contact admin and Help"),
         BotCommand(command="convert", description="Open timezone converter"),
     ])
 

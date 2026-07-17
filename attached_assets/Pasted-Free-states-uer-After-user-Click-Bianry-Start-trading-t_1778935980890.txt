@@ -1,0 +1,41 @@
+Free states uer 
+After user Click Bianry Start trading then end session with losses /profit/ close session, Daily 1 used done, then user can use free new session next day rest all system same 
+
+After Trade loss full profit, no profit available Only losses then will losses profit Will Show" - " amout example : -12$ ❌
+Winrate also Show in -% example : - 20% ⚠️
+
+After Back to back 5 & 7 losses in row Bot will alert 8sc autocratic remove text " WINRATE not good Avoided trading for 1/2hr Trade later again, after 7 losses in Row Bot send 8sc auto vanish text on screen text : STOP TRADING FOR TODAY ❌ "
+
+And Everytime after Start Trading button Click hide all old open panel ,
+
+After all page 1 & page 2 fill all Burton  vanish new page panel open START TRADING & BACK BUTTON SHOW
+
+Cent account button name change use this name : 
+" Broker support Cent "
+
+After page 2 filip auto switch open page 2 for setup.
+
+Under Bianry start session button . first tap any option and select any option then on top live Tracking Selected options show.Every select data Will autofill and show on dashboard live changing, and hide all Chat box send text after sent of chat auto Select and show on Live dashboard. No more extra text on chat box hide option send text on chat box, 
+After click Win /loss Button old win/loss button auto hide Only fresh trade button penel show on chat, Highlight Trade Enter amount, an PROFT amout, WINRATE, all important data,check under bot if any Text style not style not highlight  then style and highlight those All Tests, 
+
+Forex pips CALULATOR suppor pair support All market and pair available in Tradingview forex,cypto, index,metel, all available Tradingview has available.. If any pair unavailable or find or calculate then bot send text this pair available to find, you can get help by CHATGPT,
+
+Money management , free plan incudes, and premium plan includes  both list It has new text FOREX PIPS CALULATOR.
+
+And under page 2 panel bianry start session ,  Session target and overall goal both button is work for same thing so Hide Overall goal button,
+
+
+Replace this Text " 
+💎 PAID JOIN — MTG / NON-MTG SVIP plans
+💹 FOREX VIP JOIN — GOLDZILA SVIP plans
+🔗 REFER JOIN — Join via referral link
+
+to this : 
+💎 PAID JOIN — MTG / NON-MTG SVIP plans
+💹 FOREX VIP JOIN — GOLDZILA SVIP plans
+🔗 REFER JOIN — Join via referral link
+⏳CONVERTER - Advance signal Timezones convert 
+📟 MONEY MANAGEMENT - BIANRY TRADE PLAN & FOREX LOT SIZES MAPPING
+
+" 
+Same front and text style 

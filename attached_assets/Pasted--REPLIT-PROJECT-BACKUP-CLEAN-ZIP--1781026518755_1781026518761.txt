@@ -1,0 +1,162 @@
+# ============================================================
+# REPLIT PROJECT BACKUP — CLEAN ZIP + DOWNLOAD SERVER
+# Boss Man Edition — Drop this in Replit Shell, run it once
+# ============================================================
+
+# ─────────────────────────────────────────────────────────────
+# STEP 1 — Wipe garbage files
+# ─────────────────────────────────────────────────────────────
+echo "[ STEP 1 ] Cleaning junk files..."
+
+rm -rf node_modules
+rm -rf venv
+rm -rf __pycache__
+find . -name "*.pyc"    -delete
+find . -name "*.log"    -delete
+find . -name "*.cache"  -delete
+find . -name "*.tmp"    -delete
+find . -name "__pycache__" -type d -exec rm -rf {} + 2>/dev/null
+
+echo "✅ STEP 1 DONE — Junk cleared"
+
+# ─────────────────────────────────────────────────────────────
+# STEP 2 — Check project size
+# ─────────────────────────────────────────────────────────────
+echo ""
+echo "[ STEP 2 ] Current project size:"
+du -sh .
+echo "✅ STEP 2 DONE"
+
+# ─────────────────────────────────────────────────────────────
+# STEP 3 — Build the ZIP (fixed exclude flags — each needs its own -x)
+# ─────────────────────────────────────────────────────────────
+echo ""
+echo "[ STEP 3 ] Creating ZIP..."
+
+zip -r mybot_backup.zip . \
+  -x "*.pyc" \
+  -x "*__pycache__*" \
+  -x "*.log" \
+  -x "*.tmp" \
+  -x "*venv/*" \
+  -x "*.cache" \
+  -x "*node_modules/*" \
+  -x "mybot_backup.zip"
+
+echo "✅ STEP 3 DONE — ZIP created"
+
+# ─────────────────────────────────────────────────────────────
+# STEP 4 — Verify ZIP exists
+# ─────────────────────────────────────────────────────────────
+echo ""
+echo "[ STEP 4 ] ZIP file info:"
+ls -lh mybot_backup.zip
+echo "✅ STEP 4 DONE"
+
+# ─────────────────────────────────────────────────────────────
+# STEP 5 — Install Flask
+# ─────────────────────────────────────────────────────────────
+echo ""
+echo "[ STEP 5 ] Installing Flask..."
+pip install flask --break-system-packages --quiet
+echo "✅ STEP 5 DONE — Flask ready"
+
+# ─────────────────────────────────────────────────────────────
+# STEP 6 — Write download_server.py
+#           Fixed: __name__, __main__ were mangled in original prompt
+#           Added: one-time token so random bots can't leech your file
+# ─────────────────────────────────────────────────────────────
+echo ""
+echo "[ STEP 6 ] Writing download_server.py..."
+
+cat > download_server.py << 'PYEOF'
+import os
+import secrets
+from flask import Flask, send_file, abort, request
+
+app = Flask(__name__)
+
+# One-time token — printed to console on startup
+# Anyone without this token gets a 403
+DOWNLOAD_TOKEN = secrets.token_urlsafe(16)
+
+@app.route("/")
+def index():
+    token = request.args.get("token", "")
+    if token != DOWNLOAD_TOKEN:
+        abort(403)
+    zip_path = os.path.join(os.path.dirname(__file__), "mybot_backup.zip")
+    if not os.path.exists(zip_path):
+        abort(404)
+    return send_file(
+        zip_path,
+        as_attachment=True,
+        download_name="mybot_backup.zip",
+        mimetype="application/zip"
+    )
+
+@app.route("/health")
+def health():
+    return {"status": "ok"}, 200
+
+if __name__ == "__main__":
+    print("\n" + "="*55)
+    print("  ✅ Download server is LIVE")
+    print(f"  🔗 URL: http://0.0.0.0:8080/?token={DOWNLOAD_TOKEN}")
+    print("  📦 File: mybot_backup.zip")
+    print("  🔒 Token required — copy the full URL above")
+    print("="*55 + "\n")
+    app.run(host="0.0.0.0", port=8080)
+PYEOF
+
+echo "✅ STEP 6 DONE — download_server.py written"
+
+# ─────────────────────────────────────────────────────────────
+# STEP 7 — Run the server
+# ─────────────────────────────────────────────────────────────
+echo ""
+echo "[ STEP 7 ] Starting download server..."
+echo "           Copy the full URL from console output below"
+echo "           Open it in browser → ZIP auto-downloads"
+echo ""
+python download_server.py
+
+# ─────────────────────────────────────────────────────────────
+# STEP 8 — After download: verify contents
+# ─────────────────────────────────────────────────────────────
+# Run this MANUALLY after your download completes:
+#
+#   unzip -l mybot_backup.zip
+#
+# Check that .env, user_settings.json, requirements.txt,
+# and all your handlers are listed.
+# ─────────────────────────────────────────────────────────────
+
+# ─────────────────────────────────────────────────────────────
+# STEP 9 — Write .gitignore (GitHub push ready)
+# ─────────────────────────────────────────────────────────────
+cat > .gitignore << 'GIEOF'
+__pycache__/
+*.pyc
+*.pyo
+*.log
+venv/
+.venv/
+node_modules/
+*.tmp
+.cache/
+mybot_backup.zip
+download_server.py
+.env
+GIEOF
+
+echo ""
+echo "✅ STEP 9 DONE — .gitignore written"
+echo ""
+echo "============================================"
+echo "  ALL STEPS COMPLETE — boss man you're good"
+echo "  ZIP: mybot_backup.zip"
+echo "  .env: INCLUDED in ZIP, NOT in git push"
+echo "  Platform ready: Railway / Render / Koyeb"
+echo "              JustRunMy / GitHub / Local PC"
+echo "============================================"

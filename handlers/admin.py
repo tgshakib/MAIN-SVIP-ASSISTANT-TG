@@ -1,3 +1,5 @@
+import asyncio
+
 from aiogram import Router, F
 from aiogram.types import Message, CallbackQuery
 from aiogram.filters import Command
@@ -15,11 +17,19 @@ from config import (
 from keyboards import (
     admin_panel_kb, back_admin_kb, transfer_confirm_kb,
     active_members_actions_kb, ban_member_list_kb, ban_confirm_kb,
+    join_options_kb,
 )
 from admin_msg_tracker import add_id as track_admin_msg, pop_all as pop_admin_msgs
 
 router = Router()
 
+# ── Helper: delete a message after a delay ─────────────────
+async def _delete_after(bot, chat_id: int, message_id: int, delay: int = 5):
+    await asyncio.sleep(delay)
+    try:
+        await bot.delete_message(chat_id, message_id)
+    except Exception:
+        pass
 
 # Outer middleware: track every incoming message from the admin so we can wipe
 # their side too when CLOSE ADMIN PANEL is pressed. Runs before handlers and
@@ -208,15 +218,16 @@ async def approve_payment(callback: CallbackQuery, state: FSMContext, bot):
             expiry_display = mmdb.grant_mm_access(user_id, duration_str)
             expiry_str     = expiry_display or "Lifetime"
 
-            await callback.message.answer(
+            confirm = await callback.message.answer(
                 f"🤲 *Alhamdulillah! MM Payment Received!*\n\n"
                 f"👤 *{fname}* ( {uname} )\n"
                 f"📦 *{pkg_name}*\n"
                 f"✅ MM Access activated: *{label}*\n"
                 f"⏰ Expires: *{expiry_str}*",
                 parse_mode="Markdown",
-                reply_markup=admin_panel_kb()
             )
+            asyncio.create_task(_delete_after(bot, confirm.chat.id, confirm.message_id, 5))
+            await callback.message.answer("🛠 *Admin Panel*", parse_mode="Markdown", reply_markup=admin_panel_kb())
             await callback.answer("🤲 MM Access Granted!")
 
             try:
@@ -323,18 +334,20 @@ async def receive_invite_link(message: Message, state: FSMContext, bot):
 
     try:
         await bot.send_message(user_id, congrats, parse_mode="HTML")
-        await message.answer(
+        confirm = await message.answer(
             f"✅ *Invite link sent successfully Member {uname}*\n\n"
             f"⏳ *WORK WORK WORK Waiting for next payment, sir!*",
             parse_mode="Markdown"
         )
+        asyncio.create_task(_delete_after(bot, confirm.chat.id, confirm.message_id, 5))
     except Exception as e:
-        await message.answer(
+        confirm = await message.answer(
             f"❌ Could not send message to user: {e}\n\n"
             f"Please contact them manually.\n\n"
             f"⏳ *WORK WORK WORK Waiting for next payment, sir!*",
             parse_mode="Markdown"
         )
+        asyncio.create_task(_delete_after(bot, confirm.chat.id, confirm.message_id, 5))
 
     await message.answer(
         "🛠 *Admin Panel*",
@@ -375,11 +388,12 @@ async def reject_payment(callback: CallbackQuery, bot):
 
     await callback.answer("❌ Payment rejected.")
 
-    await callback.message.answer(
+    confirm = await callback.message.answer(
         f"❌ *Payment Rejected.*\n\n"
         f"⏳ *WORK WORK WORK Waiting for next payment, sir!*",
         parse_mode="Markdown"
     )
+    asyncio.create_task(_delete_after(bot, confirm.chat.id, confirm.message_id, 5))
     await callback.message.answer(
         "🛠 *Admin Panel*",
         parse_mode="Markdown",
@@ -807,3 +821,21 @@ async def admin_close(callback: CallbackQuery, state: FSMContext, bot):
         except Exception:
             # Already deleted, too old (>48h), or not deletable — ignore
             pass
+
+    # After 1 second, send the clean home menu smoothly
+    await asyncio.sleep(1)
+    await bot.send_message(
+        admin_id,
+        "☪️ *Assalamu Walaikum BOSS* 👋\n"
+        "*Welcome CEO — the TOP G*\n"
+        "━━━━━━━━━━━━━\n"
+        "💎 *PAID JOIN* — MTG / NON-MTG\n"
+        "💹 *FOREX VIP* — GOLDZILA SVIP\n"
+        "🔗 *REFER JOIN* — via referral\n"
+        "⏳ *CONVERTER* — Timezone tool\n"
+        "📟 *MONEY MGMT* — Trade planner\n"
+        "━━━━━━━━━━━━━━\n"
+        "👇 Choose an option below:",
+        parse_mode="Markdown",
+        reply_markup=join_options_kb(is_admin=True),
+    )
