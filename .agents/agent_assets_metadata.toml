@@ -6,3 +6,9 @@ id = "EFhy-C0nbfUnrOiBXuDzp"
 uri = "file://mybot_backup.zip"
 type = "unspecified"
 title = "mybot_backup.zip — Password: svipownershakib"
+
+[[outputs]]
+id = "LvxlcYGR7IHoZ99kkl8kU"
+uri = "file://mybot_clean.zip"
+type = "unspecified"
+title = "mybot_clean.zip — Clean Bot Backup (no bloat)"
