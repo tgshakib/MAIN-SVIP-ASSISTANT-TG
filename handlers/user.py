@@ -278,6 +278,30 @@ async def broker_pocket(callback: CallbackQuery, state: FSMContext):
     )
     await callback.answer()
 
+# ── Quotex ─────────────────────────────────────────────────
+@router.callback_query(F.data == "broker_quotex")
+async def broker_quotex(callback: CallbackQuery, state: FSMContext):
+    from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+    text = (
+        "No time to analyze the markets all day? Join our <b>SVIP trading community</b> "
+        "or buy <b>TRADING AI</b> and trade with confidence.\n\n"
+        "✅ <b>Create Your Pocket Option Account :</b>👇\n"
+        "https://broker-qx.pro/sign-up/?lid=2203139\n\n"
+        "🌍 <b>Global Registration Link</b> also available below :\n"
+        "https://broker-qx.pro/sign-up/?lid=2203126\n\n"
+        "🚀 Don't miss this opportunity to boost your trading capital and start your journey today!"
+    )
+    await callback.message.answer(
+        text,
+        parse_mode="HTML",
+        reply_markup=InlineKeyboardMarkup(inline_keyboard=[
+            [InlineKeyboardButton(text="✅ Create Account (Main Link)", url="https://broker-qx.pro/sign-up/?lid=2203139")],
+            [InlineKeyboardButton(text="🌍 Global Registration Link",   url="https://broker-qx.pro/sign-up/?lid=2203126")],
+            [InlineKeyboardButton(text="⬅️ Back", callback_data="back_main")],
+        ])
+    )
+    await callback.answer()
+
 # ── 🔄 Renew → PAID JOIN ───────────────────────────────────
 @router.callback_query(F.data == "renew_paid")
 async def renew_paid(callback: CallbackQuery, state: FSMContext):
