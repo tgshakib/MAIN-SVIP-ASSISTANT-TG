@@ -1,0 +1,90 @@
+{
+  "lang_name": "Hausa",
+  "language_set": "✅ An saita harshe zuwa <b>Hausa</b>. Dukkan saƙonni za su bayyana cikin Hausa.",
+  "language_invalid": "❌ Lambar harshe ba daidai ba. Don Allah rubuta lambar da ta dace daga jerin.",
+  "language_prompt": "🌐 <b>Zaɓi Harsheka</b>\n\nRubuta lambar harsheka:\n\n<code>ha</code>  = Hausa\n<code>en</code>  = English\n<code>ar</code>  = Arabic\n<code>fr</code>  = Français",
+
+  "mm_menu_title": "💰 <b>GUDANAR DA KUƊI</b>\n\nKula da zaman kasuwancin ku da dabarun gudanar da kuɗi masu wayo.",
+  "mm_btn_start_session": "▶️ Fara Zama",
+  "mm_btn_buy_access": "💳 Siyan Damar Shiga",
+  "mm_btn_support": "💬 Tallafi",
+  "mm_btn_language": "🌐 Harshe",
+  "mm_btn_back_home": "⬅️ Koma Gida",
+
+  "mm_access_premium": "✅ <b>Damar Shiga:</b> Premium",
+  "mm_access_free": "🆓 <b>Damar Shiga:</b> Kyauta",
+  "mm_access_expires": "📅 <b>Ƙarewa:</b> {date}",
+  "mm_access_lifetime": "📅 <b>Ƙarewa:</b> Har Abada ♾️",
+  "mm_sessions_today": "📊 <b>Zamar Yau:</b> {used}/{max} An Yi Amfani",
+  "mm_upgrade_prompt": "⬆️ Yi haɓakawa don samun zamar ba iyaka.",
+
+  "step_capital_prompt": "💰 <b>Mataki 1/12 — Jarin Kasuwanci</b>\n\nShiga adadin jarin kasuwancin ku:\n<i>(Lambobi kawai. Misali: 100)</i>",
+  "step_capital_free_limit": "⚠️ Damar Shiga Kyauta tana ba da damar jari har $50 kawai.\nDon Allah shigar da $50 ko ƙasa da haka.",
+  "step_capital_invalid": "❌ Don Allah shigar da lambar ingantacciya ta tabbatacciya.\nMisali: 100",
+
+  "step_accuracy_prompt": "🎯 <b>Mataki 2/12 — Daidaiton Kasuwanci</b>\n\nShiga daidaiton kasuwancin ku %:\n<i>(Misali: 65)</i>",
+  "step_accuracy_invalid": "❌ Don Allah shigar da lamba tsakanin 1 zuwa 100.\nMisali: 65",
+
+  "step_trades_prompt": "🔢 <b>Mataki 3/12 — Yawan Kasuwanci (Zabi)</b>\n\nNawa ne kasuwanci kuke son yi a wannan zaman?\n<i>(Rubuta lamba. Don tsallakewa: skip)</i>",
+  "step_trades_invalid": "❌ Don Allah shigar da lambar tabbatacciya ko rubuta <b>skip</b>.",
+
+  "step_daily_profit_prompt": "📈 <b>Mataki 4/12 — Manufar Riba Ta Yau</b>\n\nNawa kuke son samu a yau? ($)\n<i>(Misali: 20)</i>",
+  "step_daily_profit_invalid": "❌ Don Allah shigar da adadin ingantaccen tabbatacce.\nMisali: 20",
+
+  "step_overall_target_prompt": "🏆 <b>Mataki 5/12 — Manufa Gabaɗaya</b>\n\nMene ne manufar kasuwancin ku gabaɗaya? ($)\n<i>(Misali: 500)</i>",
+  "step_overall_target_invalid": "❌ Don Allah shigar da adadin ingantaccen tabbatacce.\nMisali: 500",
+
+  "step_cent_prompt": "🏦 <b>Mataki 6/12 — Asusun Cent</b>\n\nBroker naku na goyan bayan Asusun Cent?\n<i>(Rubuta: <b>yes</b> ko <b>no</b>)</i>",
+  "step_cent_invalid": "❌ Don Allah rubuta <b>yes</b> ko <b>no</b>.",
+
+  "step_payout_prompt": "💹 <b>Mataki 7/12 — Kaso na Biyan Kasuwa %</b>\n\nShiga kason biyan kasuwan broker ku:\n<i>(Misali: 80)</i>",
+  "step_payout_invalid": "❌ Don Allah shigar da lamba tsakanin 1 zuwa 200.\nMisali: 80",
+
+  "step_total_trades_prompt": "📊 <b>Mataki 8/12 — Jimlar Kasuwancin da aka Tsara</b>\n\nNawa kasuwanci kuka tsara don wannan zaman?\n<i>(Misali: 10)</i>",
+  "step_total_trades_invalid": "❌ Don Allah shigar da lambar ingantacciya ta tabbatacciya.\nMisali: 10",
+
+  "step_wins_needed_prompt": "🏅 <b>Mataki 9/12 — Nasarorin da ake Buƙata</b>\n\nNawa ne nasarorin da kuke buƙata a wannan zaman?\n<i>(Misali: 6)</i>",
+  "step_wins_needed_invalid": "❌ Don Allah shigar da lambar ingantacciya ta tabbatacciya.\nMisali: 6",
+
+  "step_stop_loss_prompt": "🛑 <b>Mataki 10/12 — Iyakar Stop Loss</b>\n\nMafi yawan asara kafin dakatar da zaman ta atomatik? ($)\n<i>(Misali: 15)</i>",
+  "step_stop_loss_invalid": "❌ Don Allah shigar da adadin ingantaccen tabbatacce.\nMisali: 15",
+
+  "step_session_target_prompt": "🎯 <b>Mataki 11/12 — Manufar Riba ta Zama</b>\n\nNawa riba zai rufe wannan zaman ta atomatik? ($)\n<i>(Misali: 20)</i>",
+  "step_session_target_invalid": "❌ Don Allah shigar da adadin ingantaccen tabbatacce.\nMisali: 20",
+
+  "step_mode_prompt": "⚙️ <b>Mataki 12/12 — Yanayin Kasuwanci</b>\n\nRubuta lambar yanayin ku:\n\n<b>1</b>  = Na yau da kullum\n<b>2</b>  = Haɗakarwa 1-Matakai\n<b>3</b>  = Haɗakarwa 2-Matakai\n<b>4</b>  = Haɗakarwa 3-Matakai\n<b>5</b>  = Martingale\n<b>6</b>  = Oscar's Grind\n<b>7</b>  = Anti-Martingale\n<b>8</b>  = Caca Madaidaiciya\n<b>9</b>  = Fibonacci\n<b>10</b> = D'Alembert\n\n<i>(Rubuta lamba daga 1 zuwa 10. Misali: 1)</i>",
+  "step_mode_invalid": "❌ Don Allah rubuta lamba daga <b>1 zuwa 10</b>.\nMisali: 1",
+
+  "session_trade_header": "──────────────────────────────\n<b>Kasuwanci #{trade_num}</b>\nYanayi: {mode_name}\n💵 Yi Amfani da Wannan Adadin: <b>${amount}</b>\n──────────────────────────────",
+  "session_btn_win": "✅ NASARA",
+  "session_btn_loss": "❌ ASARA",
+  "session_btn_close": "🔒 Rufe Zama",
+  "session_btn_new": "🔄 Sabon Zama",
+  "session_btn_home": "🏠 Koma Gida",
+  "session_btn_close_all": "🔒 Rufe Duk Zamar",
+
+  "session_dashboard": "──────────────────────────────\n<b>Dashboard</b>\n💰 Jari: ${capital}   💼 Salo: ${balance}\n✅ Nasara: {wins}      ❌ Asara: {losses}\n📊 Kasuwanci: {trades_used}/{total_trades}   📈 Adadin Nasara: {win_rate}%\n💹 Riba: {profit_sign}${profit}\n──────────────────────────────",
+
+  "target_hit": "🎉 <b>Taya murna! An kai manufar zaman ku!</b>\n\nKuna so ku inganta kasuwancin ku ƙari?\nKwatance AI Bot, SVIP Signals, ko Premium.\nDM Ƙungiyar Support don cikakkun bayanai.",
+  "stop_loss_hit": "🛑 <b>An kai iyakar Stop Loss. An rufe zaman don kare ku.</b>\n\nKuna so ku sami gudanarwar haɗari mafi wayo?\nAI Bot da SVIP zai iya taimaka. Tuntuɓi Support.",
+  "martingale_stop": "⚠️ <b>An kunna tsayar da Martingale.</b>\nAdadin da aka lissafa na gaba zai wuce iyakar stop loss.\nAn rufe zaman don kare ku.",
+
+  "session_closed": "✅ An rufe zama. An adana kididdigan ku.",
+  "session_not_found": "⚠️ Ba a sami wani zama mai aiki ba. Don Allah fara sabon zama.",
+
+  "free_session_used": "⏰ <b>Zamanku na kyauta na yau ya ƙare.</b>\n\nDon Allah gwada sake gobe.\nDon samun damar shiga ba iyaka, siya shirin damar shiga.",
+  "new_session_blocked": "🔒 <b>Ba ku da cikakken damar shiga MONEY MANAGEMENT.</b>\n\nSiya shirin damar shiga don buɗe zamar ba iyaka.",
+
+  "buy_access_text": "💳 <b>Shirye-shiryen Damar Shiga MONEY MANAGEMENT</b>\n\n📅 Kwanaki 13  =  $6\n📅 Kwanaki 25  =  $10\n📅 Wata 1       =  $15\n📅 Watanni 2    =  $25\n📅 Watanni 4    =  $60\n♾️  Har Abada   =  $100\n\n⭐ Masu amfani da SVIP / AI Bot = <b>KYAUTA</b>\n<i>(DM Admin don samun damar shiga kyauta)</i>",
+
+  "access_activated": "🎉 <b>An kunna Damar Shiga MONEY MANAGEMENT ɗin ku!</b>\n\n📅 <b>Ƙarewa:</b> {expiry}\n\nZa ku iya Fara Zama a kowane lokaci yanzu. ✅",
+
+  "admin_mm_grant_username": "👤 <b>Baiwa MM Damar Shiga</b>\n\nRubuta sunan mai amfani:\n<i>(Misali: @username)</i>",
+  "admin_mm_grant_duration": "⏳ Rubuta tsawon lokaci:\n\nMisalai:\n<code>7</code>, <code>14</code>  = Kwanaki\n<code>1month</code>, <code>2month</code>  = Watanni\n<code>lifetime</code>  = Na Har Abada",
+  "admin_mm_grant_confirmed": "✅ An ba <b>{username}</b> damar shiga MM\n📅 Tsawon Lokaci: <b>{duration}</b>\n⏰ Ƙarewa: <b>{expiry}</b>",
+  "admin_mm_grant_user_not_found": "❌ Ba a sami <b>{username}</b> a cikin bayanai ba.\nMai amfani dole ya fara bot da farko.",
+  "admin_mm_grant_invalid_duration": "❌ Tsarin tsawon lokaci ba daidai ba.\nMisalai: <code>7</code> (kwanaki), <code>1month</code>, <code>lifetime</code>",
+  "admin_mm_cancel": "❌ An soke baiwa damar shiga MM.",
+
+  "session_summary": "📊 <b>Taƙaitaccen Zama</b>\n\n🏆 Yanayi: {mode_name}\n💰 Jari: ${capital}\n💼 Salo na Ƙarshe: ${balance}\n✅ Nasara: {wins} | ❌ Asara: {losses}\n📈 Adadin Nasara: {win_rate}%\n💹 Jimlar Riba: {profit_sign}${profit}\n📊 Kasuwanci: {total_trades}"
+}

@@ -1,0 +1,90 @@
+{
+  "lang_name": "English",
+  "language_prompt": "🌐 <b>Select Your Language</b>\n\nType your language code:\n\n<code>bn</code>  = Bangla\n<code>en</code>  = English\n<code>hi</code>  = Hindi\n<code>ar</code>  = Arabic\n<code>es</code>  = Spanish\n<code>fr</code>  = French\n<code>pt</code>  = Portuguese\n<code>ru</code>  = Russian\n<code>tr</code>  = Turkish\n<code>id</code>  = Indonesian\n<code>zh</code>  = Chinese\n<code>ja</code>  = Japanese\n<code>ko</code>  = Korean\n<code>de</code>  = German\n<code>it</code>  = Italian\n<code>tl</code>  = Filipino\n<code>vi</code>  = Vietnamese\n<code>th</code>  = Thai\n<code>ur</code>  = Urdu\n<code>ha</code>  = Hausa",
+  "language_set": "✅ Language set to <b>English</b>. All messages will now appear in English.",
+  "language_invalid": "❌ Invalid language code. Please type a valid code from the list above.",
+
+  "mm_menu_title": "💰 <b>MONEY MANAGEMENT</b>\n\nManage your binary trading sessions with smart money management strategies.",
+  "mm_btn_start_session": "▶️ Start Session",
+  "mm_btn_buy_access": "💳 Buy Access",
+  "mm_btn_support": "💬 Support",
+  "mm_btn_language": "🌐 Language",
+  "mm_btn_back_home": "⬅️ Back to Home",
+
+  "mm_access_premium": "✅ <b>Access:</b> Premium",
+  "mm_access_free": "🆓 <b>Access:</b> Free",
+  "mm_access_expires": "📅 <b>Expires:</b> {date}",
+  "mm_access_lifetime": "📅 <b>Expires:</b> Lifetime ♾️",
+  "mm_sessions_today": "📊 <b>Sessions Today:</b> {used} of {max} used",
+  "mm_upgrade_prompt": "⬆️ Upgrade to unlock unlimited sessions.",
+
+  "step_capital_prompt": "💰 <b>Step 1 of 12 — Trading Capital</b>\n\nEnter your Trading Capital amount:\n<i>(Numbers only. Example: 100)</i>",
+  "step_capital_free_limit": "⚠️ Free Access allows maximum $50 capital.\nPlease enter $50 or less.",
+  "step_capital_invalid": "❌ Please enter a valid positive number.\nExample: 100",
+
+  "step_accuracy_prompt": "🎯 <b>Step 2 of 12 — Trading Accuracy</b>\n\nEnter your Trading Accuracy %:\n<i>(Example: 65)</i>",
+  "step_accuracy_invalid": "❌ Please enter a number between 1 and 100.\nExample: 65",
+
+  "step_trades_prompt": "🔢 <b>Step 3 of 12 — Number of Trades (Optional)</b>\n\nHow many trades do you want to take this session?\n<i>(Type a number. To skip, type: skip)</i>",
+  "step_trades_invalid": "❌ Please enter a positive number or type <b>skip</b>.",
+
+  "step_daily_profit_prompt": "📈 <b>Step 4 of 12 — Today's Profit Target</b>\n\nHow much profit do you want to make today? ($)\n<i>(Example: 20)</i>",
+  "step_daily_profit_invalid": "❌ Please enter a valid positive amount.\nExample: 20",
+
+  "step_overall_target_prompt": "🏆 <b>Step 5 of 12 — Overall Target</b>\n\nWhat is your overall trading target? ($)\n<i>(Example: 500)</i>",
+  "step_overall_target_invalid": "❌ Please enter a valid positive amount.\nExample: 500",
+
+  "step_cent_prompt": "🏦 <b>Step 6 of 12 — Broker Cent Account</b>\n\nDoes your broker support Cent Account?\n<i>(Type: <b>yes</b> or <b>no</b>)</i>\n\n<b>yes</b> = Trade amounts shown in cent format (1.90$, 2.00$, 3.00$)\n<b>no</b>  = Trade amounts shown in standard rounded format",
+  "step_cent_invalid": "❌ Please type <b>yes</b> or <b>no</b>.",
+
+  "step_payout_prompt": "💹 <b>Step 7 of 12 — Market Payout %</b>\n\nEnter your broker's Market Payout %:\n<i>(Example: 80)</i>",
+  "step_payout_invalid": "❌ Please enter a number between 1 and 200.\nExample: 80",
+
+  "step_total_trades_prompt": "📊 <b>Step 8 of 12 — Total Trades Planned</b>\n\nHow many total trades do you plan for this session?\n<i>(Example: 10)</i>",
+  "step_total_trades_invalid": "❌ Please enter a valid positive number.\nExample: 10",
+
+  "step_wins_needed_prompt": "🏅 <b>Step 9 of 12 — Wins Needed</b>\n\nHow many wins do you need this session?\n<i>(Example: 6)</i>",
+  "step_wins_needed_invalid": "❌ Please enter a valid positive number.\nExample: 6",
+
+  "step_stop_loss_prompt": "🛑 <b>Step 10 of 12 — Stop Loss Limit</b>\n\nMaximum loss amount before session stops automatically? ($)\n<i>(Example: 15)</i>",
+  "step_stop_loss_invalid": "❌ Please enter a valid positive amount.\nExample: 15",
+
+  "step_session_target_prompt": "🎯 <b>Step 11 of 12 — Session Profit Target</b>\n\nHow much profit will close this session automatically? ($)\n<i>(Example: 20)</i>",
+  "step_session_target_invalid": "❌ Please enter a valid positive amount.\nExample: 20",
+
+  "step_mode_prompt": "⚙️ <b>Step 12 of 12 — Trading Mode</b>\n\nType the number of your Trading Mode:\n\n<b>1</b>  = Regular\n     Win = next trade doubles. Loss = stay same amount until win then double.\n\n<b>2</b>  = 1-Step Compounding\n     Trade 1 loss = Trade 2 doubles. After Trade 2 result = restart.\n\n<b>3</b>  = 2-Step Compounding\n     2 consecutive losses then double twice. After final result = restart.\n\n<b>4</b>  = 3-Step Compounding\n     3 consecutive losses then double three times. After final result = restart.\n\n<b>5</b>  = Martingale (1-MTG)\n     Every loss doubles the amount. First win = restart.\n\n<b>6</b>  = Oscar's Grind\n     Loss = same amount. Win = increase by 1 unit. At +1 unit profit = restart.\n     Works at 30% win rate.\n\n<b>7</b>  = Anti-Martingale\n     Win = double amount. Loss = restart at base. After 3 wins in a row = restart.\n\n<b>8</b>  = Flat Bet\n     Every trade uses the same base amount. Safest mode.\n\n<b>9</b>  = Fibonacci\n     Loss = move forward in sequence. Win = move 2 steps back.\n     Works at 40% win rate.\n\n<b>10</b> = D'Alembert\n     Loss = increase by 1 unit. Win = decrease by 1 unit (minimum 1 unit).\n     Works at 35% win rate.\n\n<i>(Type a number from 1 to 10. Example: 1)</i>",
+  "step_mode_invalid": "❌ Please type a number from <b>1 to 10</b>.\nExample: 1",
+
+  "session_trade_header": "──────────────────────────────\n<b>Trade #{trade_num}</b>\nMode: {mode_name}\n💵 Use This Amount: <b>${amount}</b>\n──────────────────────────────",
+  "session_btn_win": "✅ WIN",
+  "session_btn_loss": "❌ LOSS",
+  "session_btn_close": "🔒 Close Session",
+  "session_btn_new": "🔄 New Session",
+  "session_btn_home": "🏠 Back to Home",
+  "session_btn_close_all": "🔒 Close All Sessions",
+
+  "session_dashboard": "──────────────────────────────\n<b>Dashboard</b>\n💰 Capital: ${capital}      💼 Balance: ${balance}\n✅ Wins: {wins}              ❌ Losses: {losses}\n📊 Trades: {trades_used}/{total_trades}    📈 Win Rate: {win_rate}%\n💹 Profit: {profit_sign}${profit}\n──────────────────────────────",
+
+  "target_hit": "🎉 <b>Congratulations! Your session target has been reached!</b>\n\nWant to improve your trading even further?\nTry our AI Bot, SVIP Signals, or Premium Software.\nDM the Support Team for full details.",
+  "stop_loss_hit": "🛑 <b>Stop Loss limit reached. Session has been closed for your protection.</b>\n\nWant smarter risk management?\nOur AI Bot and SVIP can help you avoid this situation.\nDM the Support Team for full details.",
+  "martingale_stop": "⚠️ <b>Martingale stop triggered.</b>\nNext calculated amount would exceed your stop loss limit.\nSession closed for your protection.",
+
+  "session_closed": "✅ Session closed. Your stats have been saved.",
+  "session_not_found": "⚠️ No active session found. Please start a new session.",
+
+  "free_session_used": "⏰ <b>Your free session for today is finished.</b>\n\nPlease try again tomorrow.\nTo get unlimited access, purchase an Access plan.",
+  "new_session_blocked": "🔒 <b>You do not have MONEY MANAGEMENT full access.</b>\n\nPurchase an access plan to unlock unlimited sessions.",
+
+  "buy_access_text": "💳 <b>MONEY MANAGEMENT Access Plans</b>\n\n📅 13 Days    =  $6\n📅 25 Days    =  $10\n📅 1 Month    =  $15\n📅 2 Months   =  $25\n📅 4 Months   =  $60\n♾️  Lifetime   =  $100\n\n⭐ SVIP / AI Bot Users = <b>FREE</b>\n<i>(DM Admin to claim your free access)</i>",
+
+  "access_activated": "🎉 <b>Your MONEY MANAGEMENT Access has been activated!</b>\n\n📅 <b>Expires:</b> {expiry}\n\nYou can now Start Session anytime. ✅",
+
+  "admin_mm_grant_username": "👤 <b>MM Access Grant</b>\n\nType the username:\n<i>(Example: @username)</i>",
+  "admin_mm_grant_duration": "⏳ Type the duration:\n\nExamples:\n<code>1</code>, <code>2</code>, <code>7</code>, <code>14</code>, <code>24</code>  = Days\n<code>1month</code>, <code>2month</code>, <code>3month</code>  = Months\n<code>lifetime</code>  = Permanent",
+  "admin_mm_grant_confirmed": "✅ MM Access granted to <b>{username}</b>\n📅 Duration: <b>{duration}</b>\n⏰ Expires: <b>{expiry}</b>",
+  "admin_mm_grant_user_not_found": "❌ User <b>{username}</b> not found in the database.\nThe user must start the bot first.",
+  "admin_mm_grant_invalid_duration": "❌ Invalid duration format.\nExamples: <code>7</code> (days), <code>1month</code>, <code>lifetime</code>",
+  "admin_mm_cancel": "❌ MM Access grant cancelled.",
+
+  "session_summary": "📊 <b>Session Summary</b>\n\n🏆 Mode: {mode_name}\n💰 Capital: ${capital}\n💼 Final Balance: ${balance}\n✅ Wins: {wins} | ❌ Losses: {losses}\n📈 Win Rate: {win_rate}%\n💹 Total Profit: {profit_sign}${profit}\n📊 Trades: {total_trades}"
+}

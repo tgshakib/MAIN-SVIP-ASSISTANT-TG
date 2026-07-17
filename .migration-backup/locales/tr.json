@@ -1,0 +1,90 @@
+{
+  "lang_name": "Türkçe",
+  "language_prompt": "🌐 <b>Dilinizi seçin</b>\n\nDil kodunuzu yazın:\n\n<code>en</code>  = English\n<code>tr</code>  = Türkçe\n<code>ar</code>  = العربية\n<code>ru</code>  = Русский\n<code>de</code>  = Deutsch\n<code>fr</code>  = Français\n<code>es</code>  = Español",
+  "language_set": "✅ Dil <b>Türkçe</b> olarak ayarlandı. Tüm mesajlar artık Türkçe görünecek.",
+  "language_invalid": "❌ Geçersiz dil kodu. Lütfen listeden geçerli bir kod yazın.",
+
+  "mm_menu_title": "💰 <b>PARA YÖNETİMİ</b>\n\nAkıllı para yönetimi stratejileriyle işlem seanslarınızı yönetin.",
+  "mm_btn_start_session": "▶️ Seans Başlat",
+  "mm_btn_buy_access": "💳 Erişim Satın Al",
+  "mm_btn_support": "💬 Destek",
+  "mm_btn_language": "🌐 Dil",
+  "mm_btn_back_home": "⬅️ Ana Sayfaya Dön",
+
+  "mm_access_premium": "✅ <b>Erişim:</b> Premium",
+  "mm_access_free": "🆓 <b>Erişim:</b> Ücretsiz",
+  "mm_access_expires": "📅 <b>Bitiş Tarihi:</b> {date}",
+  "mm_access_lifetime": "📅 <b>Bitiş Tarihi:</b> Ömür Boyu ♾️",
+  "mm_sessions_today": "📊 <b>Bugünkü Seanslar:</b> {used} / {max} kullanıldı",
+  "mm_upgrade_prompt": "⬆️ Sınırsız seans için yükselt.",
+
+  "step_capital_prompt": "💰 <b>Adım 1/12 — İşlem Sermayesi</b>\n\nİşlem sermayenizi girin:\n<i>(Sadece sayılar. Örnek: 100)</i>",
+  "step_capital_free_limit": "⚠️ Ücretsiz erişimde maksimum $50 sermayeye izin verilir.\nLütfen $50 veya daha az girin.",
+  "step_capital_invalid": "❌ Lütfen geçerli bir pozitif sayı girin.\nÖrnek: 100",
+
+  "step_accuracy_prompt": "🎯 <b>Adım 2/12 — İşlem Doğruluğu</b>\n\nİşlem doğruluğunuzu % olarak girin:\n<i>(Örnek: 65)</i>",
+  "step_accuracy_invalid": "❌ Lütfen 1 ile 100 arasında bir sayı girin.\nÖrnek: 65",
+
+  "step_trades_prompt": "🔢 <b>Adım 3/12 — İşlem Sayısı (İsteğe Bağlı)</b>\n\nBu seansta kaç işlem yapmak istiyorsunuz?\n<i>(Bir sayı yazın. Geçmek için: skip)</i>",
+  "step_trades_invalid": "❌ Lütfen pozitif bir sayı veya <b>skip</b> yazın.",
+
+  "step_daily_profit_prompt": "📈 <b>Adım 4/12 — Günlük Kar Hedefi</b>\n\nBugün ne kadar kazanmak istiyorsunuz? ($)\n<i>(Örnek: 20)</i>",
+  "step_daily_profit_invalid": "❌ Lütfen geçerli bir pozitif miktar girin.\nÖrnek: 20",
+
+  "step_overall_target_prompt": "🏆 <b>Adım 5/12 — Genel Hedef</b>\n\nGenel işlem hedefiniz nedir? ($)\n<i>(Örnek: 500)</i>",
+  "step_overall_target_invalid": "❌ Lütfen geçerli bir pozitif miktar girin.\nÖrnek: 500",
+
+  "step_cent_prompt": "🏦 <b>Adım 6/12 — Cent Hesabı</b>\n\nBrokerınız Cent Hesabı destekliyor mu?\n<i>(Yazın: <b>yes</b> veya <b>no</b>)</i>\n\n<b>yes</b> = Cent formatında gösterilir\n<b>no</b>  = Standart yuvarlak formatta",
+  "step_cent_invalid": "❌ Lütfen <b>yes</b> veya <b>no</b> yazın.",
+
+  "step_payout_prompt": "💹 <b>Adım 7/12 — Piyasa Ödeme Oranı %</b>\n\nBrokerınızın piyasa ödeme oranını girin:\n<i>(Örnek: 80)</i>",
+  "step_payout_invalid": "❌ Lütfen 1 ile 200 arasında bir sayı girin.\nÖrnek: 80",
+
+  "step_total_trades_prompt": "📊 <b>Adım 8/12 — Planlanan Toplam İşlem</b>\n\nBu seans için kaç işlem planlıyorsunuz?\n<i>(Örnek: 10)</i>",
+  "step_total_trades_invalid": "❌ Lütfen geçerli bir pozitif sayı girin.\nÖrnek: 10",
+
+  "step_wins_needed_prompt": "🏅 <b>Adım 9/12 — Gereken Kazanç</b>\n\nBu seansta kaç kazanç gerekiyor?\n<i>(Örnek: 6)</i>",
+  "step_wins_needed_invalid": "❌ Lütfen geçerli bir pozitif sayı girin.\nÖrnek: 6",
+
+  "step_stop_loss_prompt": "🛑 <b>Adım 10/12 — Stop Loss Limiti</b>\n\nSeans otomatik durdurmadan önce maksimum kayıp? ($)\n<i>(Örnek: 15)</i>",
+  "step_stop_loss_invalid": "❌ Lütfen geçerli bir pozitif miktar girin.\nÖrnek: 15",
+
+  "step_session_target_prompt": "🎯 <b>Adım 11/12 — Seans Kar Hedefi</b>\n\nHangi karda bu seans otomatik kapanacak? ($)\n<i>(Örnek: 20)</i>",
+  "step_session_target_invalid": "❌ Lütfen geçerli bir pozitif miktar girin.\nÖrnek: 20",
+
+  "step_mode_prompt": "⚙️ <b>Adım 12/12 — İşlem Modu</b>\n\nMod numaranızı yazın:\n\n<b>1</b>  = Düzenli\n<b>2</b>  = 1 Adımlı Bileşik\n<b>3</b>  = 2 Adımlı Bileşik\n<b>4</b>  = 3 Adımlı Bileşik\n<b>5</b>  = Martingale\n<b>6</b>  = Oscar's Grind\n<b>7</b>  = Anti-Martingale\n<b>8</b>  = Sabit Bahis\n<b>9</b>  = Fibonacci\n<b>10</b> = D'Alembert\n\n<i>(1 ile 10 arasında bir sayı yazın. Örnek: 1)</i>",
+  "step_mode_invalid": "❌ Lütfen <b>1 ile 10</b> arasında bir sayı yazın.\nÖrnek: 1",
+
+  "session_trade_header": "──────────────────────────────\n<b>İşlem #{trade_num}</b>\nMod: {mode_name}\n💵 Bu Miktarı Kullanın: <b>${amount}</b>\n──────────────────────────────",
+  "session_btn_win": "✅ KAZANÇ",
+  "session_btn_loss": "❌ KAYIP",
+  "session_btn_close": "🔒 Seansı Kapat",
+  "session_btn_new": "🔄 Yeni Seans",
+  "session_btn_home": "🏠 Ana Sayfaya Dön",
+  "session_btn_close_all": "🔒 Tüm Seansları Kapat",
+
+  "session_dashboard": "──────────────────────────────\n<b>Gösterge Paneli</b>\n💰 Sermaye: ${capital}   💼 Bakiye: ${balance}\n✅ Kazanç: {wins}        ❌ Kayıp: {losses}\n📊 İşlemler: {trades_used}/{total_trades}   📈 Kazanç Oranı: {win_rate}%\n💹 Kar: {profit_sign}${profit}\n──────────────────────────────",
+
+  "target_hit": "🎉 <b>Tebrikler! Seans hedefinize ulaştınız!</b>\n\nİşleminizi daha da geliştirmek ister misiniz?\nAI Bot, SVIP Signals veya Premium'u deneyin.\nDestek ekibiyle iletişime geçin.",
+  "stop_loss_hit": "🛑 <b>Stop Loss limitine ulaşıldı. Seans koruma amaçlı kapatıldı.</b>\n\nDaha akıllı risk yönetimi ister misiniz?\nAI Bot ve SVIP size yardımcı olabilir. Destek ile iletişime geçin.",
+  "martingale_stop": "⚠️ <b>Martingale durdurma tetiklendi.</b>\nSonraki hesaplanan miktar stop loss limitinizi aşacak.\nSeans koruma amaçlı kapatıldı.",
+
+  "session_closed": "✅ Seans kapatıldı. İstatistikleriniz kaydedildi.",
+  "session_not_found": "⚠️ Aktif seans bulunamadı. Lütfen yeni bir seans başlatın.",
+
+  "free_session_used": "⏰ <b>Bugünkü ücretsiz seansiniz bitti.</b>\n\nLütfen yarın tekrar deneyin.\nSınırsız erişim için bir plan satın alın.",
+  "new_session_blocked": "🔒 <b>MONEY MANAGEMENT tam erişiminiz yok.</b>\n\nSınırsız seansları açmak için bir plan satın alın.",
+
+  "buy_access_text": "💳 <b>MONEY MANAGEMENT Erişim Planları</b>\n\n📅 13 Gün    =  $6\n📅 25 Gün    =  $10\n📅 1 Ay      =  $15\n📅 2 Ay      =  $25\n📅 4 Ay      =  $60\n♾️  Ömür Boyu  =  $100\n\n⭐ SVIP / AI Bot Kullanıcıları = <b>ÜCRETSİZ</b>\n<i>(Ücretsiz erişim için Admin'e DM gönderin)</i>",
+
+  "access_activated": "🎉 <b>MONEY MANAGEMENT Erişiminiz aktif edildi!</b>\n\n📅 <b>Bitiş Tarihi:</b> {expiry}\n\nArtık istediğiniz zaman seans başlatabilirsiniz. ✅",
+
+  "admin_mm_grant_username": "👤 <b>MM Erişim Ver</b>\n\nKullanıcı adını yazın:\n<i>(Örnek: @username)</i>",
+  "admin_mm_grant_duration": "⏳ Süreyi yazın:\n\nÖrnekler:\n<code>7</code>, <code>14</code>  = Gün\n<code>1month</code>, <code>2month</code>  = Ay\n<code>lifetime</code>  = Kalıcı",
+  "admin_mm_grant_confirmed": "✅ <b>{username}</b>'e MM erişimi verildi\n📅 Süre: <b>{duration}</b>\n⏰ Bitiş: <b>{expiry}</b>",
+  "admin_mm_grant_user_not_found": "❌ <b>{username}</b> veritabanında bulunamadı.\nKullanıcı önce botu başlatmalıdır.",
+  "admin_mm_grant_invalid_duration": "❌ Geçersiz süre formatı.\nÖrnekler: <code>7</code> (gün), <code>1month</code>, <code>lifetime</code>",
+  "admin_mm_cancel": "❌ MM erişim verme iptal edildi.",
+
+  "session_summary": "📊 <b>Seans Özeti</b>\n\n🏆 Mod: {mode_name}\n💰 Sermaye: ${capital}\n💼 Final Bakiye: ${balance}\n✅ Kazanç: {wins} | ❌ Kayıp: {losses}\n📈 Kazanç Oranı: {win_rate}%\n💹 Toplam Kar: {profit_sign}${profit}\n📊 İşlemler: {total_trades}"
+}

@@ -1,0 +1,90 @@
+{
+  "lang_name": "한국어",
+  "language_set": "✅ 언어가 <b>한국어</b>로 설정되었습니다. 모든 메시지가 한국어로 표시됩니다.",
+  "language_invalid": "❌ 잘못된 언어 코드입니다. 목록에서 유효한 코드를 입력하세요.",
+  "language_prompt": "🌐 <b>언어를 선택하세요</b>\n\n언어 코드를 입력하세요:\n\n<code>ko</code>  = 한국어\n<code>en</code>  = English\n<code>zh</code>  = 中文\n<code>ja</code>  = 日本語",
+
+  "mm_menu_title": "💰 <b>자금 관리</b>\n\n스마트한 자금 관리 전략으로 거래 세션을 관리하세요.",
+  "mm_btn_start_session": "▶️ 세션 시작",
+  "mm_btn_buy_access": "💳 액세스 구매",
+  "mm_btn_support": "💬 지원",
+  "mm_btn_language": "🌐 언어",
+  "mm_btn_back_home": "⬅️ 홈으로 돌아가기",
+
+  "mm_access_premium": "✅ <b>액세스:</b> 프리미엄",
+  "mm_access_free": "🆓 <b>액세스:</b> 무료",
+  "mm_access_expires": "📅 <b>만료:</b> {date}",
+  "mm_access_lifetime": "📅 <b>만료:</b> 평생 ♾️",
+  "mm_sessions_today": "📊 <b>오늘 세션:</b> {used}/{max} 사용됨",
+  "mm_upgrade_prompt": "⬆️ 무제한 세션을 위해 업그레이드하세요.",
+
+  "step_capital_prompt": "💰 <b>1단계/12 — 거래 자본</b>\n\n거래 자본 금액을 입력하세요:\n<i>(숫자만. 예: 100)</i>",
+  "step_capital_free_limit": "⚠️ 무료 액세스는 최대 $50 자본을 허용합니다.\n$50 이하를 입력하세요.",
+  "step_capital_invalid": "❌ 유효한 양수를 입력하세요.\n예: 100",
+
+  "step_accuracy_prompt": "🎯 <b>2단계/12 — 거래 정확도</b>\n\n거래 정확도 %를 입력하세요:\n<i>(예: 65)</i>",
+  "step_accuracy_invalid": "❌ 1에서 100 사이의 숫자를 입력하세요.\n예: 65",
+
+  "step_trades_prompt": "🔢 <b>3단계/12 — 거래 횟수 (선택)</b>\n\n이 세션에서 몇 번 거래하시겠습니까?\n<i>(숫자 입력. 건너뛰려면: skip)</i>",
+  "step_trades_invalid": "❌ 양수 또는 <b>skip</b>을 입력하세요.",
+
+  "step_daily_profit_prompt": "📈 <b>4단계/12 — 오늘의 수익 목표</b>\n\n오늘 얼마를 벌고 싶으신가요? ($)\n<i>(예: 20)</i>",
+  "step_daily_profit_invalid": "❌ 유효한 양수 금액을 입력하세요.\n예: 20",
+
+  "step_overall_target_prompt": "🏆 <b>5단계/12 — 전체 목표</b>\n\n전체 거래 목표는 얼마입니까? ($)\n<i>(예: 500)</i>",
+  "step_overall_target_invalid": "❌ 유효한 양수 금액을 입력하세요.\n예: 500",
+
+  "step_cent_prompt": "🏦 <b>6단계/12 — 센트 계좌</b>\n\n브로커가 센트 계좌를 지원합니까?\n<i>(입력: <b>yes</b> 또는 <b>no</b>)</i>",
+  "step_cent_invalid": "❌ <b>yes</b> 또는 <b>no</b>를 입력하세요.",
+
+  "step_payout_prompt": "💹 <b>7단계/12 — 시장 수익률%</b>\n\n브로커의 시장 수익률 %를 입력하세요:\n<i>(예: 80)</i>",
+  "step_payout_invalid": "❌ 1에서 200 사이의 숫자를 입력하세요.\n예: 80",
+
+  "step_total_trades_prompt": "📊 <b>8단계/12 — 계획된 총 거래 수</b>\n\n이 세션에서 몇 번 거래할 계획입니까?\n<i>(예: 10)</i>",
+  "step_total_trades_invalid": "❌ 유효한 양수를 입력하세요.\n예: 10",
+
+  "step_wins_needed_prompt": "🏅 <b>9단계/12 — 필요한 승리 수</b>\n\n이 세션에서 몇 번 이겨야 합니까?\n<i>(예: 6)</i>",
+  "step_wins_needed_invalid": "❌ 유효한 양수를 입력하세요.\n예: 6",
+
+  "step_stop_loss_prompt": "🛑 <b>10단계/12 — 손절 한도</b>\n\n세션 자동 중지 전 최대 손실액? ($)\n<i>(예: 15)</i>",
+  "step_stop_loss_invalid": "❌ 유효한 양수 금액을 입력하세요.\n예: 15",
+
+  "step_session_target_prompt": "🎯 <b>11단계/12 — 세션 수익 목표</b>\n\n얼마의 수익으로 이 세션을 자동 종료할까요? ($)\n<i>(예: 20)</i>",
+  "step_session_target_invalid": "❌ 유효한 양수 금액을 입력하세요.\n예: 20",
+
+  "step_mode_prompt": "⚙️ <b>12단계/12 — 거래 모드</b>\n\n모드 번호를 입력하세요:\n\n<b>1</b>  = 일반\n<b>2</b>  = 1단계 복리\n<b>3</b>  = 2단계 복리\n<b>4</b>  = 3단계 복리\n<b>5</b>  = 마틴게일\n<b>6</b>  = 오스카 그라인드\n<b>7</b>  = 안티 마틴게일\n<b>8</b>  = 고정 베팅\n<b>9</b>  = 피보나치\n<b>10</b> = 달랑베르\n\n<i>(1에서 10까지 숫자 입력. 예: 1)</i>",
+  "step_mode_invalid": "❌ <b>1에서 10</b> 사이의 숫자를 입력하세요.\n예: 1",
+
+  "session_trade_header": "──────────────────────────────\n<b>거래 #{trade_num}</b>\n모드: {mode_name}\n💵 이 금액 사용: <b>${amount}</b>\n──────────────────────────────",
+  "session_btn_win": "✅ 승리",
+  "session_btn_loss": "❌ 손실",
+  "session_btn_close": "🔒 세션 종료",
+  "session_btn_new": "🔄 새 세션",
+  "session_btn_home": "🏠 홈으로",
+  "session_btn_close_all": "🔒 모든 세션 종료",
+
+  "session_dashboard": "──────────────────────────────\n<b>대시보드</b>\n💰 자본: ${capital}   💼 잔액: ${balance}\n✅ 승리: {wins}       ❌ 손실: {losses}\n📊 거래: {trades_used}/{total_trades}   📈 승률: {win_rate}%\n💹 수익: {profit_sign}${profit}\n──────────────────────────────",
+
+  "target_hit": "🎉 <b>축하합니다! 세션 목표를 달성했습니다!</b>\n\n거래를 더욱 향상시키고 싶으신가요?\nAI Bot, SVIP Signals 또는 프리미엄을 사용해보세요.\n자세한 내용은 지원팀에 DM하세요.",
+  "stop_loss_hit": "🛑 <b>손절 한도에 도달했습니다. 보호를 위해 세션이 종료되었습니다.</b>\n\n더 스마트한 위험 관리를 원하십니까?\nAI Bot과 SVIP가 도움이 될 수 있습니다. 지원팀에 연락하세요.",
+  "martingale_stop": "⚠️ <b>마틴게일 중지가 트리거되었습니다.</b>\n다음 계산 금액이 손절 한도를 초과합니다.\n보호를 위해 세션이 종료되었습니다.",
+
+  "session_closed": "✅ 세션이 종료되었습니다. 통계가 저장되었습니다.",
+  "session_not_found": "⚠️ 활성 세션을 찾을 수 없습니다. 새 세션을 시작하세요.",
+
+  "free_session_used": "⏰ <b>오늘의 무료 세션이 종료되었습니다.</b>\n\n내일 다시 시도하세요.\n무제한 액세스를 위해 플랜을 구매하세요.",
+  "new_session_blocked": "🔒 <b>MONEY MANAGEMENT 전체 액세스 권한이 없습니다.</b>\n\n무제한 세션을 잠금 해제하려면 액세스 플랜을 구매하세요.",
+
+  "buy_access_text": "💳 <b>MONEY MANAGEMENT 액세스 플랜</b>\n\n📅 13일   =  $6\n📅 25일   =  $10\n📅 1개월  =  $15\n📅 2개월  =  $25\n📅 4개월  =  $60\n♾️  평생   =  $100\n\n⭐ SVIP / AI Bot 사용자 = <b>무료</b>\n<i>(무료 액세스는 Admin에게 DM하세요)</i>",
+
+  "access_activated": "🎉 <b>MONEY MANAGEMENT 액세스가 활성화되었습니다!</b>\n\n📅 <b>만료:</b> {expiry}\n\n이제 언제든지 세션을 시작할 수 있습니다. ✅",
+
+  "admin_mm_grant_username": "👤 <b>MM 액세스 부여</b>\n\n사용자 이름 입력:\n<i>(예: @username)</i>",
+  "admin_mm_grant_duration": "⏳ 기간 입력:\n\n예:\n<code>7</code>, <code>14</code>  = 일\n<code>1month</code>, <code>2month</code>  = 월\n<code>lifetime</code>  = 영구",
+  "admin_mm_grant_confirmed": "✅ <b>{username}</b>에게 MM 액세스 부여됨\n📅 기간: <b>{duration}</b>\n⏰ 만료: <b>{expiry}</b>",
+  "admin_mm_grant_user_not_found": "❌ <b>{username}</b>을(를) 데이터베이스에서 찾을 수 없습니다.\n사용자가 먼저 봇을 시작해야 합니다.",
+  "admin_mm_grant_invalid_duration": "❌ 잘못된 기간 형식입니다.\n예: <code>7</code>(일), <code>1month</code>, <code>lifetime</code>",
+  "admin_mm_cancel": "❌ MM 액세스 부여가 취소되었습니다.",
+
+  "session_summary": "📊 <b>세션 요약</b>\n\n🏆 모드: {mode_name}\n💰 자본: ${capital}\n💼 최종 잔액: ${balance}\n✅ 승리: {wins} | ❌ 손실: {losses}\n📈 승률: {win_rate}%\n💹 총 수익: {profit_sign}${profit}\n📊 거래: {total_trades}"
+}

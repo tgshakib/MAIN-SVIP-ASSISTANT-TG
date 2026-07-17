@@ -1,0 +1,90 @@
+{
+  "lang_name": "中文",
+  "language_set": "✅ 语言已设置为<b>中文</b>。所有消息现在将以中文显示。",
+  "language_invalid": "❌ 无效的语言代码。请从列表中输入有效代码。",
+  "language_prompt": "🌐 <b>选择您的语言</b>\n\n输入语言代码：\n\n<code>zh</code>  = 中文\n<code>en</code>  = English\n<code>ja</code>  = 日本語\n<code>ko</code>  = 한국어",
+
+  "mm_menu_title": "💰 <b>资金管理</b>\n\n使用智能资金管理策略管理您的交易会话。",
+  "mm_btn_start_session": "▶️ 开始会话",
+  "mm_btn_buy_access": "💳 购买访问权限",
+  "mm_btn_support": "💬 支持",
+  "mm_btn_language": "🌐 语言",
+  "mm_btn_back_home": "⬅️ 返回主页",
+
+  "mm_access_premium": "✅ <b>访问权限：</b>高级",
+  "mm_access_free": "🆓 <b>访问权限：</b>免费",
+  "mm_access_expires": "📅 <b>到期时间：</b>{date}",
+  "mm_access_lifetime": "📅 <b>到期时间：</b>终身 ♾️",
+  "mm_sessions_today": "📊 <b>今日会话：</b>{used}/{max} 已使用",
+  "mm_upgrade_prompt": "⬆️ 升级以解锁无限会话。",
+
+  "step_capital_prompt": "💰 <b>第1步/12 — 交易资金</b>\n\n输入您的交易资金金额：\n<i>（仅数字。示例：100）</i>",
+  "step_capital_free_limit": "⚠️ 免费访问允许最多$50资金。\n请输入$50或更少。",
+  "step_capital_invalid": "❌ 请输入有效的正数。\n示例：100",
+
+  "step_accuracy_prompt": "🎯 <b>第2步/12 — 交易准确率</b>\n\n输入您的交易准确率%：\n<i>（示例：65）</i>",
+  "step_accuracy_invalid": "❌ 请输入1到100之间的数字。\n示例：65",
+
+  "step_trades_prompt": "🔢 <b>第3步/12 — 交易次数（可选）</b>\n\n本次会话要进行多少次交易？\n<i>（输入数字。跳过请输入：skip）</i>",
+  "step_trades_invalid": "❌ 请输入正数或输入 <b>skip</b>。",
+
+  "step_daily_profit_prompt": "📈 <b>第4步/12 — 今日盈利目标</b>\n\n今天想赚多少钱？($)\n<i>（示例：20）</i>",
+  "step_daily_profit_invalid": "❌ 请输入有效的正数金额。\n示例：20",
+
+  "step_overall_target_prompt": "🏆 <b>第5步/12 — 总体目标</b>\n\n您的总体交易目标是多少？($)\n<i>（示例：500）</i>",
+  "step_overall_target_invalid": "❌ 请输入有效的正数金额。\n示例：500",
+
+  "step_cent_prompt": "🏦 <b>第6步/12 — 分账户</b>\n\n您的经纪商支持分账户吗？\n<i>（输入：<b>yes</b> 或 <b>no</b>）</i>\n\n<b>yes</b> = 以分格式显示金额\n<b>no</b>  = 标准四舍五入格式",
+  "step_cent_invalid": "❌ 请输入 <b>yes</b> 或 <b>no</b>。",
+
+  "step_payout_prompt": "💹 <b>第7步/12 — 市场赔付率%</b>\n\n输入您经纪商的市场赔付率%：\n<i>（示例：80）</i>",
+  "step_payout_invalid": "❌ 请输入1到200之间的数字。\n示例：80",
+
+  "step_total_trades_prompt": "📊 <b>第8步/12 — 计划总交易次数</b>\n\n本次会话计划进行多少次交易？\n<i>（示例：10）</i>",
+  "step_total_trades_invalid": "❌ 请输入有效的正数。\n示例：10",
+
+  "step_wins_needed_prompt": "🏅 <b>第9步/12 — 所需胜利次数</b>\n\n本次会话需要多少次胜利？\n<i>（示例：6）</i>",
+  "step_wins_needed_invalid": "❌ 请输入有效的正数。\n示例：6",
+
+  "step_stop_loss_prompt": "🛑 <b>第10步/12 — 止损限额</b>\n\n会话自动停止前的最大亏损金额？($)\n<i>（示例：15）</i>",
+  "step_stop_loss_invalid": "❌ 请输入有效的正数金额。\n示例：15",
+
+  "step_session_target_prompt": "🎯 <b>第11步/12 — 会话盈利目标</b>\n\n多少盈利会自动关闭本次会话？($)\n<i>（示例：20）</i>",
+  "step_session_target_invalid": "❌ 请输入有效的正数金额。\n示例：20",
+
+  "step_mode_prompt": "⚙️ <b>第12步/12 — 交易模式</b>\n\n输入您的交易模式编号：\n\n<b>1</b>  = 常规\n<b>2</b>  = 1步复利\n<b>3</b>  = 2步复利\n<b>4</b>  = 3步复利\n<b>5</b>  = 马丁格尔\n<b>6</b>  = 奥斯卡研磨法\n<b>7</b>  = 反马丁格尔\n<b>8</b>  = 固定投注\n<b>9</b>  = 斐波那契\n<b>10</b> = 达朗贝尔\n\n<i>（输入1到10的数字。示例：1）</i>",
+  "step_mode_invalid": "❌ 请输入<b>1到10</b>之间的数字。\n示例：1",
+
+  "session_trade_header": "──────────────────────────────\n<b>交易 #{trade_num}</b>\n模式：{mode_name}\n💵 使用此金额：<b>${amount}</b>\n──────────────────────────────",
+  "session_btn_win": "✅ 胜利",
+  "session_btn_loss": "❌ 亏损",
+  "session_btn_close": "🔒 关闭会话",
+  "session_btn_new": "🔄 新会话",
+  "session_btn_home": "🏠 返回主页",
+  "session_btn_close_all": "🔒 关闭所有会话",
+
+  "session_dashboard": "──────────────────────────────\n<b>仪表板</b>\n💰 资金：${capital}   💼 余额：${balance}\n✅ 胜利：{wins}       ❌ 亏损：{losses}\n📊 交易：{trades_used}/{total_trades}   📈 胜率：{win_rate}%\n💹 盈利：{profit_sign}${profit}\n──────────────────────────────",
+
+  "target_hit": "🎉 <b>恭喜！您的会话目标已达成！</b>\n\n想进一步提升您的交易吗？\n试试我们的AI机器人、SVIP信号或高级软件。\n联系支持团队了解详情。",
+  "stop_loss_hit": "🛑 <b>已达到止损限额。为保护您，会话已关闭。</b>\n\n想要更智能的风险管理？\n我们的AI机器人和SVIP可以帮助您避免这种情况。\n联系支持团队。",
+  "martingale_stop": "⚠️ <b>马丁格尔止损已触发。</b>\n下一个计算金额将超过您的止损限额。\n为保护您，会话已关闭。",
+
+  "session_closed": "✅ 会话已关闭。您的统计数据已保存。",
+  "session_not_found": "⚠️ 未找到活跃会话。请开始新会话。",
+
+  "free_session_used": "⏰ <b>您今天的免费会话已结束。</b>\n\n请明天再试。\n要获得无限访问，请购买访问计划。",
+  "new_session_blocked": "🔒 <b>您没有完整的MONEY MANAGEMENT访问权限。</b>\n\n购买访问计划以解锁无限会话。",
+
+  "buy_access_text": "💳 <b>MONEY MANAGEMENT访问计划</b>\n\n📅 13天   =  $6\n📅 25天   =  $10\n📅 1个月  =  $15\n📅 2个月  =  $25\n📅 4个月  =  $60\n♾️  终身   =  $100\n\n⭐ SVIP / AI机器人用户 = <b>免费</b>\n<i>（DM管理员领取免费访问）</i>",
+
+  "access_activated": "🎉 <b>您的MONEY MANAGEMENT访问权限已激活！</b>\n\n📅 <b>到期时间：</b>{expiry}\n\n您现在可以随时开始会话。 ✅",
+
+  "admin_mm_grant_username": "👤 <b>授予MM访问权限</b>\n\n输入用户名：\n<i>（示例：@username）</i>",
+  "admin_mm_grant_duration": "⏳ 输入时长：\n\n示例：\n<code>7</code>, <code>14</code>  = 天\n<code>1month</code>, <code>2month</code>  = 月\n<code>lifetime</code>  = 永久",
+  "admin_mm_grant_confirmed": "✅ MM访问权限已授予 <b>{username}</b>\n📅 时长：<b>{duration}</b>\n⏰ 到期：<b>{expiry}</b>",
+  "admin_mm_grant_user_not_found": "❌ 在数据库中未找到 <b>{username}</b>。\n用户必须先启动机器人。",
+  "admin_mm_grant_invalid_duration": "❌ 时长格式无效。\n示例：<code>7</code>（天），<code>1month</code>，<code>lifetime</code>",
+  "admin_mm_cancel": "❌ MM访问权限授予已取消。",
+
+  "session_summary": "📊 <b>会话摘要</b>\n\n🏆 模式：{mode_name}\n💰 资金：${capital}\n💼 最终余额：${balance}\n✅ 胜利：{wins} | ❌ 亏损：{losses}\n📈 胜率：{win_rate}%\n💹 总盈利：{profit_sign}${profit}\n📊 交易：{total_trades}"
+}

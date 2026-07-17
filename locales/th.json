@@ -1,0 +1,90 @@
+{
+  "lang_name": "ภาษาไทย",
+  "language_set": "✅ ตั้งค่าภาษาเป็น <b>ภาษาไทย</b> แล้ว ข้อความทั้งหมดจะแสดงเป็นภาษาไทย",
+  "language_invalid": "❌ รหัสภาษาไม่ถูกต้อง กรุณาพิมพ์รหัสที่ถูกต้องจากรายการ",
+  "language_prompt": "🌐 <b>เลือกภาษาของคุณ</b>\n\nพิมพ์รหัสภาษาของคุณ:\n\n<code>th</code>  = ภาษาไทย\n<code>en</code>  = English\n<code>id</code>  = Indonesia\n<code>vi</code>  = Tiếng Việt",
+
+  "mm_menu_title": "💰 <b>การจัดการเงิน</b>\n\nจัดการเซสชันการซื้อขายด้วยกลยุทธ์การจัดการเงินที่ชาญฉลาด",
+  "mm_btn_start_session": "▶️ เริ่มเซสชัน",
+  "mm_btn_buy_access": "💳 ซื้อสิทธิ์การเข้าถึง",
+  "mm_btn_support": "💬 การสนับสนุน",
+  "mm_btn_language": "🌐 ภาษา",
+  "mm_btn_back_home": "⬅️ กลับหน้าหลัก",
+
+  "mm_access_premium": "✅ <b>การเข้าถึง:</b> พรีเมียม",
+  "mm_access_free": "🆓 <b>การเข้าถึง:</b> ฟรี",
+  "mm_access_expires": "📅 <b>หมดอายุ:</b> {date}",
+  "mm_access_lifetime": "📅 <b>หมดอายุ:</b> ตลอดชีพ ♾️",
+  "mm_sessions_today": "📊 <b>เซสชันวันนี้:</b> {used}/{max} ใช้แล้ว",
+  "mm_upgrade_prompt": "⬆️ อัพเกรดเพื่อเซสชันไม่จำกัด",
+
+  "step_capital_prompt": "💰 <b>ขั้นตอนที่ 1/12 — ทุนการซื้อขาย</b>\n\nป้อนจำนวนทุนการซื้อขายของคุณ:\n<i>(ตัวเลขเท่านั้น ตัวอย่าง: 100)</i>",
+  "step_capital_free_limit": "⚠️ การเข้าถึงฟรีอนุญาตทุนสูงสุด $50\nกรุณาป้อน $50 หรือน้อยกว่า",
+  "step_capital_invalid": "❌ กรุณาป้อนตัวเลขบวกที่ถูกต้อง\nตัวอย่าง: 100",
+
+  "step_accuracy_prompt": "🎯 <b>ขั้นตอนที่ 2/12 — ความแม่นยำในการซื้อขาย</b>\n\nป้อนความแม่นยำในการซื้อขาย %:\n<i>(ตัวอย่าง: 65)</i>",
+  "step_accuracy_invalid": "❌ กรุณาป้อนตัวเลขระหว่าง 1 ถึง 100\nตัวอย่าง: 65",
+
+  "step_trades_prompt": "🔢 <b>ขั้นตอนที่ 3/12 — จำนวนการซื้อขาย (ไม่บังคับ)</b>\n\nคุณต้องการซื้อขายกี่ครั้งในเซสชันนี้?\n<i>(พิมพ์ตัวเลข หรือพิมพ์ skip เพื่อข้าม)</i>",
+  "step_trades_invalid": "❌ กรุณาป้อนตัวเลขบวกหรือพิมพ์ <b>skip</b>",
+
+  "step_daily_profit_prompt": "📈 <b>ขั้นตอนที่ 4/12 — เป้าหมายกำไรวันนี้</b>\n\nคุณต้องการทำกำไรเท่าไหร่วันนี้? ($)\n<i>(ตัวอย่าง: 20)</i>",
+  "step_daily_profit_invalid": "❌ กรุณาป้อนจำนวนบวกที่ถูกต้อง\nตัวอย่าง: 20",
+
+  "step_overall_target_prompt": "🏆 <b>ขั้นตอนที่ 5/12 — เป้าหมายโดยรวม</b>\n\nเป้าหมายการซื้อขายโดยรวมของคุณคืออะไร? ($)\n<i>(ตัวอย่าง: 500)</i>",
+  "step_overall_target_invalid": "❌ กรุณาป้อนจำนวนบวกที่ถูกต้อง\nตัวอย่าง: 500",
+
+  "step_cent_prompt": "🏦 <b>ขั้นตอนที่ 6/12 — บัญชี Cent</b>\n\nโบรกเกอร์ของคุณรองรับบัญชี Cent หรือไม่?\n<i>(พิมพ์: <b>yes</b> หรือ <b>no</b>)</i>",
+  "step_cent_invalid": "❌ กรุณาพิมพ์ <b>yes</b> หรือ <b>no</b>",
+
+  "step_payout_prompt": "💹 <b>ขั้นตอนที่ 7/12 — อัตราการจ่าย %</b>\n\nป้อนอัตราการจ่ายของตลาดจากโบรกเกอร์:\n<i>(ตัวอย่าง: 80)</i>",
+  "step_payout_invalid": "❌ กรุณาป้อนตัวเลขระหว่าง 1 ถึง 200\nตัวอย่าง: 80",
+
+  "step_total_trades_prompt": "📊 <b>ขั้นตอนที่ 8/12 — จำนวนการซื้อขายทั้งหมดที่วางแผน</b>\n\nคุณวางแผนการซื้อขายกี่ครั้งในเซสชันนี้?\n<i>(ตัวอย่าง: 10)</i>",
+  "step_total_trades_invalid": "❌ กรุณาป้อนตัวเลขบวกที่ถูกต้อง\nตัวอย่าง: 10",
+
+  "step_wins_needed_prompt": "🏅 <b>ขั้นตอนที่ 9/12 — จำนวนชัยชนะที่ต้องการ</b>\n\nคุณต้องการชนะกี่ครั้งในเซสชันนี้?\n<i>(ตัวอย่าง: 6)</i>",
+  "step_wins_needed_invalid": "❌ กรุณาป้อนตัวเลขบวกที่ถูกต้อง\nตัวอย่าง: 6",
+
+  "step_stop_loss_prompt": "🛑 <b>ขั้นตอนที่ 10/12 — ขีดจำกัด Stop Loss</b>\n\nจำนวนขาดทุนสูงสุดก่อนหยุดเซสชันอัตโนมัติ? ($)\n<i>(ตัวอย่าง: 15)</i>",
+  "step_stop_loss_invalid": "❌ กรุณาป้อนจำนวนบวกที่ถูกต้อง\nตัวอย่าง: 15",
+
+  "step_session_target_prompt": "🎯 <b>ขั้นตอนที่ 11/12 — เป้าหมายกำไรเซสชัน</b>\n\nกำไรเท่าไหร่จะปิดเซสชันนี้อัตโนมัติ? ($)\n<i>(ตัวอย่าง: 20)</i>",
+  "step_session_target_invalid": "❌ กรุณาป้อนจำนวนบวกที่ถูกต้อง\nตัวอย่าง: 20",
+
+  "step_mode_prompt": "⚙️ <b>ขั้นตอนที่ 12/12 — โหมดการซื้อขาย</b>\n\nพิมพ์หมายเลขโหมดของคุณ:\n\n<b>1</b>  = ปกติ\n<b>2</b>  = Compounding 1 ขั้น\n<b>3</b>  = Compounding 2 ขั้น\n<b>4</b>  = Compounding 3 ขั้น\n<b>5</b>  = Martingale\n<b>6</b>  = Oscar's Grind\n<b>7</b>  = Anti-Martingale\n<b>8</b>  = Flat Bet\n<b>9</b>  = Fibonacci\n<b>10</b> = D'Alembert\n\n<i>(พิมพ์ตัวเลข 1 ถึง 10 ตัวอย่าง: 1)</i>",
+  "step_mode_invalid": "❌ กรุณาพิมพ์ตัวเลข <b>1 ถึง 10</b>\nตัวอย่าง: 1",
+
+  "session_trade_header": "──────────────────────────────\n<b>การซื้อขาย #{trade_num}</b>\nโหมด: {mode_name}\n💵 ใช้จำนวนนี้: <b>${amount}</b>\n──────────────────────────────",
+  "session_btn_win": "✅ ชนะ",
+  "session_btn_loss": "❌ แพ้",
+  "session_btn_close": "🔒 ปิดเซสชัน",
+  "session_btn_new": "🔄 เซสชันใหม่",
+  "session_btn_home": "🏠 กลับหน้าหลัก",
+  "session_btn_close_all": "🔒 ปิดทุกเซสชัน",
+
+  "session_dashboard": "──────────────────────────────\n<b>แดชบอร์ด</b>\n💰 ทุน: ${capital}   💼 ยอดคงเหลือ: ${balance}\n✅ ชนะ: {wins}        ❌ แพ้: {losses}\n📊 การซื้อขาย: {trades_used}/{total_trades}   📈 อัตราชนะ: {win_rate}%\n💹 กำไร: {profit_sign}${profit}\n──────────────────────────────",
+
+  "target_hit": "🎉 <b>ยินดีด้วย! คุณบรรลุเป้าหมายเซสชันแล้ว!</b>\n\nต้องการพัฒนาการซื้อขายเพิ่มเติมไหม?\nลอง AI Bot, SVIP Signals หรือ Premium ของเรา\nDM ทีม Support สำหรับรายละเอียดเพิ่มเติม",
+  "stop_loss_hit": "🛑 <b>ถึงขีดจำกัด Stop Loss เซสชันถูกปิดเพื่อปกป้องคุณ</b>\n\nต้องการการจัดการความเสี่ยงที่ชาญฉลาดกว่านี้ไหม?\nAI Bot และ SVIP ของเราสามารถช่วยได้ ติดต่อ Support",
+  "martingale_stop": "⚠️ <b>ทริกเกอร์หยุด Martingale</b>\nจำนวนที่คำนวณถัดไปจะเกินขีดจำกัด stop loss ของคุณ\nเซสชันถูกปิดเพื่อปกป้องคุณ",
+
+  "session_closed": "✅ เซสชันปิดแล้ว สถิติของคุณถูกบันทึกแล้ว",
+  "session_not_found": "⚠️ ไม่พบเซสชันที่ใช้งานอยู่ กรุณาเริ่มเซสชันใหม่",
+
+  "free_session_used": "⏰ <b>เซสชันฟรีของคุณวันนี้สิ้นสุดแล้ว</b>\n\nกรุณาลองใหม่พรุ่งนี้\nซื้อแผนการเข้าถึงสำหรับการเข้าถึงไม่จำกัด",
+  "new_session_blocked": "🔒 <b>คุณไม่มีสิทธิ์เข้าถึง MONEY MANAGEMENT อย่างสมบูรณ์</b>\n\nซื้อแผนการเข้าถึงเพื่อปลดล็อคเซสชันไม่จำกัด",
+
+  "buy_access_text": "💳 <b>แผนการเข้าถึง MONEY MANAGEMENT</b>\n\n📅 13 วัน   =  $6\n📅 25 วัน   =  $10\n📅 1 เดือน  =  $15\n📅 2 เดือน  =  $25\n📅 4 เดือน  =  $60\n♾️  ตลอดชีพ  =  $100\n\n⭐ ผู้ใช้ SVIP / AI Bot = <b>ฟรี</b>\n<i>(DM Admin เพื่อรับสิทธิ์ฟรี)</i>",
+
+  "access_activated": "🎉 <b>สิทธิ์การเข้าถึง MONEY MANAGEMENT ของคุณถูกเปิดใช้งานแล้ว!</b>\n\n📅 <b>หมดอายุ:</b> {expiry}\n\nตอนนี้คุณสามารถเริ่มเซสชันได้ทุกเมื่อ ✅",
+
+  "admin_mm_grant_username": "👤 <b>ให้สิทธิ์ MM Access</b>\n\nพิมพ์ชื่อผู้ใช้:\n<i>(ตัวอย่าง: @username)</i>",
+  "admin_mm_grant_duration": "⏳ พิมพ์ระยะเวลา:\n\nตัวอย่าง:\n<code>7</code>, <code>14</code>  = วัน\n<code>1month</code>, <code>2month</code>  = เดือน\n<code>lifetime</code>  = ถาวร",
+  "admin_mm_grant_confirmed": "✅ ให้สิทธิ์ MM access แก่ <b>{username}</b> แล้ว\n📅 ระยะเวลา: <b>{duration}</b>\n⏰ หมดอายุ: <b>{expiry}</b>",
+  "admin_mm_grant_user_not_found": "❌ ไม่พบ <b>{username}</b> ในฐานข้อมูล\nผู้ใช้ต้องเริ่มบอทก่อน",
+  "admin_mm_grant_invalid_duration": "❌ รูปแบบระยะเวลาไม่ถูกต้อง\nตัวอย่าง: <code>7</code> (วัน), <code>1month</code>, <code>lifetime</code>",
+  "admin_mm_cancel": "❌ ยกเลิกการให้สิทธิ์ MM access แล้ว",
+
+  "session_summary": "📊 <b>สรุปเซสชัน</b>\n\n🏆 โหมด: {mode_name}\n💰 ทุน: ${capital}\n💼 ยอดคงเหลือสุดท้าย: ${balance}\n✅ ชนะ: {wins} | ❌ แพ้: {losses}\n📈 อัตราชนะ: {win_rate}%\n💹 กำไรรวม: {profit_sign}${profit}\n📊 การซื้อขาย: {total_trades}"
+}

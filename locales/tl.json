@@ -1,0 +1,90 @@
+{
+  "lang_name": "Filipino",
+  "language_set": "✅ Ang wika ay nakatakda sa <b>Filipino</b>. Lahat ng mensahe ay lalabas sa Filipino.",
+  "language_invalid": "❌ Di wastong language code. Mangyaring mag-type ng wastong code mula sa listahan.",
+  "language_prompt": "🌐 <b>Piliin ang iyong Wika</b>\n\nI-type ang iyong language code:\n\n<code>tl</code>  = Filipino\n<code>en</code>  = English\n<code>id</code>  = Indonesia",
+
+  "mm_menu_title": "💰 <b>PAMAMAHALA NG PERA</b>\n\nPamahalaan ang iyong mga trading session gamit ang matalinong estratehiya.",
+  "mm_btn_start_session": "▶️ Simulan ang Session",
+  "mm_btn_buy_access": "💳 Bilhin ang Access",
+  "mm_btn_support": "💬 Suporta",
+  "mm_btn_language": "🌐 Wika",
+  "mm_btn_back_home": "⬅️ Bumalik sa Home",
+
+  "mm_access_premium": "✅ <b>Access:</b> Premium",
+  "mm_access_free": "🆓 <b>Access:</b> Libre",
+  "mm_access_expires": "📅 <b>Mag-e-expire:</b> {date}",
+  "mm_access_lifetime": "📅 <b>Mag-e-expire:</b> Habang Buhay ♾️",
+  "mm_sessions_today": "📊 <b>Mga Session Ngayon:</b> {used} sa {max} nagamit",
+  "mm_upgrade_prompt": "⬆️ I-upgrade para sa walang limitasyong session.",
+
+  "step_capital_prompt": "💰 <b>Hakbang 1/12 — Trading Capital</b>\n\nIlagay ang iyong trading capital:\n<i>(Mga numero lamang. Halimbawa: 100)</i>",
+  "step_capital_free_limit": "⚠️ Ang libreng access ay nagpapahintulot ng maximum na $50 capital.\nMangyaring maglagay ng $50 o mas kaunti.",
+  "step_capital_invalid": "❌ Mangyaring maglagay ng wastong positibong numero.\nHalimbawa: 100",
+
+  "step_accuracy_prompt": "🎯 <b>Hakbang 2/12 — Trading Accuracy</b>\n\nIlagay ang iyong trading accuracy %:\n<i>(Halimbawa: 65)</i>",
+  "step_accuracy_invalid": "❌ Mangyaring maglagay ng numero sa pagitan ng 1 at 100.\nHalimbawa: 65",
+
+  "step_trades_prompt": "🔢 <b>Hakbang 3/12 — Bilang ng Trades (Opsyonal)</b>\n\nIlan ang gusto mong trade sa session na ito?\n<i>(Mag-type ng numero. Para laktawan: skip)</i>",
+  "step_trades_invalid": "❌ Mangyaring maglagay ng positibong numero o i-type ang <b>skip</b>.",
+
+  "step_daily_profit_prompt": "📈 <b>Hakbang 4/12 — Araw-araw na Profit Target</b>\n\nMagkano ang gusto mong kumita ngayon? ($)\n<i>(Halimbawa: 20)</i>",
+  "step_daily_profit_invalid": "❌ Mangyaring maglagay ng wastong positibong halaga.\nHalimbawa: 20",
+
+  "step_overall_target_prompt": "🏆 <b>Hakbang 5/12 — Overall na Target</b>\n\nAno ang iyong overall na trading target? ($)\n<i>(Halimbawa: 500)</i>",
+  "step_overall_target_invalid": "❌ Mangyaring maglagay ng wastong positibong halaga.\nHalimbawa: 500",
+
+  "step_cent_prompt": "🏦 <b>Hakbang 6/12 — Cent Account</b>\n\nSinusuportahan ba ng iyong broker ang Cent Account?\n<i>(I-type: <b>yes</b> o <b>no</b>)</i>",
+  "step_cent_invalid": "❌ Mangyaring mag-type ng <b>yes</b> o <b>no</b>.",
+
+  "step_payout_prompt": "💹 <b>Hakbang 7/12 — Market Payout %</b>\n\nIlagay ang Market Payout % ng iyong broker:\n<i>(Halimbawa: 80)</i>",
+  "step_payout_invalid": "❌ Mangyaring maglagay ng numero sa pagitan ng 1 at 200.\nHalimbawa: 80",
+
+  "step_total_trades_prompt": "📊 <b>Hakbang 8/12 — Kabuuang Trades na Pinlano</b>\n\nIlan ang kabuuang trades na pinlano mo para sa session na ito?\n<i>(Halimbawa: 10)</i>",
+  "step_total_trades_invalid": "❌ Mangyaring maglagay ng wastong positibong numero.\nHalimbawa: 10",
+
+  "step_wins_needed_prompt": "🏅 <b>Hakbang 9/12 — Mga Panalo na Kailangan</b>\n\nIlan ang panalo na kailangan mo sa session na ito?\n<i>(Halimbawa: 6)</i>",
+  "step_wins_needed_invalid": "❌ Mangyaring maglagay ng wastong positibong numero.\nHalimbawa: 6",
+
+  "step_stop_loss_prompt": "🛑 <b>Hakbang 10/12 — Stop Loss Limit</b>\n\nMaximum na halaga ng pagkalugi bago awtomatikong huminto ang session? ($)\n<i>(Halimbawa: 15)</i>",
+  "step_stop_loss_invalid": "❌ Mangyaring maglagay ng wastong positibong halaga.\nHalimbawa: 15",
+
+  "step_session_target_prompt": "🎯 <b>Hakbang 11/12 — Session Profit Target</b>\n\nMagkano ang profit na magsasara ng session na ito nang awtomatiko? ($)\n<i>(Halimbawa: 20)</i>",
+  "step_session_target_invalid": "❌ Mangyaring maglagay ng wastong positibong halaga.\nHalimbawa: 20",
+
+  "step_mode_prompt": "⚙️ <b>Hakbang 12/12 — Trading Mode</b>\n\nI-type ang numero ng iyong mode:\n\n<b>1</b>  = Regular\n<b>2</b>  = 1-Step Compounding\n<b>3</b>  = 2-Step Compounding\n<b>4</b>  = 3-Step Compounding\n<b>5</b>  = Martingale\n<b>6</b>  = Oscar's Grind\n<b>7</b>  = Anti-Martingale\n<b>8</b>  = Flat Bet\n<b>9</b>  = Fibonacci\n<b>10</b> = D'Alembert\n\n<i>(Mag-type ng numero mula 1 hanggang 10. Halimbawa: 1)</i>",
+  "step_mode_invalid": "❌ Mangyaring mag-type ng numero mula <b>1 hanggang 10</b>.\nHalimbawa: 1",
+
+  "session_trade_header": "──────────────────────────────\n<b>Trade #{trade_num}</b>\nMode: {mode_name}\n💵 Gamitin ang Halagang Ito: <b>${amount}</b>\n──────────────────────────────",
+  "session_btn_win": "✅ PANALO",
+  "session_btn_loss": "❌ TALO",
+  "session_btn_close": "🔒 Isara ang Session",
+  "session_btn_new": "🔄 Bagong Session",
+  "session_btn_home": "🏠 Bumalik sa Home",
+  "session_btn_close_all": "🔒 Isara Lahat ng Session",
+
+  "session_dashboard": "──────────────────────────────\n<b>Dashboard</b>\n💰 Capital: ${capital}   💼 Balance: ${balance}\n✅ Panalo: {wins}         ❌ Talo: {losses}\n📊 Trades: {trades_used}/{total_trades}   📈 Win Rate: {win_rate}%\n💹 Profit: {profit_sign}${profit}\n──────────────────────────────",
+
+  "target_hit": "🎉 <b>Congrats! Naabot mo na ang iyong session target!</b>\n\nGusto mo bang mapabuti pa ang iyong trading?\nSubukan ang aming AI Bot, SVIP Signals, o Premium.\nDM ang Support Team para sa mga detalye.",
+  "stop_loss_hit": "🛑 <b>Naabot ang Stop Loss limit. Isinara ang session para sa iyong proteksyon.</b>\n\nGusto mo ng mas matalinong pamamahala ng panganib?\nAng aming AI Bot at SVIP ay makakatulong. DM ang Support.",
+  "martingale_stop": "⚠️ <b>Na-trigger ang Martingale stop.</b>\nAng susunod na halaga ay lalampas sa iyong stop loss limit.\nIsinara ang session para sa iyong proteksyon.",
+
+  "session_closed": "✅ Isinara ang session. Na-save ang iyong mga estadistika.",
+  "session_not_found": "⚠️ Walang aktibong session na nahanap. Magsimula ng bagong session.",
+
+  "free_session_used": "⏰ <b>Tapos na ang iyong libreng session para ngayon.</b>\n\nSubukan ulit bukas.\nBilhin ang isang access plan para sa walang limitasyong access.",
+  "new_session_blocked": "🔒 <b>Wala kang buong access sa MONEY MANAGEMENT.</b>\n\nBilhin ang access plan para i-unlock ang walang limitasyong session.",
+
+  "buy_access_text": "💳 <b>MONEY MANAGEMENT Access Plans</b>\n\n📅 13 Araw   =  $6\n📅 25 Araw   =  $10\n📅 1 Buwan   =  $15\n📅 2 Buwan   =  $25\n📅 4 Buwan   =  $60\n♾️  Habang Buhay = $100\n\n⭐ SVIP / AI Bot Users = <b>LIBRE</b>\n<i>(DM ang Admin para sa libreng access)</i>",
+
+  "access_activated": "🎉 <b>Na-activate na ang iyong MONEY MANAGEMENT Access!</b>\n\n📅 <b>Mag-e-expire:</b> {expiry}\n\nMaaari ka nang mag-Start Session anumang oras. ✅",
+
+  "admin_mm_grant_username": "👤 <b>MM Access Grant</b>\n\nI-type ang username:\n<i>(Halimbawa: @username)</i>",
+  "admin_mm_grant_duration": "⏳ I-type ang tagal:\n\nMga Halimbawa:\n<code>7</code>, <code>14</code>  = Araw\n<code>1month</code>, <code>2month</code>  = Buwan\n<code>lifetime</code>  = Permanente",
+  "admin_mm_grant_confirmed": "✅ Binigyan ng MM access si <b>{username}</b>\n📅 Tagal: <b>{duration}</b>\n⏰ Mag-e-expire: <b>{expiry}</b>",
+  "admin_mm_grant_user_not_found": "❌ Hindi nahanap ang <b>{username}</b> sa database.\nKailangang simulan muna ng user ang bot.",
+  "admin_mm_grant_invalid_duration": "❌ Di wastong format ng tagal.\nMga Halimbawa: <code>7</code> (araw), <code>1month</code>, <code>lifetime</code>",
+  "admin_mm_cancel": "❌ Nakansela ang MM access grant.",
+
+  "session_summary": "📊 <b>Buod ng Session</b>\n\n🏆 Mode: {mode_name}\n💰 Capital: ${capital}\n💼 Final Balance: ${balance}\n✅ Panalo: {wins} | ❌ Talo: {losses}\n📈 Win Rate: {win_rate}%\n💹 Kabuuang Profit: {profit_sign}${profit}\n📊 Trades: {total_trades}"
+}

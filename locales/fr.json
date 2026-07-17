@@ -1,0 +1,90 @@
+{
+  "lang_name": "Français",
+  "language_prompt": "🌐 <b>Choisissez votre langue</b>\n\nTapez votre code de langue:\n\n<code>en</code>  = English\n<code>fr</code>  = Français\n<code>es</code>  = Español\n<code>de</code>  = Deutsch\n<code>it</code>  = Italiano\n<code>pt</code>  = Português\n<code>ar</code>  = العربية\n<code>ru</code>  = Русский",
+  "language_set": "✅ Langue configurée en <b>Français</b>. Tous les messages s'afficheront en français.",
+  "language_invalid": "❌ Code de langue invalide. Veuillez taper un code valide de la liste.",
+
+  "mm_menu_title": "💰 <b>GESTION DE L'ARGENT</b>\n\nGérez vos sessions de trading avec des stratégies intelligentes.",
+  "mm_btn_start_session": "▶️ Démarrer la Session",
+  "mm_btn_buy_access": "💳 Acheter l'Accès",
+  "mm_btn_support": "💬 Support",
+  "mm_btn_language": "🌐 Langue",
+  "mm_btn_back_home": "⬅️ Retour à l'Accueil",
+
+  "mm_access_premium": "✅ <b>Accès:</b> Premium",
+  "mm_access_free": "🆓 <b>Accès:</b> Gratuit",
+  "mm_access_expires": "📅 <b>Expire:</b> {date}",
+  "mm_access_lifetime": "📅 <b>Expire:</b> À vie ♾️",
+  "mm_sessions_today": "📊 <b>Sessions aujourd'hui:</b> {used} sur {max} utilisées",
+  "mm_upgrade_prompt": "⬆️ Passez à la version supérieure pour des sessions illimitées.",
+
+  "step_capital_prompt": "💰 <b>Étape 1/12 — Capital de Trading</b>\n\nEntrez votre capital de trading:\n<i>(Chiffres seulement. Exemple: 100)</i>",
+  "step_capital_free_limit": "⚠️ L'accès gratuit permet un capital maximum de $50.\nVeuillez entrer $50 ou moins.",
+  "step_capital_invalid": "❌ Veuillez entrer un nombre positif valide.\nExemple: 100",
+
+  "step_accuracy_prompt": "🎯 <b>Étape 2/12 — Précision de Trading</b>\n\nEntrez votre précision de trading %:\n<i>(Exemple: 65)</i>",
+  "step_accuracy_invalid": "❌ Veuillez entrer un nombre entre 1 et 100.\nExemple: 65",
+
+  "step_trades_prompt": "🔢 <b>Étape 3/12 — Nombre de Trades (Optionnel)</b>\n\nCombien de trades voulez-vous faire cette session?\n<i>(Tapez un nombre. Pour ignorer: skip)</i>",
+  "step_trades_invalid": "❌ Veuillez entrer un nombre positif ou taper <b>skip</b>.",
+
+  "step_daily_profit_prompt": "📈 <b>Étape 4/12 — Objectif de Profit Quotidien</b>\n\nCombien voulez-vous gagner aujourd'hui? ($)\n<i>(Exemple: 20)</i>",
+  "step_daily_profit_invalid": "❌ Veuillez entrer un montant positif valide.\nExemple: 20",
+
+  "step_overall_target_prompt": "🏆 <b>Étape 5/12 — Objectif Global</b>\n\nQuel est votre objectif global de trading? ($)\n<i>(Exemple: 500)</i>",
+  "step_overall_target_invalid": "❌ Veuillez entrer un montant positif valide.\nExemple: 500",
+
+  "step_cent_prompt": "🏦 <b>Étape 6/12 — Compte Cent</b>\n\nVotre courtier supporte-t-il le Compte Cent?\n<i>(Tapez: <b>yes</b> ou <b>no</b>)</i>\n\n<b>yes</b> = Montants en format cent\n<b>no</b>  = Format arrondi standard",
+  "step_cent_invalid": "❌ Veuillez taper <b>yes</b> ou <b>no</b>.",
+
+  "step_payout_prompt": "💹 <b>Étape 7/12 — Payout du Marché %</b>\n\nEntrez le % de payout du marché de votre courtier:\n<i>(Exemple: 80)</i>",
+  "step_payout_invalid": "❌ Veuillez entrer un nombre entre 1 et 200.\nExemple: 80",
+
+  "step_total_trades_prompt": "📊 <b>Étape 8/12 — Total de Trades Planifiés</b>\n\nCombien de trades planifiez-vous pour cette session?\n<i>(Exemple: 10)</i>",
+  "step_total_trades_invalid": "❌ Veuillez entrer un nombre positif valide.\nExemple: 10",
+
+  "step_wins_needed_prompt": "🏅 <b>Étape 9/12 — Victoires Nécessaires</b>\n\nCombien de victoires avez-vous besoin cette session?\n<i>(Exemple: 6)</i>",
+  "step_wins_needed_invalid": "❌ Veuillez entrer un nombre positif valide.\nExemple: 6",
+
+  "step_stop_loss_prompt": "🛑 <b>Étape 10/12 — Limite Stop Loss</b>\n\nPerte maximale avant arrêt automatique de la session? ($)\n<i>(Exemple: 15)</i>",
+  "step_stop_loss_invalid": "❌ Veuillez entrer un montant positif valide.\nExemple: 15",
+
+  "step_session_target_prompt": "🎯 <b>Étape 11/12 — Objectif de Session</b>\n\nQuel profit fermera automatiquement cette session? ($)\n<i>(Exemple: 20)</i>",
+  "step_session_target_invalid": "❌ Veuillez entrer un montant positif valide.\nExemple: 20",
+
+  "step_mode_prompt": "⚙️ <b>Étape 12/12 — Mode de Trading</b>\n\nTapez le numéro de votre mode:\n\n<b>1</b>  = Régulier\n<b>2</b>  = Composition 1 étape\n<b>3</b>  = Composition 2 étapes\n<b>4</b>  = Composition 3 étapes\n<b>5</b>  = Martingale\n<b>6</b>  = Oscar's Grind\n<b>7</b>  = Anti-Martingale\n<b>8</b>  = Mise Plate\n<b>9</b>  = Fibonacci\n<b>10</b> = D'Alembert\n\n<i>(Tapez un nombre de 1 à 10. Exemple: 1)</i>",
+  "step_mode_invalid": "❌ Veuillez taper un nombre de <b>1 à 10</b>.\nExemple: 1",
+
+  "session_trade_header": "──────────────────────────────\n<b>Trade #{trade_num}</b>\nMode: {mode_name}\n💵 Utilisez ce montant: <b>${amount}</b>\n──────────────────────────────",
+  "session_btn_win": "✅ VICTOIRE",
+  "session_btn_loss": "❌ PERTE",
+  "session_btn_close": "🔒 Fermer la Session",
+  "session_btn_new": "🔄 Nouvelle Session",
+  "session_btn_home": "🏠 Retour à l'Accueil",
+  "session_btn_close_all": "🔒 Fermer Toutes les Sessions",
+
+  "session_dashboard": "──────────────────────────────\n<b>Tableau de bord</b>\n💰 Capital: ${capital}   💼 Solde: ${balance}\n✅ Victoires: {wins}    ❌ Pertes: {losses}\n📊 Trades: {trades_used}/{total_trades}   📈 Taux de réussite: {win_rate}%\n💹 Profit: {profit_sign}${profit}\n──────────────────────────────",
+
+  "target_hit": "🎉 <b>Félicitations! Votre objectif de session a été atteint!</b>\n\nVoulez-vous améliorer votre trading?\nEssayez notre AI Bot, SVIP Signals ou le Premium.\nContactez le Support pour plus de détails.",
+  "stop_loss_hit": "🛑 <b>Limite Stop Loss atteinte. La session a été fermée pour votre protection.</b>\n\nVoulez-vous une meilleure gestion des risques?\nNotre AI Bot et SVIP peuvent vous aider. Contactez le Support.",
+  "martingale_stop": "⚠️ <b>Stop Martingale déclenché.</b>\nLe prochain montant calculé dépasserait votre limite stop loss.\nSession fermée pour votre protection.",
+
+  "session_closed": "✅ Session fermée. Vos statistiques ont été sauvegardées.",
+  "session_not_found": "⚠️ Aucune session active trouvée. Veuillez démarrer une nouvelle session.",
+
+  "free_session_used": "⏰ <b>Votre session gratuite du jour est terminée.</b>\n\nVeuillez réessayer demain.\nPour un accès illimité, achetez un plan.",
+  "new_session_blocked": "🔒 <b>Vous n'avez pas l'accès complet à MONEY MANAGEMENT.</b>\n\nAchetez un plan pour débloquer les sessions illimitées.",
+
+  "buy_access_text": "💳 <b>Plans d'Accès MONEY MANAGEMENT</b>\n\n📅 13 Jours  =  $6\n📅 25 Jours  =  $10\n📅 1 Mois    =  $15\n📅 2 Mois    =  $25\n📅 4 Mois    =  $60\n♾️  À vie      =  $100\n\n⭐ Utilisateurs SVIP / AI Bot = <b>GRATUIT</b>\n<i>(DM l'Admin pour réclamer l'accès gratuit)</i>",
+
+  "access_activated": "🎉 <b>Votre Accès MONEY MANAGEMENT a été activé!</b>\n\n📅 <b>Expire:</b> {expiry}\n\nVous pouvez maintenant démarrer une session à tout moment. ✅",
+
+  "admin_mm_grant_username": "👤 <b>Accorder l'Accès MM</b>\n\nTapez le nom d'utilisateur:\n<i>(Exemple: @username)</i>",
+  "admin_mm_grant_duration": "⏳ Tapez la durée:\n\nExemples:\n<code>7</code>, <code>14</code>  = Jours\n<code>1month</code>, <code>2month</code>  = Mois\n<code>lifetime</code>  = Permanent",
+  "admin_mm_grant_confirmed": "✅ Accès MM accordé à <b>{username}</b>\n📅 Durée: <b>{duration}</b>\n⏰ Expire: <b>{expiry}</b>",
+  "admin_mm_grant_user_not_found": "❌ Utilisateur <b>{username}</b> non trouvé dans la base de données.\nL'utilisateur doit d'abord démarrer le bot.",
+  "admin_mm_grant_invalid_duration": "❌ Format de durée invalide.\nExemples: <code>7</code> (jours), <code>1month</code>, <code>lifetime</code>",
+  "admin_mm_cancel": "❌ Attribution d'accès MM annulée.",
+
+  "session_summary": "📊 <b>Résumé de Session</b>\n\n🏆 Mode: {mode_name}\n💰 Capital: ${capital}\n💼 Solde Final: ${balance}\n✅ Victoires: {wins} | ❌ Pertes: {losses}\n📈 Taux de réussite: {win_rate}%\n💹 Profit Total: {profit_sign}${profit}\n📊 Trades: {total_trades}"
+}

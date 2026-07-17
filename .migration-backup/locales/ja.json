@@ -1,0 +1,90 @@
+{
+  "lang_name": "日本語",
+  "language_set": "✅ 言語が<b>日本語</b>に設定されました。すべてのメッセージが日本語で表示されます。",
+  "language_invalid": "❌ 無効な言語コードです。リストから有効なコードを入力してください。",
+  "language_prompt": "🌐 <b>言語を選択してください</b>\n\n言語コードを入力してください：\n\n<code>ja</code>  = 日本語\n<code>en</code>  = English\n<code>zh</code>  = 中文\n<code>ko</code>  = 한국어",
+
+  "mm_menu_title": "💰 <b>マネーマネジメント</b>\n\nスマートなマネーマネジメント戦略でトレードセッションを管理しましょう。",
+  "mm_btn_start_session": "▶️ セッション開始",
+  "mm_btn_buy_access": "💳 アクセス購入",
+  "mm_btn_support": "💬 サポート",
+  "mm_btn_language": "🌐 言語",
+  "mm_btn_back_home": "⬅️ ホームに戻る",
+
+  "mm_access_premium": "✅ <b>アクセス：</b>プレミアム",
+  "mm_access_free": "🆓 <b>アクセス：</b>無料",
+  "mm_access_expires": "📅 <b>有効期限：</b>{date}",
+  "mm_access_lifetime": "📅 <b>有効期限：</b>生涯 ♾️",
+  "mm_sessions_today": "📊 <b>本日のセッション：</b>{used}/{max}使用済み",
+  "mm_upgrade_prompt": "⬆️ 無制限セッションのためにアップグレードしてください。",
+
+  "step_capital_prompt": "💰 <b>ステップ1/12 — 取引資金</b>\n\n取引資金額を入力してください：\n<i>（数字のみ。例：100）</i>",
+  "step_capital_free_limit": "⚠️ 無料アクセスでは最大$50の資金が許可されています。\n$50以下を入力してください。",
+  "step_capital_invalid": "❌ 有効な正の数を入力してください。\n例：100",
+
+  "step_accuracy_prompt": "🎯 <b>ステップ2/12 — 取引精度</b>\n\n取引精度%を入力してください：\n<i>（例：65）</i>",
+  "step_accuracy_invalid": "❌ 1から100の間の数字を入力してください。\n例：65",
+
+  "step_trades_prompt": "🔢 <b>ステップ3/12 — 取引回数（任意）</b>\n\nこのセッションで何回取引しますか？\n<i>（数字を入力。スキップするには：skip）</i>",
+  "step_trades_invalid": "❌ 正の数または<b>skip</b>を入力してください。",
+
+  "step_daily_profit_prompt": "📈 <b>ステップ4/12 — 本日の利益目標</b>\n\n今日はいくら稼ぎたいですか？($)\n<i>（例：20）</i>",
+  "step_daily_profit_invalid": "❌ 有効な正の金額を入力してください。\n例：20",
+
+  "step_overall_target_prompt": "🏆 <b>ステップ5/12 — 全体目標</b>\n\nあなたの全体的な取引目標は？($)\n<i>（例：500）</i>",
+  "step_overall_target_invalid": "❌ 有効な正の金額を入力してください。\n例：500",
+
+  "step_cent_prompt": "🏦 <b>ステップ6/12 — セントアカウント</b>\n\nブローカーはセントアカウントをサポートしていますか？\n<i>（入力：<b>yes</b> または <b>no</b>）</i>",
+  "step_cent_invalid": "❌ <b>yes</b>または<b>no</b>を入力してください。",
+
+  "step_payout_prompt": "💹 <b>ステップ7/12 — 市場ペイアウト%</b>\n\nブローカーの市場ペイアウト%を入力：\n<i>（例：80）</i>",
+  "step_payout_invalid": "❌ 1から200の間の数字を入力してください。\n例：80",
+
+  "step_total_trades_prompt": "📊 <b>ステップ8/12 — 予定総取引数</b>\n\nこのセッションで何回取引する予定ですか？\n<i>（例：10）</i>",
+  "step_total_trades_invalid": "❌ 有効な正の数を入力してください。\n例：10",
+
+  "step_wins_needed_prompt": "🏅 <b>ステップ9/12 — 必要な勝利数</b>\n\nこのセッションで何回勝つ必要がありますか？\n<i>（例：6）</i>",
+  "step_wins_needed_invalid": "❌ 有効な正の数を入力してください。\n例：6",
+
+  "step_stop_loss_prompt": "🛑 <b>ステップ10/12 — ストップロス上限</b>\n\nセッション自動停止前の最大損失額？($)\n<i>（例：15）</i>",
+  "step_stop_loss_invalid": "❌ 有効な正の金額を入力してください。\n例：15",
+
+  "step_session_target_prompt": "🎯 <b>ステップ11/12 — セッション利益目標</b>\n\nいくらの利益でセッションを自動終了しますか？($)\n<i>（例：20）</i>",
+  "step_session_target_invalid": "❌ 有効な正の金額を入力してください。\n例：20",
+
+  "step_mode_prompt": "⚙️ <b>ステップ12/12 — 取引モード</b>\n\nモード番号を入力：\n\n<b>1</b>  = レギュラー\n<b>2</b>  = 1ステップ複利\n<b>3</b>  = 2ステップ複利\n<b>4</b>  = 3ステップ複利\n<b>5</b>  = マルチンゲール\n<b>6</b>  = オスカーグラインド\n<b>7</b>  = アンチマルチンゲール\n<b>8</b>  = フラットベット\n<b>9</b>  = フィボナッチ\n<b>10</b> = ダランベール\n\n<i>（1から10の数字を入力。例：1）</i>",
+  "step_mode_invalid": "❌ <b>1から10</b>の数字を入力してください。\n例：1",
+
+  "session_trade_header": "──────────────────────────────\n<b>取引 #{trade_num}</b>\nモード：{mode_name}\n💵 この金額を使用：<b>${amount}</b>\n──────────────────────────────",
+  "session_btn_win": "✅ 勝利",
+  "session_btn_loss": "❌ 損失",
+  "session_btn_close": "🔒 セッション終了",
+  "session_btn_new": "🔄 新しいセッション",
+  "session_btn_home": "🏠 ホームに戻る",
+  "session_btn_close_all": "🔒 全セッション終了",
+
+  "session_dashboard": "──────────────────────────────\n<b>ダッシュボード</b>\n💰 資金：${capital}   💼 残高：${balance}\n✅ 勝利：{wins}       ❌ 損失：{losses}\n📊 取引：{trades_used}/{total_trades}   📈 勝率：{win_rate}%\n💹 利益：{profit_sign}${profit}\n──────────────────────────────",
+
+  "target_hit": "🎉 <b>おめでとうございます！セッション目標を達成しました！</b>\n\nトレードをさらに向上させたいですか？\nAI Bot、SVIP Signals、またはPremiumをお試しください。\nサポートチームにDMしてください。",
+  "stop_loss_hit": "🛑 <b>ストップロス上限に達しました。保護のためセッションを終了しました。</b>\n\nよりスマートなリスク管理を望みますか？\nAI BotとSVIPが役立ちます。サポートにDMしてください。",
+  "martingale_stop": "⚠️ <b>マルチンゲールストップが発動しました。</b>\n次の計算金額がストップロス上限を超えます。\n保護のためセッションを終了しました。",
+
+  "session_closed": "✅ セッション終了。統計が保存されました。",
+  "session_not_found": "⚠️ アクティブなセッションが見つかりません。新しいセッションを開始してください。",
+
+  "free_session_used": "⏰ <b>本日の無料セッションが終了しました。</b>\n\n明日また試してください。\n無制限アクセスにはアクセスプランを購入してください。",
+  "new_session_blocked": "🔒 <b>MONEY MANAGEMENTの完全なアクセス権がありません。</b>\n\n無制限セッションを解放するためのアクセスプランを購入してください。",
+
+  "buy_access_text": "💳 <b>MONEY MANAGEMENTアクセスプラン</b>\n\n📅 13日   =  $6\n📅 25日   =  $10\n📅 1ヶ月  =  $15\n📅 2ヶ月  =  $25\n📅 4ヶ月  =  $60\n♾️  生涯   =  $100\n\n⭐ SVIP / AI Botユーザー = <b>無料</b>\n<i>（無料アクセスはAdminにDMしてください）</i>",
+
+  "access_activated": "🎉 <b>MONEY MANAGEMENTアクセスが有効化されました！</b>\n\n📅 <b>有効期限：</b>{expiry}\n\nいつでもセッションを開始できます。 ✅",
+
+  "admin_mm_grant_username": "👤 <b>MMアクセス付与</b>\n\nユーザー名を入力：\n<i>（例：@username）</i>",
+  "admin_mm_grant_duration": "⏳ 期間を入力：\n\n例：\n<code>7</code>, <code>14</code>  = 日\n<code>1month</code>, <code>2month</code>  = 月\n<code>lifetime</code>  = 永久",
+  "admin_mm_grant_confirmed": "✅ <b>{username}</b>にMMアクセスを付与しました\n📅 期間：<b>{duration}</b>\n⏰ 有効期限：<b>{expiry}</b>",
+  "admin_mm_grant_user_not_found": "❌ <b>{username}</b>がデータベースに見つかりません。\nユーザーは最初にボットを開始する必要があります。",
+  "admin_mm_grant_invalid_duration": "❌ 無効な期間フォーマットです。\n例：<code>7</code>（日）、<code>1month</code>、<code>lifetime</code>",
+  "admin_mm_cancel": "❌ MMアクセス付与がキャンセルされました。",
+
+  "session_summary": "📊 <b>セッションサマリー</b>\n\n🏆 モード：{mode_name}\n💰 資金：${capital}\n💼 最終残高：${balance}\n✅ 勝利：{wins} | ❌ 損失：{losses}\n📈 勝率：{win_rate}%\n💹 総利益：{profit_sign}${profit}\n📊 取引回数：{total_trades}"
+}

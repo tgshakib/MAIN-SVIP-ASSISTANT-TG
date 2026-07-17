@@ -1,0 +1,90 @@
+{
+  "lang_name": "العربية",
+  "language_prompt": "🌐 <b>اختر لغتك</b>\n\nاكتب رمز لغتك:\n\n<code>bn</code>  = Bangla\n<code>en</code>  = English\n<code>ar</code>  = العربية\n<code>hi</code>  = Hindi\n<code>es</code>  = Spanish\n<code>fr</code>  = French\n<code>ru</code>  = Russian\n<code>tr</code>  = Turkish\n<code>id</code>  = Indonesian\n<code>zh</code>  = Chinese\n<code>ja</code>  = Japanese\n<code>ko</code>  = Korean\n<code>de</code>  = German\n<code>it</code>  = Italian",
+  "language_set": "✅ تم تعيين اللغة إلى <b>العربية</b>. ستظهر جميع الرسائل الآن باللغة العربية.",
+  "language_invalid": "❌ رمز اللغة غير صالح. يرجى كتابة رمز صحيح من القائمة أعلاه.",
+
+  "mm_menu_title": "💰 <b>إدارة الأموال</b>\n\nأدر جلسات التداول الخاصة بك باستخدام استراتيجيات إدارة الأموال الذكية.",
+  "mm_btn_start_session": "▶️ بدء الجلسة",
+  "mm_btn_buy_access": "💳 شراء الوصول",
+  "mm_btn_support": "💬 الدعم",
+  "mm_btn_language": "🌐 اللغة",
+  "mm_btn_back_home": "⬅️ العودة للرئيسية",
+
+  "mm_access_premium": "✅ <b>الوصول:</b> مميز",
+  "mm_access_free": "🆓 <b>الوصول:</b> مجاني",
+  "mm_access_expires": "📅 <b>تنتهي في:</b> {date}",
+  "mm_access_lifetime": "📅 <b>تنتهي في:</b> مدى الحياة ♾️",
+  "mm_sessions_today": "📊 <b>جلسات اليوم:</b> {used} من {max} مستخدمة",
+  "mm_upgrade_prompt": "⬆️ قم بالترقية لفتح الجلسات غير المحدودة.",
+
+  "step_capital_prompt": "💰 <b>الخطوة 1/12 — رأس المال</b>\n\nأدخل مبلغ رأس المال الخاص بك:\n<i>(أرقام فقط. مثال: 100)</i>",
+  "step_capital_free_limit": "⚠️ الوصول المجاني يسمح بحد أقصى $50 رأس مال.\nيرجى إدخال $50 أو أقل.",
+  "step_capital_invalid": "❌ يرجى إدخال رقم موجب صحيح.\nمثال: 100",
+
+  "step_accuracy_prompt": "🎯 <b>الخطوة 2/12 — دقة التداول</b>\n\nأدخل نسبة دقة التداول %:\n<i>(مثال: 65)</i>",
+  "step_accuracy_invalid": "❌ يرجى إدخال رقم بين 1 و 100.\nمثال: 65",
+
+  "step_trades_prompt": "🔢 <b>الخطوة 3/12 — عدد الصفقات (اختياري)</b>\n\nكم عدد الصفقات في هذه الجلسة؟\n<i>(اكتب رقماً. للتخطي: skip)</i>",
+  "step_trades_invalid": "❌ يرجى إدخال رقم موجب أو كتابة <b>skip</b>.",
+
+  "step_daily_profit_prompt": "📈 <b>الخطوة 4/12 — هدف الربح اليومي</b>\n\nكم تريد أن تربح اليوم؟ ($)\n<i>(مثال: 20)</i>",
+  "step_daily_profit_invalid": "❌ يرجى إدخال مبلغ موجب صحيح.\nمثال: 20",
+
+  "step_overall_target_prompt": "🏆 <b>الخطوة 5/12 — الهدف الإجمالي</b>\n\nما هو هدفك الإجمالي في التداول؟ ($)\n<i>(مثال: 500)</i>",
+  "step_overall_target_invalid": "❌ يرجى إدخال مبلغ موجب صحيح.\nمثال: 500",
+
+  "step_cent_prompt": "🏦 <b>الخطوة 6/12 — حساب السنت</b>\n\nهل يدعم وسيطك حساب السنت؟\n<i>(اكتب: <b>yes</b> أو <b>no</b>)</i>\n\n<b>yes</b> = تظهر المبالغ بتنسيق السنت\n<b>no</b>  = تظهر بتنسيق مقرب قياسي",
+  "step_cent_invalid": "❌ يرجى كتابة <b>yes</b> أو <b>no</b>.",
+
+  "step_payout_prompt": "💹 <b>الخطوة 7/12 — نسبة العائد</b>\n\nأدخل نسبة عائد السوق لدى وسيطك:\n<i>(مثال: 80)</i>",
+  "step_payout_invalid": "❌ يرجى إدخال رقم بين 1 و 200.\nمثال: 80",
+
+  "step_total_trades_prompt": "📊 <b>الخطوة 8/12 — إجمالي الصفقات المخططة</b>\n\nكم عدد الصفقات الإجمالي التي تخطط لها؟\n<i>(مثال: 10)</i>",
+  "step_total_trades_invalid": "❌ يرجى إدخال رقم موجب صحيح.\nمثال: 10",
+
+  "step_wins_needed_prompt": "🏅 <b>الخطوة 9/12 — الانتصارات المطلوبة</b>\n\nكم انتصاراً تحتاج في هذه الجلسة؟\n<i>(مثال: 6)</i>",
+  "step_wins_needed_invalid": "❌ يرجى إدخال رقم موجب صحيح.\nمثال: 6",
+
+  "step_stop_loss_prompt": "🛑 <b>الخطوة 10/12 — حد وقف الخسارة</b>\n\nأقصى خسارة قبل إيقاف الجلسة تلقائياً؟ ($)\n<i>(مثال: 15)</i>",
+  "step_stop_loss_invalid": "❌ يرجى إدخال مبلغ موجب صحيح.\nمثال: 15",
+
+  "step_session_target_prompt": "🎯 <b>الخطوة 11/12 — هدف الجلسة</b>\n\nكم من الربح يغلق هذه الجلسة تلقائياً؟ ($)\n<i>(مثال: 20)</i>",
+  "step_session_target_invalid": "❌ يرجى إدخال مبلغ موجب صحيح.\nمثال: 20",
+
+  "step_mode_prompt": "⚙️ <b>الخطوة 12/12 — نمط التداول</b>\n\nاكتب رقم نمط التداول:\n\n<b>1</b>  = منتظم\n<b>2</b>  = مركب 1 خطوة\n<b>3</b>  = مركب 2 خطوة\n<b>4</b>  = مركب 3 خطوات\n<b>5</b>  = مارتينجال\n<b>6</b>  = أوسكار غرايند\n<b>7</b>  = مضاد المارتينجال\n<b>8</b>  = رهان ثابت\n<b>9</b>  = فيبوناتشي\n<b>10</b> = دالمبير\n\n<i>(اكتب رقماً من 1 إلى 10. مثال: 1)</i>",
+  "step_mode_invalid": "❌ يرجى كتابة رقم من <b>1 إلى 10</b>.\nمثال: 1",
+
+  "session_trade_header": "──────────────────────────────\n<b>صفقة #{trade_num}</b>\nالنمط: {mode_name}\n💵 استخدم هذا المبلغ: <b>${amount}</b>\n──────────────────────────────",
+  "session_btn_win": "✅ فوز",
+  "session_btn_loss": "❌ خسارة",
+  "session_btn_close": "🔒 إغلاق الجلسة",
+  "session_btn_new": "🔄 جلسة جديدة",
+  "session_btn_home": "🏠 العودة للرئيسية",
+  "session_btn_close_all": "🔒 إغلاق جميع الجلسات",
+
+  "session_dashboard": "──────────────────────────────\n<b>لوحة التحكم</b>\n💰 رأس المال: ${capital}   💼 الرصيد: ${balance}\n✅ الانتصارات: {wins}     ❌ الخسائر: {losses}\n📊 الصفقات: {trades_used}/{total_trades}   📈 نسبة الفوز: {win_rate}%\n💹 الربح: {profit_sign}${profit}\n──────────────────────────────",
+
+  "target_hit": "🎉 <b>تهانينا! لقد وصلت إلى هدف جلستك!</b>\n\nتريد تحسين تداولك أكثر؟\nجرب AI Bot أو SVIP Signals أو البرنامج المميز.\nأرسل رسالة للدعم لمعرفة التفاصيل الكاملة.",
+  "stop_loss_hit": "🛑 <b>تم الوصول لحد وقف الخسارة. تم إغلاق الجلسة لحمايتك.</b>\n\nتريد إدارة مخاطر أذكى؟\nيمكن أن يساعدك AI Bot و SVIP لتجنب هذا الوضع.\nأرسل رسالة للدعم.",
+  "martingale_stop": "⚠️ <b>تم تفعيل وقف المارتينجال.</b>\nالمبلغ المحسوب التالي سيتجاوز حد وقف الخسارة.\nتم إغلاق الجلسة لحمايتك.",
+
+  "session_closed": "✅ تم إغلاق الجلسة. تم حفظ إحصائياتك.",
+  "session_not_found": "⚠️ لم يتم العثور على جلسة نشطة. يرجى بدء جلسة جديدة.",
+
+  "free_session_used": "⏰ <b>انتهت جلستك المجانية لهذا اليوم.</b>\n\nيرجى المحاولة مرة أخرى غداً.\nلاحصول على وصول غير محدود، قم بشراء خطة وصول.",
+  "new_session_blocked": "🔒 <b>ليس لديك وصول كامل لإدارة الأموال.</b>\n\nاشترِ خطة وصول لفتح الجلسات غير المحدودة.",
+
+  "buy_access_text": "💳 <b>خطط الوصول لإدارة الأموال</b>\n\n📅 13 يوم   =  $6\n📅 25 يوم   =  $10\n📅 شهر 1   =  $15\n📅 شهران   =  $25\n📅 4 أشهر  =  $60\n♾️  مدى الحياة = $100\n\n⭐ مستخدمو SVIP / AI Bot = <b>مجاني</b>\n<i>(راسل الأدمين للحصول على وصول مجاني)</i>",
+
+  "access_activated": "🎉 <b>تم تفعيل وصولك لإدارة الأموال!</b>\n\n📅 <b>تنتهي في:</b> {expiry}\n\nيمكنك الآن بدء جلسة في أي وقت. ✅",
+
+  "admin_mm_grant_username": "👤 <b>منح وصول MM</b>\n\nاكتب اسم المستخدم:\n<i>(مثال: @username)</i>",
+  "admin_mm_grant_duration": "⏳ اكتب المدة:\n\nأمثلة:\n<code>7</code>, <code>14</code>  = أيام\n<code>1month</code>, <code>2month</code>  = أشهر\n<code>lifetime</code>  = دائم",
+  "admin_mm_grant_confirmed": "✅ تم منح وصول MM لـ <b>{username}</b>\n📅 المدة: <b>{duration}</b>\n⏰ تنتهي: <b>{expiry}</b>",
+  "admin_mm_grant_user_not_found": "❌ لم يتم العثور على <b>{username}</b> في قاعدة البيانات.\nيجب على المستخدم بدء البوت أولاً.",
+  "admin_mm_grant_invalid_duration": "❌ تنسيق مدة غير صالح.\nأمثلة: <code>7</code> (أيام), <code>1month</code>, <code>lifetime</code>",
+  "admin_mm_cancel": "❌ تم إلغاء منح وصول MM.",
+
+  "session_summary": "📊 <b>ملخص الجلسة</b>\n\n🏆 النمط: {mode_name}\n💰 رأس المال: ${capital}\n💼 الرصيد النهائي: ${balance}\n✅ الانتصارات: {wins} | ❌ الخسائر: {losses}\n📈 نسبة الفوز: {win_rate}%\n💹 الربح الإجمالي: {profit_sign}${profit}\n📊 الصفقات: {total_trades}"
+}

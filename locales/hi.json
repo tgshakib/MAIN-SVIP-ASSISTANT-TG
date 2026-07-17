@@ -1,0 +1,90 @@
+{
+  "lang_name": "हिंदी",
+  "language_prompt": "🌐 <b>अपनी भाषा चुनें</b>\n\nअपना भाषा कोड टाइप करें:\n\n<code>bn</code>  = Bangla\n<code>en</code>  = English\n<code>hi</code>  = Hindi\n<code>ar</code>  = Arabic\n<code>es</code>  = Spanish\n<code>fr</code>  = French\n<code>pt</code>  = Portuguese\n<code>ru</code>  = Russian\n<code>tr</code>  = Turkish\n<code>id</code>  = Indonesian\n<code>zh</code>  = Chinese\n<code>ja</code>  = Japanese\n<code>ko</code>  = Korean\n<code>de</code>  = German\n<code>it</code>  = Italian\n<code>tl</code>  = Filipino\n<code>vi</code>  = Vietnamese\n<code>th</code>  = Thai\n<code>ur</code>  = Urdu\n<code>ha</code>  = Hausa",
+  "language_set": "✅ भाषा <b>हिंदी</b> में सेट की गई। सभी संदेश अब हिंदी में दिखेंगे।",
+  "language_invalid": "❌ अमान्य भाषा कोड। कृपया ऊपर दी गई सूची से एक वैध कोड टाइप करें।",
+
+  "mm_menu_title": "💰 <b>मनी मैनेजमेंट</b>\n\nस्मार्ट मनी मैनेजमेंट रणनीतियों के साथ अपने ट्रेडिंग सेशन प्रबंधित करें।",
+  "mm_btn_start_session": "▶️ सेशन शुरू करें",
+  "mm_btn_buy_access": "💳 एक्सेस खरीदें",
+  "mm_btn_support": "💬 सपोर्ट",
+  "mm_btn_language": "🌐 भाषा",
+  "mm_btn_back_home": "⬅️ होम पर जाएं",
+
+  "mm_access_premium": "✅ <b>एक्सेस:</b> प्रीमियम",
+  "mm_access_free": "🆓 <b>एक्सेस:</b> मुफ्त",
+  "mm_access_expires": "📅 <b>समाप्ति:</b> {date}",
+  "mm_access_lifetime": "📅 <b>समाप्ति:</b> आजीवन ♾️",
+  "mm_sessions_today": "📊 <b>आज के सेशन:</b> {used} / {max} उपयोग",
+  "mm_upgrade_prompt": "⬆️ असीमित सेशन अनलॉक करने के लिए अपग्रेड करें।",
+
+  "step_capital_prompt": "💰 <b>चरण 1/12 — ट्रेडिंग कैपिटल</b>\n\nअपनी ट्रेडिंग कैपिटल राशि दर्ज करें:\n<i>(केवल नंबर। उदाहरण: 100)</i>",
+  "step_capital_free_limit": "⚠️ मुफ्त एक्सेस में अधिकतम $50 कैपिटल की अनुमति है।\nकृपया $50 या कम दर्ज करें।",
+  "step_capital_invalid": "❌ कृपया एक वैध धनात्मक संख्या दर्ज करें।\nउदाहरण: 100",
+
+  "step_accuracy_prompt": "🎯 <b>चरण 2/12 — ट्रेडिंग सटीकता</b>\n\nअपनी ट्रेडिंग सटीकता % दर्ज करें:\n<i>(उदाहरण: 65)</i>",
+  "step_accuracy_invalid": "❌ कृपया 1 से 100 के बीच संख्या दर्ज करें।\nउदाहरण: 65",
+
+  "step_trades_prompt": "🔢 <b>चरण 3/12 — ट्रेड संख्या (वैकल्पिक)</b>\n\nइस सेशन में कितने ट्रेड लेना चाहते हैं?\n<i>(नंबर टाइप करें। छोड़ने के लिए: skip)</i>",
+  "step_trades_invalid": "❌ कृपया एक धनात्मक संख्या या <b>skip</b> टाइप करें।",
+
+  "step_daily_profit_prompt": "📈 <b>चरण 4/12 — आज का प्रॉफिट टार्गेट</b>\n\nआज कितना प्रॉफिट कमाना चाहते हैं? ($)\n<i>(उदाहरण: 20)</i>",
+  "step_daily_profit_invalid": "❌ कृपया एक वैध धनात्मक राशि दर्ज करें।\nउदाहरण: 20",
+
+  "step_overall_target_prompt": "🏆 <b>चरण 5/12 — कुल लक्ष्य</b>\n\nआपका कुल ट्रेडिंग लक्ष्य क्या है? ($)\n<i>(उदाहरण: 500)</i>",
+  "step_overall_target_invalid": "❌ कृपया एक वैध धनात्मक राशि दर्ज करें।\nउदाहरण: 500",
+
+  "step_cent_prompt": "🏦 <b>चरण 6/12 — सेंट अकाउंट</b>\n\nक्या आपका ब्रोकर सेंट अकाउंट सपोर्ट करता है?\n<i>(टाइप करें: <b>yes</b> या <b>no</b>)</i>\n\n<b>yes</b> = सेंट फॉर्मेट में दिखेगा\n<b>no</b>  = स्टैंडर्ड फॉर्मेट में दिखेगा",
+  "step_cent_invalid": "❌ कृपया <b>yes</b> या <b>no</b> टाइप करें।",
+
+  "step_payout_prompt": "💹 <b>चरण 7/12 — मार्केट पेआउट %</b>\n\nअपने ब्रोकर का मार्केट पेआउट % दर्ज करें:\n<i>(उदाहरण: 80)</i>",
+  "step_payout_invalid": "❌ कृपया 1 से 200 के बीच संख्या दर्ज करें।\nउदाहरण: 80",
+
+  "step_total_trades_prompt": "📊 <b>चरण 8/12 — कुल ट्रेड योजना</b>\n\nइस सेशन में कुल कितने ट्रेड की योजना है?\n<i>(उदाहरण: 10)</i>",
+  "step_total_trades_invalid": "❌ कृपया एक वैध धनात्मक संख्या दर्ज करें।\nउदाहरण: 10",
+
+  "step_wins_needed_prompt": "🏅 <b>चरण 9/12 — आवश्यक जीत</b>\n\nइस सेशन में कितनी जीत चाहिए?\n<i>(उदाहरण: 6)</i>",
+  "step_wins_needed_invalid": "❌ कृपया एक वैध धनात्मक संख्या दर्ज करें।\nउदाहरण: 6",
+
+  "step_stop_loss_prompt": "🛑 <b>चरण 10/12 — स्टॉप लॉस लिमिट</b>\n\nसेशन ऑटो-बंद होने से पहले अधिकतम नुकसान? ($)\n<i>(उदाहरण: 15)</i>",
+  "step_stop_loss_invalid": "❌ कृपया एक वैध धनात्मक राशि दर्ज करें।\nउदाहरण: 15",
+
+  "step_session_target_prompt": "🎯 <b>चरण 11/12 — सेशन प्रॉफिट टार्गेट</b>\n\nकितने प्रॉफिट पर यह सेशन ऑटो-बंद होगा? ($)\n<i>(उदाहरण: 20)</i>",
+  "step_session_target_invalid": "❌ कृपया एक वैध धनात्मक राशि दर्ज करें।\nउदाहरण: 20",
+
+  "step_mode_prompt": "⚙️ <b>चरण 12/12 — ट्रेडिंग मोड</b>\n\nअपने ट्रेडिंग मोड का नंबर टाइप करें:\n\n<b>1</b>  = रेगुलर\n<b>2</b>  = 1-स्टेप कंपाउंडिंग\n<b>3</b>  = 2-स्टेप कंपाउंडिंग\n<b>4</b>  = 3-स्टेप कंपाउंडिंग\n<b>5</b>  = मार्टिंगेल (1-MTG)\n<b>6</b>  = ऑस्कर्स ग्राइंड\n<b>7</b>  = एंटी-मार्टिंगेल\n<b>8</b>  = फ्लैट बेट\n<b>9</b>  = फिबोनाची\n<b>10</b> = डी'एलेम्बर्ट\n\n<i>(1 से 10 के बीच नंबर टाइप करें। उदाहरण: 1)</i>",
+  "step_mode_invalid": "❌ कृपया <b>1 से 10</b> के बीच नंबर टाइप करें।\nउदाहरण: 1",
+
+  "session_trade_header": "──────────────────────────────\n<b>ट्रेड #{trade_num}</b>\nमोड: {mode_name}\n💵 इस राशि का उपयोग करें: <b>${amount}</b>\n──────────────────────────────",
+  "session_btn_win": "✅ जीत",
+  "session_btn_loss": "❌ हार",
+  "session_btn_close": "🔒 सेशन बंद करें",
+  "session_btn_new": "🔄 नया सेशन",
+  "session_btn_home": "🏠 होम पर जाएं",
+  "session_btn_close_all": "🔒 सभी सेशन बंद करें",
+
+  "session_dashboard": "──────────────────────────────\n<b>डैशबोर्ड</b>\n💰 कैपिटल: ${capital}   💼 बैलेंस: ${balance}\n✅ जीत: {wins}          ❌ हार: {losses}\n📊 ट्रेड: {trades_used}/{total_trades}   📈 जीत दर: {win_rate}%\n💹 प्रॉफिट: {profit_sign}${profit}\n──────────────────────────────",
+
+  "target_hit": "🎉 <b>बधाई! आपका सेशन टार्गेट पूरा हो गया!</b>\n\nअपनी ट्रेडिंग और बेहतर बनाना चाहते हैं?\nहमारा AI Bot, SVIP Signals, या Premium Software आज़माएं।\nपूरी जानकारी के लिए Support Team को DM करें।",
+  "stop_loss_hit": "🛑 <b>स्टॉप लॉस लिमिट हिट हुई। आपकी सुरक्षा के लिए सेशन बंद किया गया।</b>\n\nस्मार्ट रिस्क मैनेजमेंट चाहते हैं?\nहमारा AI Bot और SVIP इस स्थिति से बचने में मदद कर सकते हैं।\nSupport Team को DM करें।",
+  "martingale_stop": "⚠️ <b>मार्टिंगेल स्टॉप ट्रिगर हुआ।</b>\nअगली राशि आपकी स्टॉप लॉस लिमिट से अधिक होगी।\nआपकी सुरक्षा के लिए सेशन बंद।",
+
+  "session_closed": "✅ सेशन बंद हुआ। आपके आंकड़े सहेजे गए।",
+  "session_not_found": "⚠️ कोई सक्रिय सेशन नहीं मिला। कृपया नया सेशन शुरू करें।",
+
+  "free_session_used": "⏰ <b>आज का आपका मुफ्त सेशन समाप्त हो गया।</b>\n\nकृपया कल पुनः प्रयास करें।\nअसीमित एक्सेस के लिए एक प्लान खरीदें।",
+  "new_session_blocked": "🔒 <b>आपके पास MONEY MANAGEMENT का पूर्ण एक्सेस नहीं है।</b>\n\nअसीमित सेशन अनलॉक करने के लिए एक्सेस प्लान खरीदें।",
+
+  "buy_access_text": "💳 <b>मनी मैनेजमेंट एक्सेस प्लान</b>\n\n📅 13 दिन   =  $6\n📅 25 दिन   =  $10\n📅 1 महीना  =  $15\n📅 2 महीने  =  $25\n📅 4 महीने  =  $60\n♾️  आजीवन   =  $100\n\n⭐ SVIP / AI Bot यूजर = <b>मुफ्त</b>\n<i>(मुफ्त एक्सेस के लिए Admin को DM करें)</i>",
+
+  "access_activated": "🎉 <b>आपका MONEY MANAGEMENT एक्सेस सक्रिय हो गया!</b>\n\n📅 <b>समाप्ति:</b> {expiry}\n\nआप अब कभी भी सेशन शुरू कर सकते हैं। ✅",
+
+  "admin_mm_grant_username": "👤 <b>MM एक्सेस ग्रांट</b>\n\nयूजरनेम टाइप करें:\n<i>(उदाहरण: @username)</i>",
+  "admin_mm_grant_duration": "⏳ अवधि टाइप करें:\n\nउदाहरण:\n<code>7</code>, <code>14</code>  = दिन\n<code>1month</code>, <code>2month</code>  = महीने\n<code>lifetime</code>  = स्थायी",
+  "admin_mm_grant_confirmed": "✅ <b>{username}</b> को MM एक्सेस दिया गया\n📅 अवधि: <b>{duration}</b>\n⏰ समाप्ति: <b>{expiry}</b>",
+  "admin_mm_grant_user_not_found": "❌ <b>{username}</b> डेटाबेस में नहीं मिला।\nयूजर को पहले बॉट स्टार्ट करना होगा।",
+  "admin_mm_grant_invalid_duration": "❌ अमान्य अवधि फॉर्मेट।\nउदाहरण: <code>7</code> (दिन), <code>1month</code>, <code>lifetime</code>",
+  "admin_mm_cancel": "❌ MM एक्सेस ग्रांट रद्द।",
+
+  "session_summary": "📊 <b>सेशन सारांश</b>\n\n🏆 मोड: {mode_name}\n💰 कैपिटल: ${capital}\n💼 अंतिम बैलेंस: ${balance}\n✅ जीत: {wins} | ❌ हार: {losses}\n📈 जीत दर: {win_rate}%\n💹 कुल प्रॉफिट: {profit_sign}${profit}\n📊 ट्रेड: {total_trades}"
+}

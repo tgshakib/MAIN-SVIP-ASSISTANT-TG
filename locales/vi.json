@@ -1,0 +1,90 @@
+{
+  "lang_name": "Tiếng Việt",
+  "language_set": "✅ Ngôn ngữ đã được đặt thành <b>Tiếng Việt</b>. Tất cả tin nhắn sẽ hiển thị bằng tiếng Việt.",
+  "language_invalid": "❌ Mã ngôn ngữ không hợp lệ. Vui lòng nhập mã hợp lệ từ danh sách.",
+  "language_prompt": "🌐 <b>Chọn Ngôn Ngữ của Bạn</b>\n\nNhập mã ngôn ngữ:\n\n<code>vi</code>  = Tiếng Việt\n<code>en</code>  = English\n<code>id</code>  = Indonesia\n<code>tl</code>  = Filipino",
+
+  "mm_menu_title": "💰 <b>QUẢN LÝ VỐN</b>\n\nQuản lý các phiên giao dịch của bạn với chiến lược quản lý vốn thông minh.",
+  "mm_btn_start_session": "▶️ Bắt Đầu Phiên",
+  "mm_btn_buy_access": "💳 Mua Quyền Truy Cập",
+  "mm_btn_support": "💬 Hỗ Trợ",
+  "mm_btn_language": "🌐 Ngôn Ngữ",
+  "mm_btn_back_home": "⬅️ Về Trang Chủ",
+
+  "mm_access_premium": "✅ <b>Truy Cập:</b> Cao Cấp",
+  "mm_access_free": "🆓 <b>Truy Cập:</b> Miễn Phí",
+  "mm_access_expires": "📅 <b>Hết Hạn:</b> {date}",
+  "mm_access_lifetime": "📅 <b>Hết Hạn:</b> Trọn Đời ♾️",
+  "mm_sessions_today": "📊 <b>Phiên Hôm Nay:</b> {used}/{max} đã dùng",
+  "mm_upgrade_prompt": "⬆️ Nâng cấp để mở khóa phiên không giới hạn.",
+
+  "step_capital_prompt": "💰 <b>Bước 1/12 — Vốn Giao Dịch</b>\n\nNhập số vốn giao dịch của bạn:\n<i>(Chỉ số. Ví dụ: 100)</i>",
+  "step_capital_free_limit": "⚠️ Truy cập miễn phí cho phép tối đa $50 vốn.\nVui lòng nhập $50 hoặc ít hơn.",
+  "step_capital_invalid": "❌ Vui lòng nhập số dương hợp lệ.\nVí dụ: 100",
+
+  "step_accuracy_prompt": "🎯 <b>Bước 2/12 — Độ Chính Xác Giao Dịch</b>\n\nNhập độ chính xác giao dịch %:\n<i>(Ví dụ: 65)</i>",
+  "step_accuracy_invalid": "❌ Vui lòng nhập số từ 1 đến 100.\nVí dụ: 65",
+
+  "step_trades_prompt": "🔢 <b>Bước 3/12 — Số Lệnh (Tùy Chọn)</b>\n\nBạn muốn thực hiện bao nhiêu lệnh trong phiên này?\n<i>(Nhập số. Để bỏ qua: skip)</i>",
+  "step_trades_invalid": "❌ Vui lòng nhập số dương hoặc <b>skip</b>.",
+
+  "step_daily_profit_prompt": "📈 <b>Bước 4/12 — Mục Tiêu Lợi Nhuận Hôm Nay</b>\n\nBạn muốn kiếm bao nhiêu hôm nay? ($)\n<i>(Ví dụ: 20)</i>",
+  "step_daily_profit_invalid": "❌ Vui lòng nhập số tiền dương hợp lệ.\nVí dụ: 20",
+
+  "step_overall_target_prompt": "🏆 <b>Bước 5/12 — Mục Tiêu Tổng Thể</b>\n\nMục tiêu giao dịch tổng thể của bạn là bao nhiêu? ($)\n<i>(Ví dụ: 500)</i>",
+  "step_overall_target_invalid": "❌ Vui lòng nhập số tiền dương hợp lệ.\nVí dụ: 500",
+
+  "step_cent_prompt": "🏦 <b>Bước 6/12 — Tài Khoản Cent</b>\n\nMôi giới của bạn có hỗ trợ Tài Khoản Cent không?\n<i>(Nhập: <b>yes</b> hoặc <b>no</b>)</i>",
+  "step_cent_invalid": "❌ Vui lòng nhập <b>yes</b> hoặc <b>no</b>.",
+
+  "step_payout_prompt": "💹 <b>Bước 7/12 — Tỷ Lệ Chi Trả Thị Trường %</b>\n\nNhập tỷ lệ chi trả % của môi giới:\n<i>(Ví dụ: 80)</i>",
+  "step_payout_invalid": "❌ Vui lòng nhập số từ 1 đến 200.\nVí dụ: 80",
+
+  "step_total_trades_prompt": "📊 <b>Bước 8/12 — Tổng Lệnh Dự Kiến</b>\n\nBạn dự kiến bao nhiêu lệnh trong phiên này?\n<i>(Ví dụ: 10)</i>",
+  "step_total_trades_invalid": "❌ Vui lòng nhập số dương hợp lệ.\nVí dụ: 10",
+
+  "step_wins_needed_prompt": "🏅 <b>Bước 9/12 — Số Lần Thắng Cần Thiết</b>\n\nBạn cần bao nhiêu lần thắng trong phiên này?\n<i>(Ví dụ: 6)</i>",
+  "step_wins_needed_invalid": "❌ Vui lòng nhập số dương hợp lệ.\nVí dụ: 6",
+
+  "step_stop_loss_prompt": "🛑 <b>Bước 10/12 — Giới Hạn Stop Loss</b>\n\nSố tiền thua tối đa trước khi tự động dừng phiên? ($)\n<i>(Ví dụ: 15)</i>",
+  "step_stop_loss_invalid": "❌ Vui lòng nhập số tiền dương hợp lệ.\nVí dụ: 15",
+
+  "step_session_target_prompt": "🎯 <b>Bước 11/12 — Mục Tiêu Lợi Nhuận Phiên</b>\n\nBao nhiêu lợi nhuận sẽ tự động đóng phiên này? ($)\n<i>(Ví dụ: 20)</i>",
+  "step_session_target_invalid": "❌ Vui lòng nhập số tiền dương hợp lệ.\nVí dụ: 20",
+
+  "step_mode_prompt": "⚙️ <b>Bước 12/12 — Chế Độ Giao Dịch</b>\n\nNhập số chế độ của bạn:\n\n<b>1</b>  = Thông Thường\n<b>2</b>  = Gộp 1 Bước\n<b>3</b>  = Gộp 2 Bước\n<b>4</b>  = Gộp 3 Bước\n<b>5</b>  = Martingale\n<b>6</b>  = Oscar's Grind\n<b>7</b>  = Anti-Martingale\n<b>8</b>  = Đặt Cược Cố Định\n<b>9</b>  = Fibonacci\n<b>10</b> = D'Alembert\n\n<i>(Nhập số từ 1 đến 10. Ví dụ: 1)</i>",
+  "step_mode_invalid": "❌ Vui lòng nhập số từ <b>1 đến 10</b>.\nVí dụ: 1",
+
+  "session_trade_header": "──────────────────────────────\n<b>Lệnh #{trade_num}</b>\nChế độ: {mode_name}\n💵 Sử Dụng Số Tiền Này: <b>${amount}</b>\n──────────────────────────────",
+  "session_btn_win": "✅ THẮNG",
+  "session_btn_loss": "❌ THUA",
+  "session_btn_close": "🔒 Đóng Phiên",
+  "session_btn_new": "🔄 Phiên Mới",
+  "session_btn_home": "🏠 Về Trang Chủ",
+  "session_btn_close_all": "🔒 Đóng Tất Cả Phiên",
+
+  "session_dashboard": "──────────────────────────────\n<b>Bảng Điều Khiển</b>\n💰 Vốn: ${capital}   💼 Số Dư: ${balance}\n✅ Thắng: {wins}      ❌ Thua: {losses}\n📊 Lệnh: {trades_used}/{total_trades}   📈 Tỷ Lệ Thắng: {win_rate}%\n💹 Lợi Nhuận: {profit_sign}${profit}\n──────────────────────────────",
+
+  "target_hit": "🎉 <b>Chúc mừng! Bạn đã đạt mục tiêu phiên!</b>\n\nBạn muốn cải thiện giao dịch hơn nữa?\nThử AI Bot, SVIP Signals, hoặc Premium của chúng tôi.\nNhắn tin cho đội Hỗ Trợ để biết chi tiết.",
+  "stop_loss_hit": "🛑 <b>Đã đạt giới hạn Stop Loss. Phiên đã được đóng để bảo vệ bạn.</b>\n\nBạn muốn quản lý rủi ro thông minh hơn?\nAI Bot và SVIP có thể giúp bạn. Liên hệ Hỗ Trợ.",
+  "martingale_stop": "⚠️ <b>Kích hoạt dừng Martingale.</b>\nSố tiền tiếp theo sẽ vượt quá giới hạn stop loss.\nPhiên đã đóng để bảo vệ bạn.",
+
+  "session_closed": "✅ Phiên đã đóng. Thống kê của bạn đã được lưu.",
+  "session_not_found": "⚠️ Không tìm thấy phiên đang hoạt động. Vui lòng bắt đầu phiên mới.",
+
+  "free_session_used": "⏰ <b>Phiên miễn phí hôm nay của bạn đã kết thúc.</b>\n\nVui lòng thử lại vào ngày mai.\nMua gói truy cập để có quyền truy cập không giới hạn.",
+  "new_session_blocked": "🔒 <b>Bạn không có quyền truy cập đầy đủ vào MONEY MANAGEMENT.</b>\n\nMua gói truy cập để mở khóa phiên không giới hạn.",
+
+  "buy_access_text": "💳 <b>Gói Truy Cập MONEY MANAGEMENT</b>\n\n📅 13 Ngày   =  $6\n📅 25 Ngày   =  $10\n📅 1 Tháng   =  $15\n📅 2 Tháng   =  $25\n📅 4 Tháng   =  $60\n♾️  Trọn Đời   =  $100\n\n⭐ Người dùng SVIP / AI Bot = <b>MIỄN PHÍ</b>\n<i>(Nhắn Admin để nhận truy cập miễn phí)</i>",
+
+  "access_activated": "🎉 <b>Quyền Truy Cập MONEY MANAGEMENT của bạn đã được kích hoạt!</b>\n\n📅 <b>Hết Hạn:</b> {expiry}\n\nBạn có thể bắt đầu phiên bất cứ lúc nào. ✅",
+
+  "admin_mm_grant_username": "👤 <b>Cấp Quyền Truy Cập MM</b>\n\nNhập tên người dùng:\n<i>(Ví dụ: @username)</i>",
+  "admin_mm_grant_duration": "⏳ Nhập thời hạn:\n\nVí dụ:\n<code>7</code>, <code>14</code>  = Ngày\n<code>1month</code>, <code>2month</code>  = Tháng\n<code>lifetime</code>  = Vĩnh Viễn",
+  "admin_mm_grant_confirmed": "✅ Đã cấp quyền truy cập MM cho <b>{username}</b>\n📅 Thời hạn: <b>{duration}</b>\n⏰ Hết hạn: <b>{expiry}</b>",
+  "admin_mm_grant_user_not_found": "❌ Không tìm thấy <b>{username}</b> trong cơ sở dữ liệu.\nNgười dùng phải khởi động bot trước.",
+  "admin_mm_grant_invalid_duration": "❌ Định dạng thời hạn không hợp lệ.\nVí dụ: <code>7</code> (ngày), <code>1month</code>, <code>lifetime</code>",
+  "admin_mm_cancel": "❌ Đã hủy cấp quyền truy cập MM.",
+
+  "session_summary": "📊 <b>Tóm Tắt Phiên</b>\n\n🏆 Chế độ: {mode_name}\n💰 Vốn: ${capital}\n💼 Số Dư Cuối: ${balance}\n✅ Thắng: {wins} | ❌ Thua: {losses}\n📈 Tỷ Lệ Thắng: {win_rate}%\n💹 Tổng Lợi Nhuận: {profit_sign}${profit}\n📊 Lệnh: {total_trades}"
+}

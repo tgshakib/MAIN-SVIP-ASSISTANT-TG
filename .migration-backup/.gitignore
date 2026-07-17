@@ -1,0 +1,35 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Database & persistent data (managed by GitHub Actions cache)
+*.db
+*.sqlite3
+user_settings.json
+admin_msg_ids.json
+
+# Secrets
+.env
+.venv
+venv/
+env/
+
+# Replit-specific
+.replit
+replit.nix
+.pythonlibs/
+.upm/
+.cache/
+.local/
+*.zip
+zipFile.zip
+mybot_backup.zip
+svip_bot_locked.zip
+node_modules/
+*.tmp
