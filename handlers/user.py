@@ -253,19 +253,19 @@ async def broker_exness(callback: CallbackQuery, state: FSMContext):
 async def broker_pocket(callback: CallbackQuery, state: FSMContext):
     from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, FSInputFile
     caption = (
-        "🔥 <b>WELCOME50</b> – <b>Get a 50% Bonus on Your First Deposit!</b> 🔥\n\n"
-        "No time to analyze the markets all day? Join our <b>SVIP trading community</b> "
-        "or buy <b>TRADING AI</b> and trade with confidence.\n"
+        "🔥 <b><u>WELCOME50</u></b> <b>— Get a 50% Bonus on Your First Deposit!</b> 🔥\n\n"
+        "<i>No time to analyze the markets all day?</i>\n"
+        "Join our <b>SVIP trading community</b> or buy <b>TRADING AI</b> and trade with confidence.\n\n"
         "━━━━━━━━━━━━━━━━━━━━━\n"
-        "🎁 50% Deposit Bonus Link Available\n"
-        "💵 Minimum Deposit: $10\n"
-        "🏷️ Promo Code: <code>WELCOME50</code>\n"
-        "━━━━━━━━━━━━━━━━━━━━━\n"
-        "✅ Create Your Pocket Option Account : 👇\n"
-        "https://goo.su/a7Kioo\n\n"
-        "🌍 Global Registration Link also available below :\n"
-        "https://po-ru4.click/smart/r44rfMYgy7uvhR\n\n"
-        "🚀 Don't miss this opportunity to boost your trading capital and start your journey today!"
+        "🎁 <b>50% Deposit Bonus Link Available</b>\n"
+        "💵 <b>Minimum Deposit:</b> <code>$10</code>\n"
+        "🏷️ <b>Promo Code:</b> <code>WELCOME50</code>\n"
+        "━━━━━━━━━━━━━━━━━━━━━\n\n"
+        "✅ <b><u>Create Your Pocket Option Account :</u></b> 👇\n"
+        "<code>https://goo.su/a7Kioo</code>\n\n"
+        "🌍 <b>Global Registration Link</b> also available below :\n"
+        "<code>https://po-ru4.click/smart/r44rfMYgy7uvhR</code>\n\n"
+        "🚀 <b><i>Don't miss this opportunity to boost your trading capital and start your journey today!</i></b>"
     )
     photo = FSInputFile("attached_assets/ChatGPT_Image_Jun_9,_2026,_06_53_59_PM_1781023499405.png")
     await callback.message.answer_photo(
