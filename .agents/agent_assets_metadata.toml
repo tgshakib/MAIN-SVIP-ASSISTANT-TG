@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "EFhy-C0nbfUnrOiBXuDzp"
+uri = "file://mybot_backup.zip"
+type = "unspecified"
+title = "mybot_backup.zip — Password: svipownershakib"
