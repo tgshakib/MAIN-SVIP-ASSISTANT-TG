@@ -255,15 +255,17 @@ async def broker_pocket(callback: CallbackQuery, state: FSMContext):
     caption = (
         "🔥 <b>WELCOME50</b> – <b>Get a 50% Bonus on Your First Deposit!</b> 🔥\n\n"
         "No time to analyze the markets all day? Join our <b>SVIP trading community</b> "
-        "or buy <b>TRADING AI</b> and trade with confidence.\n\n"
+        "or buy <b>TRADING AI</b> and trade with confidence.\n"
         "━━━━━━━━━━━━━━━━━━━━━\n"
-        "🎁 <b>50% Deposit Bonus Link Available</b>\n"
-        "💵 <b>Minimum Deposit:</b> $10\n"
-        "🏷️ <b>Promo Code:</b> <code>WELCOME50</code>\n"
-        "━━━━━━━━━━━━━━━━━━━━━\n\n"
-        "✅ <b>Create Your Pocket Option Account 👇</b>\n\n"
-        "🌍 <b>Global Registration Link</b> also available below\n\n"
-        "🚀 <b>Don't miss this opportunity to boost your trading capital and start your journey today!</b>"
+        "🎁 50% Deposit Bonus Link Available\n"
+        "💵 Minimum Deposit: $10\n"
+        "🏷️ Promo Code: <code>WELCOME50</code>\n"
+        "━━━━━━━━━━━━━━━━━━━━━\n"
+        "✅ Create Your Pocket Option Account : 👇\n"
+        "https://goo.su/a7Kioo\n\n"
+        "🌍 Global Registration Link also available below :\n"
+        "https://po-ru4.click/smart/r44rfMYgy7uvhR\n\n"
+        "🚀 Don't miss this opportunity to boost your trading capital and start your journey today!"
     )
     photo = FSInputFile("attached_assets/ChatGPT_Image_Jun_9,_2026,_06_53_59_PM_1781023499405.png")
     await callback.message.answer_photo(
