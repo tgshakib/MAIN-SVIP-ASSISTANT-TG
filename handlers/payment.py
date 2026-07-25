@@ -6,14 +6,18 @@ from aiogram.fsm.state import State, StatesGroup
 
 import database as db
 from config import (
-    PACKAGES, FOREX_VIP_PACKAGES, PAYMENT_INSTRUCTIONS, FOREX_PAYMENT_INSTRUCTIONS, ADMIN_ID,
+    PACKAGES, FOREX_VIP_PACKAGES, PAYMENT_INSTRUCTIONS, PAYMENT_INSTRUCTIONS_PAGE2,
+    FOREX_PAYMENT_INSTRUCTIONS, ADMIN_ID,
     PAID_OFFER_TIER3, PAID_OFFER_TIER6, FOREX_OFFER_TIER3, FOREX_OFFER_TIER6,
 )
 from keyboards import (
-    payment_instructions_kb, cancel_only_kb, paid_menu_kb,
-    forex_join_kb, forex_proceed_payment_kb, forex_payment_instructions_kb, forex_cancel_kb,
-    paid_offer_proceed_kb, paid_offer_payment_instructions_kb, paid_offer_cancel_kb,
-    forex_offer_proceed_kb, forex_offer_payment_instructions_kb, forex_offer_cancel_kb,
+    payment_instructions_kb, payment_instructions_page2_kb, cancel_only_kb, paid_menu_kb,
+    forex_join_kb, forex_proceed_payment_kb,
+    forex_payment_instructions_kb, forex_payment_instructions_page2_kb, forex_cancel_kb,
+    paid_offer_proceed_kb, paid_offer_payment_instructions_kb,
+    paid_offer_payment_instructions_page2_kb, paid_offer_cancel_kb,
+    forex_offer_proceed_kb, forex_offer_payment_instructions_kb,
+    forex_offer_payment_instructions_page2_kb, forex_offer_cancel_kb,
 )
 
 router = Router()
@@ -31,6 +35,107 @@ def get_pkg(pkg_id: int):
 
 def get_forex_pkg(pkg_id: int):
     return next((p for p in FOREX_VIP_PACKAGES if p["id"] == pkg_id), None)
+
+# ── Payment page navigation ────────────────────────────────
+@router.callback_query(F.data == "pay_p2")
+async def payment_page2(callback: CallbackQuery, state: FSMContext):
+    data = await state.get_data()
+    pkg = get_pkg(data.get("pkg_id"))
+    header = (f"📦 Package: *{pkg['name']}*\n💰 Amount: *${pkg['price']}*\n\n") if pkg else ""
+    await callback.message.edit_text(
+        f"💳 *Payment Methods — Page 2 of 2*\n\n{header}{PAYMENT_INSTRUCTIONS_PAGE2}",
+        parse_mode="Markdown",
+        reply_markup=payment_instructions_page2_kb()
+    )
+    await callback.answer()
+
+@router.callback_query(F.data == "pay_p1")
+async def payment_page1(callback: CallbackQuery, state: FSMContext):
+    data = await state.get_data()
+    pkg = get_pkg(data.get("pkg_id"))
+    header = (f"📦 Package: *{pkg['name']}*\n💰 Amount: *${pkg['price']}*\n\n") if pkg else ""
+    await callback.message.edit_text(
+        f"💳 *Payment Instructions — Page 1 of 2*\n\n{header}{PAYMENT_INSTRUCTIONS}",
+        parse_mode="Markdown",
+        reply_markup=payment_instructions_kb()
+    )
+    await callback.answer()
+
+@router.callback_query(F.data == "fpay_p2")
+async def forex_payment_page2(callback: CallbackQuery, state: FSMContext):
+    data = await state.get_data()
+    pkg = get_forex_pkg(data.get("forex_pkg_id"))
+    header = (f"📦 Package: *{pkg['name']}*\n💰 Amount: *${pkg['price']}*\n\n") if pkg else ""
+    await callback.message.edit_text(
+        f"💳 *FOREX VIP — Payment Methods — Page 2 of 2*\n\n{header}{PAYMENT_INSTRUCTIONS_PAGE2}",
+        parse_mode="Markdown",
+        reply_markup=forex_payment_instructions_page2_kb()
+    )
+    await callback.answer()
+
+@router.callback_query(F.data == "fpay_p1")
+async def forex_payment_page1(callback: CallbackQuery, state: FSMContext):
+    data = await state.get_data()
+    pkg = get_forex_pkg(data.get("forex_pkg_id"))
+    header = (f"📦 Package: *{pkg['name']}*\n💰 Amount: *${pkg['price']}*\n\n") if pkg else ""
+    await callback.message.edit_text(
+        f"💳 *FOREX VIP — Payment Instructions — Page 1 of 2*\n\n{header}{FOREX_PAYMENT_INSTRUCTIONS}",
+        parse_mode="Markdown",
+        reply_markup=forex_payment_instructions_kb()
+    )
+    await callback.answer()
+
+@router.callback_query(F.data == "opay_p2")
+async def offer_payment_page2(callback: CallbackQuery, state: FSMContext):
+    data = await state.get_data()
+    pkg_id = data.get("offer_pkg_id")
+    pkg = _get_paid_offer_pkg(pkg_id) if pkg_id else None
+    header = (f"📦 Package: *{pkg['name']}*\n💰 Amount: *${pkg['price']}*\n\n") if pkg else ""
+    await callback.message.edit_text(
+        f"💳 *Payment Methods — Page 2 of 2*\n\n{header}{PAYMENT_INSTRUCTIONS_PAGE2}",
+        parse_mode="Markdown",
+        reply_markup=paid_offer_payment_instructions_page2_kb()
+    )
+    await callback.answer()
+
+@router.callback_query(F.data == "opay_p1")
+async def offer_payment_page1(callback: CallbackQuery, state: FSMContext):
+    data = await state.get_data()
+    pkg_id = data.get("offer_pkg_id")
+    pkg = _get_paid_offer_pkg(pkg_id) if pkg_id else None
+    header = (f"📦 Package: *{pkg['name']}*\n💰 Amount: *${pkg['price']}*\n\n") if pkg else ""
+    await callback.message.edit_text(
+        f"💳 *Payment Instructions (Loyalty Offer) — Page 1 of 2*\n\n{header}{PAYMENT_INSTRUCTIONS}",
+        parse_mode="Markdown",
+        reply_markup=paid_offer_payment_instructions_kb()
+    )
+    await callback.answer()
+
+@router.callback_query(F.data == "ofpay_p2")
+async def forex_offer_payment_page2(callback: CallbackQuery, state: FSMContext):
+    data = await state.get_data()
+    pkg_id = data.get("forex_offer_pkg_id")
+    pkg = _get_forex_offer_pkg(pkg_id) if pkg_id else None
+    header = (f"📦 Package: *{pkg['name']}*\n💰 Amount: *${pkg['price']}*\n\n") if pkg else ""
+    await callback.message.edit_text(
+        f"💳 *FOREX VIP — Payment Methods — Page 2 of 2*\n\n{header}{PAYMENT_INSTRUCTIONS_PAGE2}",
+        parse_mode="Markdown",
+        reply_markup=forex_offer_payment_instructions_page2_kb()
+    )
+    await callback.answer()
+
+@router.callback_query(F.data == "ofpay_p1")
+async def forex_offer_payment_page1(callback: CallbackQuery, state: FSMContext):
+    data = await state.get_data()
+    pkg_id = data.get("forex_offer_pkg_id")
+    pkg = _get_forex_offer_pkg(pkg_id) if pkg_id else None
+    header = (f"📦 Package: *{pkg['name']}*\n💰 Amount: *${pkg['price']}*\n\n") if pkg else ""
+    await callback.message.edit_text(
+        f"💳 *FOREX VIP — Payment Instructions (Loyalty Offer) — Page 1 of 2*\n\n{header}{FOREX_PAYMENT_INSTRUCTIONS}",
+        parse_mode="Markdown",
+        reply_markup=forex_offer_payment_instructions_kb()
+    )
+    await callback.answer()
 
 # ── Pay Now (from paid menu) ───────────────────────────────
 @router.callback_query(F.data == "pay_now")

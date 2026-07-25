@@ -19,6 +19,27 @@ PAYMENT_INSTRUCTIONS = os.environ.get("PAYMENT_INSTRUCTIONS", """💛 *Binance P
 ┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
 🏷  *Wallet Address:*
 `TYudgrH88fCWzNqthy6tXQAieeNcCBYmER`
+
+🟡 *Crypto — BTC* _(Bitcoin Network)_
+┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+🏷  *Wallet Address:*
+`1KgTBewwyvg6wd1F5jy9PKMy3mkvajbaCf`
+
+🔸 *Crypto — BNB* _(BEP20 · Smart Chain)_
+┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+🏷  *Wallet Address:*
+`0x3dc13af0ff1a7f4585360ab416d35d335afe68e3`
+""")
+
+PAYMENT_INSTRUCTIONS_PAGE2 = os.environ.get("PAYMENT_INSTRUCTIONS_PAGE2", """🔵 *Crypto — ETH* _(Ethereum · ERC20)_
+┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+🏷  *Wallet Address:*
+`0x3dc13af0ff1a7f4585360ab416d35d335afe68e3`
+
+🟣 *Crypto — SOL* _(Solana Network)_
+┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+🏷  *Wallet Address:*
+`CuG5iW99W8fKCPyT34Zkgyox2aa7hzyK8eRL3CXBvjXC`
 """)
 
 # ── MTG / NON-MTG SVIP Packages ────────────────────────────
@@ -51,14 +72,25 @@ FOREX_LIFETIME_NOTE = (
     "To get this please contact 👉 Support"
 )
 
-FOREX_PAYMENT_INSTRUCTIONS = os.environ.get("FOREX_PAYMENT_INSTRUCTIONS", """
-💛 *Binance Pay (Business Official):*
-Pay ID: `582355370`
+FOREX_PAYMENT_INSTRUCTIONS = os.environ.get("FOREX_PAYMENT_INSTRUCTIONS", """💛 *Binance Pay* _(Business Official)_
+┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+🪪  *Pay ID:*
+`582355370`
 
-🔷 *Crypto (USDT — TRC20):*
+🔷 *Crypto — USDT* _(TRC20 Network)_
+┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+🏷  *Wallet Address:*
 `TYudgrH88fCWzNqthy6tXQAieeNcCBYmER`
 
-📌 After payment, send your screenshot proof below.
+🟡 *Crypto — BTC* _(Bitcoin Network)_
+┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+🏷  *Wallet Address:*
+`1KgTBewwyvg6wd1F5jy9PKMy3mkvajbaCf`
+
+🔸 *Crypto — BNB* _(BEP20 · Smart Chain)_
+┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+🏷  *Wallet Address:*
+`0x3dc13af0ff1a7f4585360ab416d35d335afe68e3`
 """)
 
 # ── Tip shown for non-monthly packages (HTML) ──────────────

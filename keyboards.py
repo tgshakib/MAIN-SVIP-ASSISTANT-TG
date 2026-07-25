@@ -84,6 +84,15 @@ def forex_proceed_payment_kb(pkg_id: int) -> InlineKeyboardMarkup:
 def forex_payment_instructions_kb() -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="📸 CHECK MY SCREENSHOT",   callback_data="forex_check_screenshot")],
+        [InlineKeyboardButton(text="➡️ More Payment Methods",  callback_data="fpay_p2")],
+        [InlineKeyboardButton(text="💬 Support",                url=f"https://t.me/{SUPPORT_USERNAME.lstrip('@')}")],
+        [InlineKeyboardButton(text="❌ Cancel",                 callback_data="back_main")],
+    ])
+
+def forex_payment_instructions_page2_kb() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="📸 CHECK MY SCREENSHOT",   callback_data="forex_check_screenshot")],
+        [InlineKeyboardButton(text="⬅️ Back to Page 1",        callback_data="fpay_p1")],
         [InlineKeyboardButton(text="💬 Support",                url=f"https://t.me/{SUPPORT_USERNAME.lstrip('@')}")],
         [InlineKeyboardButton(text="❌ Cancel",                 callback_data="back_main")],
     ])
@@ -153,8 +162,16 @@ def proceed_payment_kb(pkg_id: int) -> InlineKeyboardMarkup:
 # ── Payment instructions screen ────────────────────────────
 def payment_instructions_kb() -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="📸 CHECK MY SCREENSHOT", callback_data="check_screenshot")],
-        [InlineKeyboardButton(text="❌ Cancel",               callback_data="back_paid")],
+        [InlineKeyboardButton(text="📸 CHECK MY SCREENSHOT",      callback_data="check_screenshot")],
+        [InlineKeyboardButton(text="➡️ More Payment Methods",     callback_data="pay_p2")],
+        [InlineKeyboardButton(text="❌ Cancel",                    callback_data="back_paid")],
+    ])
+
+def payment_instructions_page2_kb() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="📸 CHECK MY SCREENSHOT",      callback_data="check_screenshot")],
+        [InlineKeyboardButton(text="⬅️ Back to Page 1",           callback_data="pay_p1")],
+        [InlineKeyboardButton(text="❌ Cancel",                    callback_data="back_paid")],
     ])
 
 # ── Waiting for screenshot photo ──────────────────────────
@@ -297,8 +314,16 @@ def paid_offer_proceed_kb(pkg_id: int) -> InlineKeyboardMarkup:
 
 def paid_offer_payment_instructions_kb() -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="📸 CHECK MY SCREENSHOT", callback_data="ocheck_screenshot")],
-        [InlineKeyboardButton(text="❌ Cancel",               callback_data="my_offer_paid")],
+        [InlineKeyboardButton(text="📸 CHECK MY SCREENSHOT",  callback_data="ocheck_screenshot")],
+        [InlineKeyboardButton(text="➡️ More Payment Methods", callback_data="opay_p2")],
+        [InlineKeyboardButton(text="❌ Cancel",                callback_data="my_offer_paid")],
+    ])
+
+def paid_offer_payment_instructions_page2_kb() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="📸 CHECK MY SCREENSHOT",  callback_data="ocheck_screenshot")],
+        [InlineKeyboardButton(text="⬅️ Back to Page 1",       callback_data="opay_p1")],
+        [InlineKeyboardButton(text="❌ Cancel",                callback_data="my_offer_paid")],
     ])
 
 
@@ -331,9 +356,18 @@ def forex_offer_proceed_kb(pkg_id: int) -> InlineKeyboardMarkup:
 
 def forex_offer_payment_instructions_kb() -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="📸 CHECK MY SCREENSHOT", callback_data="ofcheck_screenshot")],
-        [InlineKeyboardButton(text="💬 Support",              url=f"https://t.me/{SUPPORT_USERNAME.lstrip('@')}")],
-        [InlineKeyboardButton(text="❌ Cancel",               callback_data="my_offer_forex")],
+        [InlineKeyboardButton(text="📸 CHECK MY SCREENSHOT",  callback_data="ofcheck_screenshot")],
+        [InlineKeyboardButton(text="➡️ More Payment Methods", callback_data="ofpay_p2")],
+        [InlineKeyboardButton(text="💬 Support",               url=f"https://t.me/{SUPPORT_USERNAME.lstrip('@')}")],
+        [InlineKeyboardButton(text="❌ Cancel",                callback_data="my_offer_forex")],
+    ])
+
+def forex_offer_payment_instructions_page2_kb() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="📸 CHECK MY SCREENSHOT",  callback_data="ofcheck_screenshot")],
+        [InlineKeyboardButton(text="⬅️ Back to Page 1",       callback_data="ofpay_p1")],
+        [InlineKeyboardButton(text="💬 Support",               url=f"https://t.me/{SUPPORT_USERNAME.lstrip('@')}")],
+        [InlineKeyboardButton(text="❌ Cancel",                callback_data="my_offer_forex")],
     ])
 
 
