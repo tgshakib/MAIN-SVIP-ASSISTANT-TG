@@ -287,7 +287,7 @@ async def broker_quotex(callback: CallbackQuery, state: FSMContext):
     text = (
         "No time to analyze the markets all day? Join our <b>SVIP trading community</b> "
         "or buy <b>TRADING AI</b> and trade with confidence.\n\n"
-        "✅ <b>Create Your Pocket Option Account :</b>👇\n"
+        "✅ <b>Create Your Quotex Account :</b>👇\n"
         "https://broker-qx.pro/sign-up/?lid=2203139\n\n"
         "🌍 <b>Global Registration Link</b> also available below :\n"
         "https://broker-qx.pro/sign-up/?lid=2203126\n\n"
