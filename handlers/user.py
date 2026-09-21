@@ -304,6 +304,31 @@ async def broker_quotex(callback: CallbackQuery, state: FSMContext):
     )
     await callback.answer()
 
+# ── Zuperior Forex Broker ─────────────────────────────────
+@router.callback_query(F.data == "broker_zuperior")
+async def broker_zuperior(callback: CallbackQuery):
+    from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+    text = (
+        "• <b>All country support Forex Broker</b> 🌐\n\n"
+        "🔗 <b>Open Your Forex Account in Zuperior :</b>\n"
+        "https://dashboard.zuperior.com/login?referralCode=IB3511NU\n\n"
+        "• <b>Partner Code</b> (you can apply): <code>IB3511NU</code>"
+    )
+    await callback.message.answer(
+        text,
+        parse_mode="HTML",
+        reply_markup=InlineKeyboardMarkup(inline_keyboard=[
+            [
+                InlineKeyboardButton(
+                    text="🔗 Open Zuperior Forex Account",
+                    url="https://dashboard.zuperior.com/login?referralCode=IB3511NU",
+                )
+            ],
+            [InlineKeyboardButton(text="⬅️ Back", callback_data="back_main")],
+        ]),
+    )
+    await callback.answer()
+
 # ── 🔄 Renew → PAID JOIN ───────────────────────────────────
 @router.callback_query(F.data == "renew_paid")
 async def renew_paid(callback: CallbackQuery, state: FSMContext):

@@ -112,6 +112,7 @@ def refer_join_kb() -> InlineKeyboardMarkup:
             InlineKeyboardButton(text="💹 POCKET OPTION",  callback_data="broker_pocket"),
         ],
         [InlineKeyboardButton(text="📈 QUOTEX",            callback_data="broker_quotex")],
+        [InlineKeyboardButton(text=" Forex Broker Zuperior ", callback_data="broker_zuperior")],
         [InlineKeyboardButton(text="🏦 Others Broker",     url=f"https://t.me/{SUPPORT_USERNAME.lstrip('@')}")],
         [InlineKeyboardButton(text="⬅️ Back",              callback_data="back_main")],
     ])
